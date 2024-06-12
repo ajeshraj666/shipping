@@ -980,3 +980,25 @@ margin-left: 10px;
     }
 
 }
+
+.arrowBtn{
+    width: fit-content;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: $black;
+    gap: 5px;
+    @include min(992){
+        gap: 12px;
+    }
+    @include min(1200){
+        gap: 16px;
+    }
+    @include min(1600){
+        gap: 18px;
+    }
+    @include min(1900){
+        gap: 20px;
+    }
+}

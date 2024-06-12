@@ -1,521 +1,85 @@
-.about-page{
-    .about-company-long-description {
-        overflow: hidden;
-        transition: height 0.3s ease;
-        height: 225px;
-        @include min(768){
-            height: 135px;
-        }
-        @include min(992){
-            height: 215px;
-        }
-        @include min(1200){
-            height: 264px;
-        }
-        @include min(1350){
-            height: 314px;
-        }
-        @include min(1440){
-            height: 344px;
-        }
-        @include min(1600){
-            height: 394px;
-        }
-        @include min(1900){
-            height: 424px;
-        }
-    }
-    
-    .about-company-long-description.expanded {
-        height: auto;
-    }
-    
-    .btn.arrow-btn {
-    
-        @include min(992){
-            margin-top: 25px;
-        }
-        @include min(1200){
-            margin-top: 30px;
-        }
-        @include min(1440){
-            margin-top: 35px;
-        }
-        @include min(1600){
-            margin-top: 36px;
-        }
-        @include min(1600){
-            margin-top: 38px;
-        }
-        @include min(1900){
-            margin-top: 40px;
-        }
-    }
-    
+.aboutIntro{
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
-.foucus-us{
-    overflow: hidden;
-    background: #FAF0EC;
+.aboutIntroImage {
     position: relative;
-    border-radius: 100px;
-    border-radius:30px 30px 0px 0px;
-
-    @include min(992){
-        border-radius:40px 40px 0px 0px;
-
-    }
-    @include min(1200){
-        border-radius: 50px 50px 0px 0px;
-   
-    }
-    @include min(1440){
-        border-radius: 80px 80px 0px 0px;
-   
-    }
-    @include min(1600){
-        border-radius: 90px 90px 0px 0px;
-   
-    }
-    @include min(1900){
-        border-radius: 100px 100px 0px 0px;
-   
-    }
-    @extend .commonPadding;
-    >   .container-ctn{
-        padding-bottom: 180px;
-        @include min(992){
-        padding-bottom: 247px;
-
-        }
-    }
-    .focus-slider{
-        background-color: $primaryColor;
-        border-radius: 0px 0px 30px 30px;
+    width: 100%;
   
-        @include min(992){
-            border-radius: 0px 0px 40px 40px;
-            padding-bottom: 20px;
-    
-        }
-        @include min(1200){
-            border-radius:  0px 0px 50px 50px;
-            padding-bottom: 15px;
-       
-        }
-        @include min(1440){
-            border-radius:  0px 0px 80px 80px;
-            padding-bottom: 20px;
-       
-        }
-        @include min(1600){
-            border-radius:  0px 0px 90px 90px;
-            padding-bottom: 25px;
-       
-        }
-        @include min(1900){
-            border-radius:  0px 0px 100px 100px;
-            padding-bottom: 40px;
-       
-        }
-        .container-ctn{
-            position: relative;
-        }
-        .slick-nav{
-            position: absolute;
-            left: 0;
-            bottom: 40px;
-            width: 100%;
-            > div{
-                &:hover{
-                   svg{
-                    filter: invert(1);
-                    transition: 0.5s ease all;
-                   }
-                }
-            }
-        }
-        .slick-dots{
-            bottom: -100px;
-        }
-    }
-    .foucus-us-featured{
-        picture{
-            width: 100%;
-            @include min(1200){
-                width: 43%;
-
-            }
-        }
-        img{
-            width: 100%;
-            height: auto;
-            border-radius: 55px;
-            @include min(768){
-                border-radius: 100px;
-            }
-            @include min(1200){
-                border-radius: 80px;
-            }
-            @include min(1440){
-                border-radius:90px;
-            }
-            @include min(1600){
-                border-radius: 100px;
-            }
-        }
-      >  ul{
-            width: 100%;
-            @include max(1199){
-                margin-top: 30px;
-            }
-            @include min(1200){
-                width: 51.75%;
-
-            }
-            p{
-                @include min-max(1200,1349){
-                    font-size: 12.5px;
-                    line-height: 22.5px;
-                }
-                @include min-max(1350,1399){
-                    font-size: 14px;
-                    line-height: 24px;
-                }
-                @include min-max(1440,1599){
-                    font-size: 14.8px;
-                    line-height: 24.8px;
-                }
-                @include min-max(1600,1799){
-                    font-size: 16px;
-                    line-height: 26px;
-                }
-            }
-            h3{
-                transition: 0.5s ease all;
-                position: relative;
-                font-family: Poppins;
-                text-transform: uppercase;
-                color: $black;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 30px;
-                @include max(768){
-                    margin-bottom: 10px;
-                }
-                @include min(768){
-                    padding:  8px 0px;
-                    font-size: 17px;
-                    line-height: 17px; 
-                } 
-                @include min(992){
-                    padding:  10px 0px;
-                    font-size: 18px;
-                    line-height: 18px; 
-                }
-                @include min(1200){
-                    padding:  10px 0px;
-                    font-size: 18px;
-                    line-height: 28px; 
-                }
-                @include min(1350){
-                    padding:  12px 0px;
-                    font-size: 20px;
-                    line-height: 30px; 
-                }
-                @include min(1440){
-                    padding:  16px 0px;
-                    font-size: 24px;
-                    line-height: 34px; 
-                }
-                @include min(1600){
-                    padding:  18px 0px;
-                    font-size: 26px;
-                    line-height: 36px; 
-                }
-                @include min(1900){
-                    padding:  20px 0px;
-                    font-size: 28px;
-                    line-height: 40px; 
-                }
-                &::before{
-                    @extend .position;  
-                    background-color: $white;
-                    height: 100%;
-                }
-                &::after{
-                    @extend .position;  
-                    background-color: $primaryColor;
-                    height: 0%;
-                    transition: 0.3s ease all;
-                }
-                &::after, &::before{
-                    @extend .position;  
-                    left: 0;
-                    top: 0;
-                    width: 6px;
-                    border-radius: 20px;
-                    @include min(1200){
-                        width: 7px;
-                    }
-                    @include min(1440){
-                        width: 8px;
-                    }
-                    @include min(1600){
-                        width: 9px;
-                    }
-                    @include min(1900){
-                        width: 10px;
-                    }
-    
-                }
-            }
-            h3,div{
-                padding-left: 20px;
-                @include min(1200){
-                    padding-left: 18px;
-                }
-                @include min(1440){
-                    padding-left: 24px;
-                }
-                @include min(1600){
-                    padding-left: 28px;
-                }
-                @include min(1900){
-                    padding-left: 30px;
-                }
-            }
-           > li{
-                transition: 0.5s ease all;
-                padding: 20px 10px;
-                border-radius: 20px;
-                @include min(1200){
-                    padding: 20px 14px;
-                }
-                @include min(1440){
-                    padding: 24px 16px;
-                }
-                @include min(1600){
-                    padding: 28px 18px;
-                }
-                @include min(1900){
-                    padding: 30px 20px;
-                }
-                &:hover{
-                    background-color: $white;
-                    box-shadow: 0px 15px 15px 0px rgba(106, 40, 117, 0.15);
-                    transition: 0.5s ease all;
-                    h3{
-              
-                        &::after{
-                            transition: 0.7s ease all;
-                            background-color: $primaryColor;
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .focus-slider-wrapper{
-        top: -147px;
-        img{
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border: 1px solid #ECECEC;
-            transition: 0.5s ease all;
-
-        }
-        picture{
-            transition: 0.5s ease all;
-
-            &:hover{
-                img{
-                    border: 1px solid #D400F8;
-                    transition: 0.5s ease all;
-
-                }
-            }
-        }
-        .slick-slide{
-            margin: 0px 5px;
-            @include min(768){
-                margin: 0px 10px;
-            }
-            @include min(992){
-                margin: 0px 12px;
-            }
-            @include min(1200){
-                margin: 0px 14px;
-            }
-            @include min(1440){
-                margin: 0px 16px;
-            }
-            @include min(1600){
-                margin: 0px 18px;
-            }
-            @include min(1900){
-                margin: 0px 20px;
-            }
-        }
-        .slick-list{
-            margin: 0px -5px;
-            @include min(768){
-                margin: 0px -10px;
-            }
-            @include min(992){
-                margin: 0px -12px;
-            }
-            @include min(1200){
-                margin: 0px -14px;
-            }
-            @include min(1440){
-                margin: 0px -16px;
-            }
-            @include min(1600){
-                margin: 0px -18px;
-            }
-            @include min(1900){
-                margin: 0px -20px;
-            }
-        }
-        .slick-dots li.slick-active button{
-            background-color: $white;
-        }
-    }
-}
-
-
-// ===========================Team Slider=====================================
-
-.team-slider{
-    .slick-slide{
-        margin: 0px 10px;
-    }
-    .slick-list{
-        margin: 0px -10px;
-    }
-}
-.team-slider-item {
-    transition: 0.5s ease all;
-
-    border: 1px solid #ECECEC;
-    background: #FFF;
-    border-radius: 20px;
-    padding: 10px;
     @include min(992){
-        padding: 12px;
-        border-radius: 25px;
+        width: 44.77%;
 
+        height: 360px;
     }
     @include min(1200){
-        padding: 14px;
+       height: 437px;
     }
-
+    @include min(1280){
+        height: 465px;
+    }
+    @include min(1350){
+        height: 493px;
+    }
     @include min(1440){
-        padding: 16px;
-        border-radius: 30px;
+        height: 523px;
     }
     @include min(1600){
-        padding: 18px;
+        height: 579px;
     }
     @include min(1900){
-        padding: 20px;
+       height: 698px;
     }
+    > picture{
+        img{
+            width: 80.52%;
+            height: auto;
+        }
+    }
+}
+.aboutMask{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 74.03%;
     img{
-        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
-    picture{
-        margin-bottom: 15px;
-        @include min(1200){
+}
+.aboutIntroDescription {
+    width: 100%;
+    @include min(992){
+        width: 49.42%;
+
+    }
+
+    p{
+        width: 100%!important;
+    }
+    h2{
+        width: 95%!important;
+    }
+    p{
+        margin-bottom: 10px;
+        @include min(768){
+            margin-bottom: 15px;
+        }
+        @include min(992){
             margin-bottom: 20px;
         }
-        @include min(1600){
+        @include min(1280){
             margin-bottom: 25px;
         }
-        @include min(1900){
-            margin-bottom: 30px;
-        }
-    }
-    h3{
-        font-family: Poppins;
-        font-weight: 500;
-        color: $black;
-    }
-    h3,p,ul{
-        margin-bottom: 5px;
-
-        @include min(1200){
-            margin-bottom: 6px;
+        @include min(1440){
+            margin-bottom: 32px;
         }
         @include min(1600){
-            margin-bottom: 8px;
-        }
-        @include min(1900){
-            margin-bottom: 10px;
-        }
-    }
-    ul{
-      gap: 5px;
-      @include min(1200){
-        gap: 6px;
-      }
-      @include min(1600){
-        gap: 8px;
-      }
-      @include min(1900){
-        gap: 10px;
-      }
-    }
-    &:hover{
-        transition: 0.5s ease all;
-        background-color: $primaryColor;
-        box-shadow: 0px 15px 15px 0px rgba(87, 87, 87, 0.20);
-        border: 1px solid $primaryColor;
-        h3,p{
-            color: $white;
-        }
-        path{
-            fill: $white;
-        }
-    }
-}
-.our-team{
-    .buttonWrapper{
-        @include max(767){
-            width: 100%;
-        }
-        margin-bottom:15px;
-        @include min(1200){
-            margin-bottom: 20px;
-        }
-        @include min(1600){
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
         @include min(1900){
             margin-bottom: 40px;
-        }
-        > div{
-            gap: 15px;
-            @include min(768){
-                gap: 20px;
-            }
-            @include min(992){
-                gap: 25px;
-            }
-            @include min(1200){
-                gap: 28px;
-            }
-            @include min(1440){
-                gap: 30px;
-            }
-            @include min(1600){
-                gap: 35px;
-            }
-            @include min(1900){
-                gap: 60px;
-            }
         }
     }
 }
