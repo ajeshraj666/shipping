@@ -1,0 +1,269 @@
+.faq{
+    @extend .commonPadding;
+    .head{
+        margin-bottom: 20px;
+        @include min(768){
+            margin-bottom: 30px;
+        }
+        @include min(992){
+            margin-bottom: 35px;
+        }
+        @include min(1200){
+            margin-bottom: 40px;
+        }
+        @include min(1440){
+            margin-bottom: 50px;
+        }
+        @include min(1600){
+            margin-bottom: 55px;
+        }
+        @include min(1900){
+            margin-bottom: 60px;
+        }
+    }
+    .accordion{
+      margin-top: 20px;
+  
+      @include min(1200){
+        margin-top: 40px;
+      }
+    }
+    h3{
+      button{
+        font-size: 15px;
+        line-height: 25px;
+        @include min(768){
+            font-size: 14px;
+            line-height: 24px;  
+        }
+        @include min(992){
+            font-size: 16px;
+            line-height: 26px;  
+        }
+        @include min(1200){
+            font-size: 16px;
+            line-height: 26px;  
+        }
+    
+        @include min(1440){
+            font-size: 16px;
+            line-height: 26px;  
+        }
+        @include min(1600){
+            font-size: 19px;
+            line-height: 29px;  
+        }
+        @include min(1900){
+            font-size: 24px;
+            line-height: 35px;  
+        }
+      }
+    }
+    .accordion-item{
+      border: unset;
+      margin-bottom: 20px;
+      border-radius: 20px;
+
+    }
+    .accordion-header{
+      transition: 0.5s ease all;
+
+      border-top: 1px solid #ECECEC;
+      border-left: 1px solid #ECECEC;
+      border-right: 1px solid #ECECEC;
+      border-radius: 20px 20px 0px 0px ;
+      padding: 15px 50px 0px 25px;
+      @include min(768){
+        padding: 30px 60px 10px 35px;
+     }
+      @include min(992){
+        padding: 30px 70px 10px 40px;
+     }
+      @include min(1200){
+        padding: 30px 110px 10px 50px;
+     }
+      @include min(1440){
+        padding: 34px 120px 10px 54px;
+     }
+      @include min(1600){
+        padding: 36px 125px 10px 56px;
+     }
+      @include min(1900){
+        padding: 40px 130px 10px 60px;
+     }
+  
+
+    }
+    .accordion-item:has(.show){
+      box-shadow: 0px 15px 15px 0px rgba(106, 40, 117, 0.15);
+      transition: 0.5s ease all;
+    }
+    .accordion-header:has(.collapsed){
+      border: 1px solid #ECECEC;
+      border-radius: 20px;
+      padding: 15px 50px 15px 25px;
+      @include min(768){
+        padding: 30px 60px 30px 30px;
+     }
+      @include min(992){
+        padding: 30px 70px 30px 40px;
+     }
+      @include min(1200){
+        padding: 30px 110px 30px 50px;
+     }
+      @include min(1440){
+        padding: 34px 120px 34px 54px;
+     }
+      @include min(1600){
+        padding: 36px 125px 36px 56px;
+     }
+      @include min(1900){
+        padding: 40px 130px 40px 60px;
+     }
+
+    }
+    .accordion-body{
+      border-bottom: 1px solid #ECECEC;
+      border-left: 1px solid #ECECEC;
+      border-right: 1px solid #ECECEC;
+      border-radius: 0px 0px 20px 20px;
+      padding: 10px 50px 20px 25px;
+      @include min(768){
+        padding: 10px 60px 30px 35px;
+      }
+      @include min(992){
+        padding: 10px 70px 30px 40px;
+      }
+      @include min(1200){
+        padding: 10px 110px 30px 50px;
+      }
+      @include min(1440){
+        padding: 10px 120px 34px 54px;
+      }
+      @include min(1600){
+        padding: 10px 125px 36px 56px;
+      }
+      @include min(1900){
+        padding: 10px 130px 40px 60px;
+      }
+    }
+    
+
+ 
+  
+    .accordion-header{
+      // border-radius:20px 20px 0px 0px ;
+      position: relative;
+   
+      .accordion-button{
+        color: $black;
+
+        transition: 0.5s ease all;
+        padding: 0;
+        background: unset;
+        box-shadow: unset;
+        line-height: 24px;
+        @include min(992){
+           line-height: 22px;
+        }
+        @include min(1600){
+            line-height: 26px;
+        }
+        @include min(1900){
+            line-height: 35px;
+        }
+      
+    
+      
+        &::after{
+          
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none"><rect x="0.5" y="-0.5" width="49" height="49" rx="24.5" transform="matrix(1 0 0 -1 0 49)" fill="%236A2875" stroke="%236A2875"/><path d="M16.2501 20.0067C16.4142 20.0065 16.5767 20.0392 16.7282 20.1029C16.8798 20.1666 17.0173 20.2601 17.133 20.378L23.5247 26.8524C23.718 27.0484 23.9476 27.2039 24.2003 27.3099C24.453 27.416 24.7239 27.4706 24.9974 27.4706C25.2709 27.4706 25.5418 27.416 25.7945 27.3099C26.0472 27.2039 26.2768 27.0484 26.4701 26.8524L32.8518 20.3864C32.967 20.2655 33.1049 20.1691 33.2573 20.1028C33.4098 20.0364 33.5737 20.0015 33.7396 20C33.9056 19.9986 34.0701 20.0306 34.2236 20.0943C34.3772 20.1579 34.5167 20.2519 34.634 20.3708C34.7513 20.4896 34.8441 20.6309 34.907 20.7865C34.9698 20.9421 35.0014 21.1088 35 21.2769C34.9985 21.4449 34.964 21.611 34.8986 21.7655C34.8331 21.9199 34.7379 22.0596 34.6185 22.1764L28.2369 28.6424C27.3772 29.5117 26.2121 30 24.9974 30C23.7827 30 22.6176 29.5117 21.7579 28.6424L15.3663 22.1679C15.1914 21.9909 15.0723 21.7653 15.024 21.5197C14.9758 21.274 15.0005 21.0194 15.0951 20.7881C15.1898 20.5567 15.35 20.3589 15.5556 20.2198C15.7612 20.0808 16.0029 20.0066 16.2501 20.0067Z" fill="white"/></svg>');
+           background-size: 30px;
+           width: 30px;
+            height: 30px;
+            right: -35px;
+            position: absolute;
+            @include min(768){
+                right: -36px;
+                top: -5px;
+         
+                background-size: 33px;
+                width: 33px;
+                height: 33px;
+            }
+            @include min(992){
+              top: -10px;
+
+              right: -50px;
+                background-size: 36px;
+                width: 36px;
+                height: 36px;
+            }
+            @include min(1200){
+              right: -70px;
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+            }
+            @include min(1440){
+                background-size: 44px;
+                width: 44px;
+                height: 44px;
+            }
+            @include min(1600){
+                background-size: 48px;
+                width: 48px;
+                height: 48px;
+            }
+            @include min(1900){
+                background-size: 50px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+    }
+    .accordion-button:not(.collapsed){
+        border: unset;
+        transition: 0.5s ease all;
+
+        .career-info li i{
+            background-color: $black;
+            transition: 0.5s ease all;
+            path{
+                fill: $white;
+            transition: 0.5s ease all;
+
+
+            }
+        }
+    }
+    }
+    .accordion-body{
+
+      p{
+        +p, +ul {
+            margin-top: 15px;
+        }
+        
+      }
+
+      ul{
+        li{
+          &:last-child{
+            p{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+  
+    }
+   
+    .accordion-item{
+      .accordion-collapse{
+        transition: 0.2s ease all;
+  
+      }
+    }
+  }

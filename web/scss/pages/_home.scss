@@ -1,0 +1,368 @@
+.bannerImage{
+    picture{
+        position: relative;
+        &::after{
+            @extend .position;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+            background: #000D25;
+            mix-blend-mode: multiply;
+            z-index: 0;
+        }
+        img{
+            object-fit: cover;
+            height: 400px;
+            @include min-max(576,767){
+                height: 430px;
+            }
+            @include min-max(768,991){
+                height: 450px;
+            }
+            @include min(992){
+                height: auto;
+                max-height: 1080px;
+            }
+        }
+    }
+}
+.banner{
+    position: relative;
+    .container-ctn{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -36.5%);
+        left: 50%;
+    }
+    h1,p,span{
+        color: $white;
+    }
+}
+
+.bannerBtn {
+    display: flex;
+    gap: 10px;
+    @include min(768){
+        gap: 25px;
+    }
+    @include min(992){
+        gap: 30px;
+    }
+    @include min(1200){
+        gap: 33px;
+    }
+    @include min(1440){
+        gap: 36px;
+    }
+    @include min(1600){
+        gap: 38px;
+    }
+    @include min(1900){
+        gap: 40px;
+    }
+}
+
+.bannerText {
+    width: 100%;
+    @include min(768){
+        width: 60.32%; 
+    }
+    @include min(992){
+        width: 47.32%; 
+    }
+   
+     h1{
+    
+     }
+     .bannerBtn{
+        margin-top:15px;
+        @include min(992){
+            margin-bottom: 30px;
+        }
+        @include min(1200){
+            margin-bottom: 40px;
+        }
+        @include min(1440){
+            margin-bottom: 50px;
+        }
+        @include min(1600){
+            margin-bottom: 55px;
+        }
+        @include min(1900){
+            margin-bottom: 60px;
+        }
+     }
+     p{
+        width: 100%!important;
+     }
+}
+
+
+
+
+///Section How Does WOrk Start Here
+.howDoesWork{
+    background: $themeBgLight;
+    ul{
+        padding-bottom: 50px;
+        counter-reset: number;
+        gap: 20px;
+        @include min(576){
+            gap: 40px;
+            padding-bottom: 60px;
+            padding-top: 20px;
+      }
+        @include min(992){
+                padding-top: 40px;
+                gap: 50px;
+        }
+        @include min(1200){
+            padding-bottom: 150px;
+            gap: 50px;
+        }
+        @include min(1440){
+            gap: 70px;
+        }
+        @include min(1600){
+            gap: 75px;
+        }
+        @include min(1900){
+            gap: 80px;
+        }
+
+        h3{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            @include  min(576){
+                font-size: 16px;
+                line-height: 23px;
+            }
+            @include  min(992){
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 5px;
+
+            }
+            @include  min(1200){
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom:6px;
+
+            }
+            @include  min(1440){
+                margin-bottom: 8px;
+
+                font-size: 22px;
+                line-height: 32px;
+            }
+            @include  min(1600){
+                font-size: 28px;
+                line-height: 38px;
+            }
+            @include  min(1900){
+                margin-bottom: 10px;
+
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;  
+            @include min(768){
+                font-size: 12px;
+                line-height: 19px;
+            }
+            @include min(992){
+                font-size: 14px;
+                line-height: 23px;
+            }
+            @include min(1200){
+                font-size: 18px;
+                line-height: 28px; 
+            }
+            @include min(1440){
+                font-size: 17px;
+                line-height: 30px; 
+            }
+            @include min(1600){
+                font-size: 18px;
+                line-height: 33px;
+            }
+            @include min(1900){
+                font-size: 24px;
+                line-height: 40px; 
+            }
+        }
+    }
+    li{
+        width:100%;
+        @include min(768){
+            width: 47%;
+        }
+        @include min(992){
+            width: 47%;
+        }
+        @include min(1200){
+            width: 47.65%;
+        }
+        @include min(1440){
+            width: 47.2%;
+        }
+        @include min(1600){
+            width: 47.3%;
+        }
+        @include min(1900){
+            width: 47.65%;
+        }
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+        picture{
+            overflow: hidden;
+            position: absolute;
+            z-index: 2;
+            border: 1px solid $border;
+            border-radius: 10px;
+            width: 32%;
+            @include max(767){
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            @include min(768){
+                top: -20px;
+            }
+            @include min(1200){
+                top: -40px;
+            }
+        }
+       > div{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            min-height: 120px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 15px;
+            background-color: $white;
+            transition: 0.5s ease all;
+            width: 75.69%;
+            @include min(576){
+                min-height: 165px;
+                width: 71.69%;
+            }
+            @include min(768){
+                width: 87.69%;
+                padding: 10px 15px 10px 22px;
+              min-height: 85px;
+                border-radius: 20px;
+            }
+            @include min(992){
+                padding: 20px 20px 20px 22px;  
+                min-height: 110px;
+                border-radius: 22px;
+            }
+            @include min(1200){
+                padding: 25px 25px 25px 40px;  
+                min-height: 140px;
+                border-radius: 25px;
+            }
+            @include min(1440){
+                padding: 30px 30px 30px 40px;  
+                min-height: 160px;
+                border-radius: 40px;
+            }
+            @include min(1600){
+                padding: 30px 45px 30px 45px;  
+                min-height: 170px;
+                border-radius: 45px;
+            }
+            @include min(1900){
+                padding: 32px 50px 50px 50px;  
+                min-height: 230px;
+                border-radius: 50px;
+            }
+            &:hover{
+                background-color: $primaryColor;
+                transition: 0.3s ease all;
+                h3,p{
+                    color: $white;
+                }
+
+            }
+           >div{
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            padding-left: 49px;
+            @include min(576){
+                padding-left: 57px;
+            }
+            @include min(768){
+                width: 86.7%;
+                padding-left: 38px;
+            }
+            @include min(992){
+                padding-left: 50px;
+            }
+            @include min(1200){
+                padding-left: 64px;
+            }
+            @include min(1440){
+                padding-left: 64px;
+            }
+            @include min(1600){
+                padding-left: 70px;
+            }
+            @include min(1900){
+                padding-left: 95px;
+            }
+
+
+            &::before{
+                color: rgba(120, 187, 96, 0.30);
+                font-weight: 700;
+                transition: 0.5s ease all;
+                counter-increment: number;
+                content:  counter(number) " ";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                font-size: 105px;
+                line-height: 90px;
+                @include min(768){
+                    font-size: 70px;
+                    line-height: 66px;
+                }
+                @include min(992){
+                    font-size: 100px;
+                    line-height: 80px; 
+                }
+                @include min(1200){
+                    font-size: 123px;
+                    line-height: 123px; 
+                }
+                @include min(1440){
+                    font-size: 120px;
+                    line-height: 95px; 
+                }
+                @include min(1600){
+                    font-size: 150px;
+                    line-height: 150px; 
+                }
+                @include min(1900){
+                    font-size: 200px;
+                    line-height: 200px; 
+                }
+            }
+           }
+        }
+    }
+}

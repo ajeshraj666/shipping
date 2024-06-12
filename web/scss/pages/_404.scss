@@ -1,0 +1,62 @@
+
+.page-not-found{
+    @extend .commonPadding;
+    img{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 10px;
+        @include min(576){
+            width: auto;
+        }
+    }
+    p{
+        color: $black;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 35px;
+        @include min(576){
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+        @include min(768){
+            font-size: 28px;
+            line-height: 28px;
+            margin-bottom: 28px;
+        }
+        @include min(992){
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        @include min(1200){
+            font-size: 33px;
+            line-height: 33px;
+            margin-bottom: 33px;
+        }
+        @include min(1440){
+            font-size: 35px;
+            line-height: 55px;
+            margin-bottom: 35px;
+        }
+        @include min(1600){
+            font-size: 38px;
+            line-height: 58px;
+            margin-bottom: 38px;
+        }
+        @include min(1900){
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 40px;
+        }
+    }
+    .btn{
+       @extend .themeBtn;
+       @extend .themeBtnPrimary;
+       width: fit-content;
+       margin: auto;
+    }
+}
+

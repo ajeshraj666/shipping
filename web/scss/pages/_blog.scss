@@ -1,0 +1,493 @@
+.newsList{
+    @extend .commonPadding;
+    .container-ctn{
+        >.btn{
+            @include max(575){
+                margin: auto;
+                margin-top: 20px;
+            }
+            margin-top: 30px;
+            @include min(992){
+                margin-top: 60px;
+            }
+        }
+    }
+    .d-flex{
+        gap: 15px;
+        @include min(768){
+            gap: 20px;
+        }
+        @include min(992){
+            gap: 20px;
+        }
+        @include min(1200){
+            gap: 24px;
+        }
+        @include min(1440){
+            gap: 29px;
+        }
+        @include min(1600){
+            gap: 33px;
+        }
+        @include min(1900){
+            gap: 39px;
+        }
+        
+    }
+    a{
+        width:100%;
+        @include min(576){
+            width: 48.46%;
+        }
+        @include min(768){
+            width: 31.37%;
+        }
+        @include min(992){
+            width: 31.82%;
+        }
+        @include min(1200){
+            width: 23.26%;
+        }
+    }
+}
+
+// ========================================Blog Detail==============================================
+.newsDetail{
+    @extend .commonPadding;
+    article{
+        width: 100%;
+        @include min(768){
+            width: 59.02%;
+        }
+        >picture{
+            margin: 15px 0px 25px 0px;
+            @include min(768){
+                margin: 18px 0px 28px 0px;
+            }
+            @include min(992){
+                margin: 20px 0px 30px 0px;
+            }
+            @include min(1200){
+                margin: 24px 0px 34px 0px;
+            }
+            @include min(1440){
+                margin: 26px 0px 36px 0px;
+            }
+            @include min(1600){
+                margin: 28px 0px 38px 0px;
+            }
+            @include min(1900){
+                margin: 30px 0px 40px 0px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+       > p{
+            margin-bottom: 10px;
+            @include min(768){
+                margin-bottom: 12px;
+            }
+            @include min(992){
+                margin-bottom: 14px;
+            }
+            @include min(1200){
+                margin-bottom: 14px;
+            }
+            @include min(1440){
+                margin-bottom: 18px;
+            }
+            @include min(1600){
+                margin-bottom: 19px;
+            }
+            @include min(1900){
+                margin-bottom: 20px;
+            }
+        }
+      >  ul{
+            margin-bottom:20px;
+            @include min(768){
+                margin-bottom: 25px;
+            }
+            @include min(992){
+                margin-bottom: 30px;
+            }
+            @include min(1200){
+                margin-bottom: 28px;
+            }
+            @include min(1440){
+                margin-bottom: 36px;
+            }
+            @include min(1600){
+                margin-bottom: 38px;
+            }
+            @include min(1900){
+                margin-bottom:40px;
+            }
+        }
+    }
+    .share{
+        p{
+            color: $black;
+            font-weight: 500;
+
+        }
+        gap: 10px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+       @include min(576){
+        margin-top: 25px;
+        padding-bottom: 35px;
+       }
+        @include min(992){
+            gap: 14px;
+            margin-top: 32px;
+            padding-bottom: 45px;
+        }
+        @include min(1200){
+            gap: 16px;
+            margin-top: 28px;
+            padding-bottom: 40px;
+        }
+        @include min(1440){
+            gap: 18px;
+            margin-top: 36px;
+            padding-bottom: 56px;
+        }
+        @include min(1600){
+            gap: 20px;
+            margin-top: 38px;
+            padding-bottom: 58px;
+        }
+        @include min(1900){
+            gap: 22px;
+            margin-top: 40px;
+            padding-bottom: 60px;
+        }
+        ul{
+            gap: 5px;
+            @include min(992){
+            gap: 6px;
+            }
+            @include min(1200){
+            gap: 7px;
+            }
+            @include min(1440){
+            gap: 8px;
+            }
+            @include min(1600){
+            gap: 9px;
+            }
+            @include min(1900){
+            gap: 10px;
+            }
+        }
+        border-bottom: 1px solid #ECECEC;
+
+        a{
+            &:hover{
+                svg{
+
+                    background-color: $secondaryColor;
+                    border-radius: 50%;
+                    rect{
+                        fill: $secondaryColor;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .blog-navigation{
+        padding-top: 10px;
+        > a{
+            width: 44.47%;
+            @include min(1200){
+            width: 28.47%;
+
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: $primaryColor;
+                    }
+                }
+            }
+        }
+        a+a{
+            text-align: right;
+        }
+        p{
+            color: $black;
+            display: flex;
+            margin-top: 10px;
+            gap: 10px;
+            @include min(576){
+                gap: 20px;
+
+            }
+        }
+        svg{
+            margin-top: -4px;
+            @include min(1900){
+                margin-top: 0px;
+            }
+        }
+    }
+    .heading{
+        h2{
+            margin-bottom: 20px;
+            +span{
+           
+                    margin-bottom: 30px;
+                    display: block;
+                
+            }
+        }
+       
+    }
+    aside{
+        height: fit-content;
+        position: sticky;
+        top: 100px;
+        border: 1px solid #ECECEC;
+        background: #FFF;
+        box-shadow: 0px 15px 15px 0px rgba(106, 40, 117, 0.15);
+        width: 100%;
+        padding:35px 20px;
+        @include max(767){
+            margin-top: 40px;
+        }
+        @include min(768){
+            padding: 30px 20px; 
+            width: 32.56%;
+            top: 85px;
+
+        }
+        @include min(992){
+            padding: 45px 20px; 
+            width: 34.56%;
+            top: 90px;
+        }
+        @include min(1200){
+            top: 100px;
+            width: 32.56%;
+            padding: 45px 27px; 
+        }
+        @include min(1440){
+            padding: 56px 36px; 
+        }
+        @include min(1600){
+            padding: 58px 38px; 
+        }
+        @include min(1900){
+            padding: 60px 40px; 
+        }
+        h2{
+            color: $black;
+            font-size: 18px;
+            line-height: 28px; 
+            margin-bottom: 35px;
+            @include min(768){
+                font-size: 22px;
+                line-height: 33px; 
+                margin-bottom: 40px;
+            }
+            @include min(992){
+                font-size: 26px;
+                line-height: 38px; 
+                margin-bottom: 48px;
+            }
+            @include min(1200){
+                font-size: 28px;
+                line-height: 44px; 
+                margin-bottom: 52px;
+            }
+            @include min(1440){
+                font-size: 30px;
+                line-height: 46px; 
+                margin-bottom: 56px;
+            }
+            @include min(1600){
+                font-size: 32px;
+                line-height: 48px; 
+                margin-bottom: 58px;
+            }
+            @include min(1900){
+                font-size: 34px;
+                line-height: 50px; 
+                margin-bottom: 60px;
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        picture{
+            width: 60px;
+            @include min(768){
+                width: 66px;
+            }
+            @include min(992){
+                width: 52px;
+            }
+            @include min(1200){
+                width: 56px;
+            }
+            @include min(1440){
+                width: 52px;
+            }
+            @include min(1600){
+                width: 66px;
+            }
+            @include min(1900){
+                width: 69px;
+            }
+        }
+        ul{
+            counter-reset: css-counter 0;
+
+        }
+        li{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            counter-increment: css-counter 1;
+            padding-left: 25px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid transparent;
+            gap: 10px;
+            @include min(576){
+                padding-left: 39px;
+            }
+            @include min(768){
+      
+                padding-left: 20px;
+                padding-bottom: 15px;
+                margin-bottom: 20px;
+            }
+            @include min(992){
+                gap: 12px;
+                padding-left: 24px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            @include min(1200){
+                gap: 15px;
+                padding-left: 28px;
+                padding-bottom: 12px;
+                margin-bottom: 12px;
+            }
+            @include min(1440){
+                gap: 21px;
+                padding-left: 33px;
+                padding-bottom: 16px;
+                margin-bottom: 16px;
+            }
+            @include min(1600){
+                gap: 24px;
+                padding-left: 36px;
+                padding-bottom: 18px;
+                margin-bottom: 18px;
+            }
+            @include min(1900){
+                gap: 25px;
+                padding-left: 39px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+            &:hover{
+                border-bottom: 1px solid #C1C1C1;
+
+            }
+            &:last-child{
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 1px solid transparent;  
+            }
+            &::after{
+                content: counter(css-counter) " ";
+                position: absolute;
+                left: 0;
+                font-size: 16px;
+                color: $black;
+                @include min(768){
+                    font-size: 16px;
+                }
+                @include min(992){
+                    font-size: 18px;
+                }
+                @include min(1200){
+                    font-size: 24px;
+                }
+                @include min(1440){
+                    font-size: 26px;
+                }
+                @include min(1600){
+                    font-size: 28px;
+                }
+                @include min(1900){
+                    font-size: 30px;
+                }
+            }
+           
+           a{
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    @include min-max(768,991){
+                        flex-wrap: wrap;
+                    }
+                    span{
+                        @include min-max(768,991){
+                            width: 100%;
+                        }
+                    }
+                }
+                width: 71%;
+                @include min(576){
+                    width: 72%;
+                }
+                @include min(768){
+                    width: 100%;
+                }
+                @include min(992){
+                    width: 72%;
+                }
+                @include min(1350){
+                    width: 76%;
+
+                }
+             
+                @include min(1600){
+                    width: 72%;
+
+                }
+            }
+            p{
+                color: $black;
+                font-weight: 500;
+                height: 45px;
+                overflow: hidden;
+                margin-bottom: 10px;
+                @include min(992){
+                    height: 46px;
+                }
+                @include min(1200){
+                    height: 48px;
+                }
+                @include min(1440){
+                    height: 54px;
+                }
+                @include min(1600){
+                    height: 64px;
+                }
+                @include min(1900){
+                    height: 70px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.thank-you {
+  @extend .commonPadding;
+  text-align: center;
+  h2{
+    width: fit-content;
+    color: $black;
+    font-weight: 700;
+    font-family: Lato;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 46px;
+    line-height: 50px;
+    @include min(576){
+        font-size: 74px;
+        line-height: 74px;
+        margin-bottom: 20px;
+
+    }
+    @include min(768){
+        font-size: 105px;
+        line-height: 105px;
+    }
+    @include min(992){
+        font-size: 130px;
+        line-height: 130px;
+    }
+    @include min(1200){
+        font-size: 148px;
+        line-height: 148px;
+    }
+    @include min(1600){
+        font-size: 185px;
+        line-height: 185px;
+    }
+    @include min(1900){
+        font-size: 200px;
+        line-height: 200px;
+    }
+  }
+  p{
+    margin-bottom: 25px;
+    @include min(768){
+        margin-bottom: 35px;
+    }
+    @include min(992){
+        margin-bottom: 45px;
+    }
+    @include min(1200){
+        margin-bottom: 50px;
+    }
+    @include min(1440){
+        margin-bottom: 55px;
+    }
+    @include min(1600){
+        margin-bottom: 58px;
+    }
+    @include min(1900){
+        margin-bottom: 60px;
+    }
+  }
+  .btn{
+    @extend .themeBtn;
+    @extend .themeBtnPrimary;
+    width: fit-content;
+    margin: auto;
+ }
+}

@@ -1,0 +1,587 @@
+.career-info {
+    h3{
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 10px;
+        font-family: Poppins;
+
+    }
+    ul{
+        gap: 5px;
+        flex-wrap: wrap;
+        @include min(768){
+            gap: 10px;
+
+        }
+    }
+    li{
+        align-items: center;
+        gap: 3px;
+        border: 1px solid #575757;
+        border-radius: 30px;
+        padding: 4px 8px 4px 4px;
+   
+        @include min(768){
+            gap: 10px;
+            padding: 4px 20px 4px 4px;
+        }
+        @include min(1200){
+            padding: 5px 24px 5px 5px;
+        }
+        @include min(1600){
+            padding: 9px 28px 9px 9px;
+        }
+        @include min(1900){
+            padding: 10px 30px 10px 10px;
+        }
+    
+        i{
+            transition: 0.5s ease all;
+
+            border-radius: 50%;
+            background: rgba(193, 193, 193, 0.80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            @include min(576){
+                width: 35px;
+                height: 35px;
+            }
+        }
+        p{
+            @include max(575){
+                font-size: 12px;
+
+            }
+        }
+        svg{
+            @include max(575){
+                    width: 16px;
+                    height: auto;
+            }
+        }
+    }
+    path{
+        transition: 0.5s ease all;
+
+    }
+}
+
+.career{
+ 
+    .nav-pills{
+        flex-wrap: nowrap;
+        gap: 5px;
+        overflow-y: auto;
+        width: 100%;
+        border-bottom: 1px solid #C1C1C1;
+            &::-webkit-scrollbar-track{
+                background-color: #fff;
+            }
+            &::-webkit-scrollbar {
+               height: 5px;
+            
+              }
+              &::-webkit-scrollbar-thumb{
+                background-color: $primaryColor;
+                height: 5px;
+
+              }
+        
+        button{
+            color: #575757;
+            min-width: 100px;
+            max-width: 1400px;
+            // margin-bottom: 14px;
+            border-radius: 20px;
+            padding: 10px;
+         
+            @include min(768){
+                min-width: 196px;
+                padding: 12px;
+            }
+            @include min(992){
+                min-width: 196px;
+                padding: 12px;
+            }
+            @include min(1200){
+                min-width: 206px;
+                padding: 14px;
+            }
+            @include min(1600){
+                min-width: 239px;
+                padding: 18px;
+            }
+            @include min(1900){
+                padding: 20px;
+                min-width: 294px;
+                font-size: 20px;
+            }
+            &.active{
+                background-color: $primaryColor;
+                color: $white;
+            }
+        }
+        li{
+            @include min(1200){
+                margin-bottom: 14px;
+            }
+        }
+    }
+    .tab-content{
+     
+    }
+    .container-ctn{
+        > a{
+            margin-top:40px;
+            @include max(575){
+                margin: auto;
+                margin-top:20px;
+            }
+            @include min(768){
+                margin-top: 50px;
+            }
+            @include min(992){
+                margin-top: 55px;
+            }
+            @include min(1200){
+                margin-top: 60px;
+            }
+            @include min(1440){
+                margin-top: 70px;
+            }
+            @include min(1600){
+                margin-top: 75px;
+            }
+            @include min(1900){
+                margin-top: 80px;
+            }
+        }
+    }
+  
+        .heading{
+           + p{
+                width: 82.56%;
+                margin-bottom: 20px;
+            }
+        }
+    .accordion-item{
+        border-radius: 0;
+       border: unset;
+        &:first-child{
+            button{
+                border-top: unset;
+            }
+        }
+
+    }
+    .accordion-button{
+        transition: 0.5s ease all;
+
+        border-radius: 0!important;
+        border-top: 1px solid #C1C1C1;
+        border-bottom: 1px solid #C1C1C1;
+        background: unset;
+        box-shadow: unset;
+        padding: 20px 0px 8px 0px;
+        @include min(768){
+            padding: 26px 0px 10px 0px;
+        }
+        @include min(992){
+            padding: 30px 0px 12px 0px;
+        }
+        @include min(1200){
+            padding: 33px 0px 14px 0px;
+        }
+        @include min(1440){
+            padding: 36px 0px 16px 0px;
+        }
+        @include min(1600){
+            padding: 38px 0px 18px 0px;
+        }
+        @include min(1900){
+            padding: 40px 0px 20px 0px;
+        }
+        &::after{
+         
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none"><rect x="0.5" y="-0.5" width="49" height="49" rx="24.5" transform="matrix(1 0 0 -1 0 49)" fill="%236A2875" stroke="%236A2875"/><path d="M16.2501 20.0067C16.4142 20.0065 16.5767 20.0392 16.7282 20.1029C16.8798 20.1666 17.0173 20.2601 17.133 20.378L23.5247 26.8524C23.718 27.0484 23.9476 27.2039 24.2003 27.3099C24.453 27.416 24.7239 27.4706 24.9974 27.4706C25.2709 27.4706 25.5418 27.416 25.7945 27.3099C26.0472 27.2039 26.2768 27.0484 26.4701 26.8524L32.8518 20.3864C32.967 20.2655 33.1049 20.1691 33.2573 20.1028C33.4098 20.0364 33.5737 20.0015 33.7396 20C33.9056 19.9986 34.0701 20.0306 34.2236 20.0943C34.3772 20.1579 34.5167 20.2519 34.634 20.3708C34.7513 20.4896 34.8441 20.6309 34.907 20.7865C34.9698 20.9421 35.0014 21.1088 35 21.2769C34.9985 21.4449 34.964 21.611 34.8986 21.7655C34.8331 21.9199 34.7379 22.0596 34.6185 22.1764L28.2369 28.6424C27.3772 29.5117 26.2121 30 24.9974 30C23.7827 30 22.6176 29.5117 21.7579 28.6424L15.3663 22.1679C15.1914 21.9909 15.0723 21.7653 15.024 21.5197C14.9758 21.274 15.0005 21.0194 15.0951 20.7881C15.1898 20.5567 15.35 20.3589 15.5556 20.2198C15.7612 20.0808 16.0029 20.0066 16.2501 20.0067Z" fill="white"/></svg>');
+           background-size: 30px;
+           width: 30px;
+            height: 30px;
+            @include min(768){
+                position: absolute;
+                right: 0;
+                top: 40px;
+                background-size: 33px;
+                width: 33px;
+                height: 33px;
+            }
+            @include min(992){
+                background-size: 36px;
+                width: 36px;
+                height: 36px;
+            }
+            @include min(1200){
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+            }
+            @include min(1440){
+                background-size: 44px;
+                width: 44px;
+                height: 44px;
+            }
+            @include min(1600){
+                background-size: 48px;
+                width: 48px;
+                height: 48px;
+            }
+            @include min(1900){
+                background-size: 50px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .accordion-button:not(.collapsed){
+        border: unset;
+        transition: 0.5s ease all;
+
+        .career-info li i{
+            background-color: $black;
+            transition: 0.5s ease all;
+            path{
+                fill: $white;
+            transition: 0.5s ease all;
+
+
+            }
+        }
+    }
+    .accordion{
+        width: 100%;
+    }
+    .accordion-body{
+        padding: 0;
+     
+        span{
+            display: block;
+            color: $black;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            @include min(768){
+                font-size: 18px;
+                line-height: 18px;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+            @include min(1200){
+                font-size: 20px;
+                line-height: 20px;
+                margin-top: 45px;
+                margin-bottom: 12px;
+            }
+            @include min(1440){
+                font-size: 24px;
+                line-height: 34px;
+                margin-top: 52px;
+                margin-bottom: 16px;
+            }
+            @include min(1600){
+                font-size: 26px;
+                line-height: 38px;
+                margin-top: 58px;
+                margin-bottom: 18px;
+            }
+            @include min(1900){
+                font-size: 28px;
+                line-height: 40px;
+                margin-top: 60px;
+                margin-bottom: 20px;
+            }
+        }
+        p + p,p +ul,ul +p{
+            margin-top: 20px;
+            @include min(768){
+                margin-top: 24px;
+            }
+            @include min(992){
+                margin-top: 28px;
+            }
+            @include min(1200){
+                margin-top: 30px;
+            }
+            @include min(1440){
+                margin-top: 36px;
+            }
+            @include min(1600){
+                margin-top: 38px;
+            }
+            @include min(1900){
+                margin-top: 40px;
+            }
+        }
+        .btn{
+            width: fit-content;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 100%;
+                @include min(576){
+                    width: 49.3%;
+                }
+                @include min(1200){
+                    width: 33.3%;
+                }
+            }
+        }
+    }
+}
+
+.career-info ul,.career-info ul li {
+    display: flex;
+}
+
+
+
+
+
+
+// ======================Career Popup======================================================
+.careerApply{
+  z-index: 99999999;
+
+    background: rgba(255, 255, 255, 0.90);
+
+  button.btn-close {
+    z-index: 3;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @include min(768){
+      right: -30px;
+      top: -10px;
+    }
+    @include min(992){
+      right: -40px;
+    }
+    @include min(1200){
+      right: -50px;
+    }
+    @include min(1440){
+      right: -90px;
+    }
+}
+  .modal-dialog {
+    max-width: 600px;
+    @include min(768){
+      max-width: 650px;
+    }
+    @include min(992){
+      max-width: 859px;
+    }
+    @include min(1200){
+      max-width: 1000px;
+    }
+    @include min(1440){
+      max-width: 1150px;
+    }
+    picture{
+      @include min-max(576,1199){
+        width: 50%;
+      
+      }
+      @include max(575){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      img{
+        object-fit: cover;
+      }
+     
+    }
+  }
+  .error-message {
+    padding-left: 10px;
+}
+}
+.careerPopupBox{
+  > div{
+    padding: 20px;
+    width: 100%;
+    @include max(575){
+      background: #ffffffc7;
+    z-index: 1;
+    }
+    @include min(576){
+      width:50%;
+    }
+    @include min(768){
+      padding: 20px;
+    }
+    @include min(992){
+      padding: 30px;
+    }
+    @include min(1200){
+      width:60%;
+      padding: 40px 40px;
+    }
+    @include min(1440){
+      width:50%;
+      padding: 65px 60px;
+    }
+  }
+  p{
+    color: #231720;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+    @include min(768){
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    @include min(992){
+      font-size: 24px;
+      margin-bottom: 20px;
+
+    }
+    @include min(1440){
+      margin-bottom: 29px;
+
+    }
+  }
+  .formGroup{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 10px;
+
+    @include min(768){
+      margin-bottom: 15px;
+    }
+    @include min(992){
+      margin-bottom: 20px;
+    }
+    @include min(1200){
+      margin-bottom: 25px;
+    }
+    @include min(1440){
+      margin-bottom: 30px;
+    }
+    label,input,textarea,select{
+      width: 100%;
+      @include min(576){
+        padding-left: 10px;
+
+      }
+    }
+    input,textarea,select{
+      border-radius: 0;
+      border: unset;
+      border-bottom: 1px solid #999;
+      background-color: transparent;
+      // color: $secondaryColor;
+      @include min(992){
+        font-size: 13px;
+      }
+      @include min(1200){
+        font-size: 14px;
+      }
+      @include min(1440){
+        font-size: 19px;
+      }
+      &:focus{
+        outline: unset;
+      }
+      &::placeholder{
+        color: $secondaryColor;
+
+      }
+    }
+    textarea{
+      width: 100%;
+      resize: none;
+    }
+   
+    .custom-file-input {
+      position: relative;
+      // overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid #999;
+      cursor: pointer;
+      button,a{
+        min-width: 100px;
+        height: 40px;
+        margin-top: -16px;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        @include min(576){
+          min-width: 110px;
+          height: 39px;
+          margin-top: -15px;
+        }
+        @include min(768){
+          min-width: 128px;
+          height: 40px;
+          margin-top: -20px;
+        }
+        @include min(992){
+          min-width: 148px;
+          height: 50px;
+          margin-top: -30px;
+        }
+
+      }
+  }
+
+  
+  .custom-file-input input[type="file"] {
+      position: absolute;
+      font-size: 100px;
+      opacity: 0;
+      right: 0;
+      height: 60px;
+      top: -30px;
+      z-index: 9;
+    
+  }
+  
+  .custom-file-input label {
+      display: inline-block;
+      z-index: 2;
+    position: relative;
+  }
+  }
+  form{
+    > button{
+      @include min(1200){
+        position: relative;
+        top: 10px;
+        min-width: 140px;
+      }
+    }
+  }
+  .iti {
+    border-bottom: 1px solid #999;
+    padding-left: 52px;
+    input{
+      border: unset;
+    }
+}
+}
