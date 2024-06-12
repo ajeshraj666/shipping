@@ -1,9 +1,10 @@
 <?php include('includes/header.php') ?>
 
 <section class="innerBanner">
-    <picture><img src="web/images/banner/about-us.jpg" alt=""></picture>
+    <picture><img src="web/images/banner/about.jpg" alt=""></picture>
     <div class="container-ctn">
-        <div class="head">
+        <div class="heading">
+            <span>About Our Company</span>
             <h1>About Us</h1>
         </div>
     </div>

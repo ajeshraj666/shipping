@@ -221,12 +221,11 @@ footer{
     color: $white;
    }
    strong{
-    font-family: "ArialRounded";
-
+    color: $secondaryColor;
      width: 100%;
     display: block;
-    font-weight: 400;
-     margin-bottom: 15px;
+    font-weight: 700;
+     margin-bottom: 10px;
      font-size: 15px;
 
         @include min(768){
@@ -238,71 +237,95 @@ footer{
             font-size: 18px;
         }
         @include min(1200){
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             font-size: 22px;
 
         }
         @include min(1440){
-            margin-bottom: 35px;
+            margin-bottom: 16px;
             font-size: 24px;
 
         }
         @include min(1600){
-            margin-bottom: 38px;
+            margin-bottom:18px;
             font-size: 26px;
 
         }
         @include min(1900){
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             font-size: 28px;
         }
    }
    .aboutContent {
+
     width: 100%;
     @include min(768){
+        width: 48.13%;
+
+    }
+    @include min(992){
         width: 29.13%;
 
     }
     @include min(1200){
-    width: 24.13%;
+    width: 25.84%;
+
+    }
+    @include min(1280){
+    width: 25.84%;
+
+    }
+    @include min(1440){
+    width: 23.84%;
 
     }
     }
     .links {
-        width: 100%;
+        width: 50%;
         @include min(768){
 
-            width: 33.23%;
+            width: 21.23%;
         }
         @include min(992){
 
-            width: 28.23%;
+            width: 17.45%;
         }
         @include min(1200){
-            width: 40.23%;
+            width:17.45%;
         }
-        @include min(1300){
-            width: 38.23%;
-        }
-        @include min(1440){
-            width: 36.23%;
-        }
-        @include min(1600){
-            width: 37.23%;
-        }
-        @include min(1900){
-            width: 35.23%;
-        }
+    
         a{
             position: relative;
             transition: 0.5s ease all;
 
             &::before{
-                content: '+';
-                position: absolute;
+                @extend .position;
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><g clip-path="url(%23clip0_1472_405)"><path d="M-3.8147e-06 7.5C-3.8147e-06 6.01664 0.439864 4.5666 1.26398 3.33323C2.08809 2.09986 3.25943 1.13856 4.62987 0.570907C6.00032 0.00324965 7.50832 -0.145275 8.96317 0.144114C10.418 0.433503 11.7544 1.14781 12.8033 2.1967C13.8522 3.2456 14.5665 4.58197 14.8559 6.03683C15.1453 7.49168 14.9968 8.99968 14.4291 10.3701C13.8614 11.7406 12.9001 12.9119 11.6668 13.736C10.4334 14.5601 8.98336 15 7.5 15C5.51153 14.9979 3.60513 14.207 2.19907 12.8009C0.793014 11.3949 0.00214672 9.48847 -3.8147e-06 7.5ZM13.75 7.5C13.75 6.26387 13.3834 5.0555 12.6967 4.02769C12.0099 2.99988 11.0338 2.1988 9.89177 1.72576C8.74973 1.25271 7.49306 1.12894 6.28068 1.3701C5.0683 1.61125 3.95466 2.20651 3.08058 3.08059C2.2065 3.95466 1.61125 5.06831 1.37009 6.28069C1.12893 7.49307 1.2527 8.74974 1.72575 9.89178C2.1988 11.0338 2.99988 12.0099 4.02768 12.6967C5.05549 13.3834 6.26386 13.75 7.5 13.75C9.15704 13.7482 10.7457 13.0891 11.9174 11.9174C13.0891 10.7457 13.7482 9.15705 13.75 7.5Z" fill="%2378BB60"/><path d="M10 7.49761C10.0005 7.04011 9.83326 6.59829 9.53 6.25574C9.34812 6.05136 9.17125 5.85761 9.04437 5.73074L7.27937 3.93511C7.16175 3.82461 7.00594 3.76389 6.84456 3.76566C6.68318 3.76744 6.52874 3.83157 6.41357 3.94464C6.29841 4.0577 6.23145 4.21093 6.2267 4.37225C6.22196 4.53357 6.2798 4.69048 6.38812 4.81011L8.15625 6.61011C8.27312 6.72761 8.43187 6.90261 8.59375 7.08449C8.69446 7.19867 8.75003 7.34568 8.75003 7.49793C8.75003 7.65017 8.69446 7.79719 8.59375 7.91136C8.4325 8.09261 8.27375 8.26761 8.16062 8.38136L6.38812 10.1851C6.2798 10.3047 6.22196 10.4617 6.2267 10.623C6.23145 10.7843 6.29841 10.9375 6.41357 11.0506C6.52874 11.1637 6.68318 11.2278 6.84456 11.2296C7.00594 11.2313 7.16175 11.1706 7.27937 11.0601L9.0475 9.26136C9.1725 9.13636 9.3475 8.94449 9.52812 8.74074C9.8325 8.39823 10.0004 7.95583 10 7.49761Z" fill="%2378BB60"/></g><defs><clipPath id="clip0_1472_405"><rect width="15" height="15" fill="white" transform="matrix(-1 0 0 1 15 0)"/></clipPath></defs></svg>');
+                width: 13px;
+                height: 13px;
+                top: 2px;
                 left: 0;
                 opacity: 0;
+                background-size: cover;
                 transition: 0.5s ease all;
+             
+           
+                @include min(992){
+                    width: 12px;
+                    height: 12px;
+                    top: 1px;
+                }
+                @include min(1200){
+                    width: 15px;
+                    height: 15px;
+                    top: 2px;
+                }
+                @include min(1440){
+                    top: 3px;
+                }
+                @include min(1600){
+                    top: 5px;
+                }
 
             }
             &:hover{
@@ -330,15 +353,27 @@ footer{
                 }
             }
         }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            @include min(768){
+                gap: 5px;
+            }
+            li{
+                width: 100%;
+            
+            }
+        }
     }
     .phone{
         @include min-max(768,991){
             div{
-                width: 100%!important;
+                width: fit-content!important;
                 flex-wrap: wrap;
             }
             a{
-                width: 100%;
+                display: flex;
             }
         }
     }
@@ -346,20 +381,34 @@ footer{
         width:100%;
         
        @include min(768){
-        width: 33.24%;
+        // width: 33.24%;
+       }
+       @include min-max(768,991){
+        margin-top: 20px;
+        ul{
+            display: flex;
+            gap: 46px;
+        }
+        li{
+            width: fit-content;
+        }
        }
         @include min(992){
-            width: 39.24%;
+            width: 28.24%;
         }
         @include min(1200){
-            width: 34.24%;
+            width: 27.45%;
         }
-        @include min(1600){
-            width: 34.24%;
+        @include min(1280){
+            width: 25.45%;
+        }
+        @include min(1440){
+            width: 23.45%;
         }
         @include min(1900){
-            width: 31.24%;
+            width: 22.9%;
         }
+
         
     }
    > .container-ctn{
@@ -368,7 +417,7 @@ footer{
             padding-bottom: 40px;
 
             @include max(767){
-                gap: 30px 0px;
+                gap: 20px 0px;
             }
             @include min(768){
                 border-bottom: 1px solid  #743A7E;
@@ -398,12 +447,52 @@ footer{
     }
 
     .aboutContent{
+   
         p{
             font-weight: 700;
             margin-bottom: 10px;
         }
-        span{
+        picture{
             margin-bottom: 20px;
+            @include min(768){
+                margin-bottom: 24px;
+            }
+            @include min(992){
+                margin-bottom: 28px;
+            }
+            @include min(1200){
+                margin-bottom: 30px;
+            }
+            @include min(1440){
+                margin-bottom: 36px;
+            }
+            @include min(1600){
+                margin-bottom: 38px;
+            }
+            @include min(1900){
+                margin-bottom: 40px;
+            }
+        }
+        span{
+            margin-bottom: 18px;
+            @include min(768){
+                margin-bottom: 20px;
+            }
+            @include min(992){
+                margin-bottom: 24px;
+            }
+            @include min(1200){
+                margin-bottom: 28px;
+            }
+            @include min(1440){
+                margin-bottom: 34px;
+            }
+            @include min(1600){
+                margin-bottom: 38px;
+            }
+            @include min(1900){
+                margin-bottom: 43px;
+            }
             display: block;
         }
         ul{
@@ -413,7 +502,7 @@ footer{
         a:hover{
             svg{
                path{
-                fill: #D400F8;
+                fill: $secondaryColor;
                }
             }
         }
@@ -483,11 +572,15 @@ footer{
             // padding-bottom: 5px;
             // border-bottom: 1px solid  #743A7E;
             display: flex;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             transition: 0.5s ease all;
             gap: 10px;
+            @include min(992){
+                margin-bottom: 20px;
+
+            }
             &.mail{
-                flex-wrap: wrap;
+                // flex-wrap: wrap;
                 div{
                     flex-wrap: wrap;
 
@@ -521,7 +614,7 @@ footer{
             }
             a{
                 @include max(767){
-                    width: 100%;
+                    width: fit-content;
                 }
             }
         }
@@ -530,7 +623,11 @@ footer{
 
     .copy{
         background: $primaryColorDark;
-        padding: 15px 0px;
+        padding: 10px 0px;
+        @include min(768){
+            padding: 15px 0px;
+
+        }
         @include min(992){
             padding: 23px 0px;
         }
@@ -539,7 +636,7 @@ footer{
         }
         p{
             @include max(767){
-                line-height: 30px;
+                line-height: 25px;
 
             }
             span {
@@ -547,15 +644,28 @@ footer{
              
             }
             a{
+                margin-left:5px;
                @include min(576){
                 margin-left: 10px;
                }
+               img{
+                height: auto;
                 @include max(575){
-                    width: 100%;
-                    display: block;
+                    width: 120px;
                 }
+               }
             }
         }
     }
+    span{
+        font-weight: 400;
+    }
+}
 
+a.brandFooter {
+    width: 150px;
+    display: flex;
+    @include min(992){
+        width: 56.58%;
+    }
 }

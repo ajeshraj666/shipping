@@ -1,139 +1,26 @@
 .innerBanner{
     position: relative;
-    // padding: 200px 0px;
     background-color: $primaryColor;
-    border-radius: 0px 0px 30px 30px;
-   
-    @include min(768){
-        border-radius: 0px 0px 70px 70px; 
-        // height: 273px;
- 
+    .heading{
+        span{
+            color: $white;
+        }
     }
-    @include min(992){
-        border-radius: 0px 0px 75px 75px; 
-        // height: 346px;
- 
-    }
-    @include min(1200){
-        border-radius: 0px 0px 80px 80px;
-        // height: 411px;
-  
-    }
-    @include min(1280){
-        border-radius: 0px 0px 85px 85px;  
-        // height: 438px;
-
-    }
-    @include min(1300){
-        // height: 446px;
-
-    }
-    @include min(1320){
-        // height: 451px;
-
-    }
-    @include min(1350){
-        // height: 460px;
-
-    }
-    @include min(1385){
-        // height: 470px;
-
-    }
-    @include min(1400){
-        border-radius: 0px 0px 90px 90px;  
-        // height: 475px;
-
-    }
-    @include min(1440){
-        // height: 486px;
-
-    }
-    @include min(1480){
-        // height: 503px;
-    }
-    @include min(1500){
-        // height: 515px;
-    }
-    @include min(1530){
-        // height: 535px;
-    }
-    @include min(1555){
-        // height: 526px;
-    }
-    @include min(1585){
-        // height: 534px;
-    }
-    @include min(1600){
-        border-radius:  0px 0px  95px 95px;  
-        // height: 538px;
-    }
-    @include min(1630){
-        // height: 560px;
-    }
-    @include min(1700){
-        // height: 571px;
-    }
-    @include min(1720){
-        // height: 600px;
-    }
-    @include min(1800){
-        // height: 610px;
-    }
-    @include min(1850){
-        // height: 625px;
-    }
-    @include min(1900){
-        border-radius:  0px 0px 100px 100px;  
-        // height: 648px;
-
-    }    
-        
     > picture {
         position: relative;
-        // opacity: 0.5;
-        // mix-blend-mode: overlay;
-        // z-index: 1;
-        // top: 0;
-        // @extend .wh-100;
-        // left: 0;
-        &::after,img{
-
-            border-radius: 0px 0px 30px 30px;
-            @include min(768){
-                border-radius: 0px 0px 70px 70px;  
-            }
-            @include min(992){
-                border-radius: 0px 0px 75px 75px;  
-            }
-            @include min(1200){
-                border-radius: 0px 0px 80px 80px;  
-            }
-            @include min(1280){
-                border-radius: 0px 0px 85px 85px;  
-            }
-            @include min(1440){
-                border-radius: 0px 0px 90px 90px;  
-            }
-            @include min(1600){
-                border-radius:  0px 0px  95px 95px;  
-            }
-            @include min(1900){
-                border-radius:  0px 0px 100px 100px;  
-            }
-        }
     
         &::after{
-            background: rgba(16, 16, 16, 0.30);
+            opacity: 0.5;
+            background: #000D25;
+            
+            mix-blend-mode: multiply;
+            
             @extend .position;
             @extend .wh-100;
             left: 0;
             z-index: 0;
             bottom: 0;
-            // @include min(576){
-            //     bottom: -45px;
-    
-            // }
+           
         }
         img{
             @extend .wh-100;
@@ -157,15 +44,10 @@
         text-transform: capitalize;
     }
     .breadCrumb{
-       
             display: flex;
             justify-content: center;
             align-items: center;
-  
             padding: 6px 0px;
-         @include min(768){
-            padding-top: 6px;
-         }
         
         ul{
             display: flex;

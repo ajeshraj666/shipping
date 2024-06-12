@@ -35,3 +35,12 @@
   -webkit-filter: drop-shadow( -2px -2px 2px #888 );
   filter: drop-shadow( -2px -2px 2px #888 );
 }
+#star-rating {
+  display: flex;
+  gap: 2px;
+}
+@include max(575){
+  .jq-star {
+    width: 13px!important;
+  }
+}

@@ -4,7 +4,7 @@
         <div class="d-flex flex-wrap justify-content-between">
             <div class="aboutContent">
                 <div>
-                    <picture><img src="web/images/logo.png" width="229" height="29" alt="SHIPPING" class="img-fluid"></picture>
+                    <a href="index.php" class="brandFooter"><picture><img src="web/images/logo.png" width="232" height="29" alt="SHIPPING" class="img-fluid"></picture></a>
                     <p>Live Your Dream with Triniti</p>
                     <span> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently all time.</span>
                     <p>Connect Us</p>
@@ -110,7 +110,6 @@
                 </div>
             </div>
             <div class="links">
-                <div>
                     <strong>Industry Served</strong>
                     <ul>
                         <li><a href="">Frozen Foods</a></li>
@@ -120,15 +119,17 @@
                         <li><a href="">Cargo Freight</a></li>
                         <li><a href="">Warehousing</a></li>
                     </ul>
+            </div>
+            <div class="links">
+                    <strong>Company Info</strong>
                     <ul>
-                    <li><a href="index.php">Home</a></li>
+                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="">Shipping Calculator</a></li>
                         <li><a href="">How it work</a></li>
                         <li><a href="blog.php">Blog</a></li>
                         <li><a href="contact.php">Contacts</a></li>
                     </ul>
-                </div>
             </div>
             <div class="address">
                 <div>
@@ -139,8 +140,8 @@
                                     <path
                                         d="M11.9996 16.791L16.9486 11.95C18.2706 10.628 18.9996 8.87 18.9996 7C18.9996 5.13 18.2706 3.373 16.9486 2.05C15.6276 0.728 13.8696 0 11.9996 0C10.1296 0 8.37164 0.728 7.04964 2.05C4.32064 4.779 4.32064 9.22 7.05364 11.953L11.9996 16.791ZM7.75664 2.757C8.89064 1.624 10.3976 1 11.9996 1C13.6016 1 15.1086 1.624 16.2416 2.757C17.3756 3.89 17.9996 5.397 17.9996 7C17.9996 8.603 17.3756 10.109 16.2456 11.239L11.9996 15.393L7.75664 11.243C5.41764 8.904 5.41764 5.096 7.75664 2.757ZM11.9996 9.98C13.6476 9.98 14.9896 8.639 14.9896 6.99C14.9896 5.341 13.6476 4 11.9996 4C10.3516 4 9.00964 5.341 9.00964 6.99C9.00964 8.639 10.3516 9.98 11.9996 9.98ZM11.9996 5C13.0976 5 13.9896 5.893 13.9896 6.99C13.9896 8.087 13.0966 8.98 11.9996 8.98C10.9026 8.98 10.0096 8.087 10.0096 6.99C10.0096 5.893 10.9026 5 11.9996 5ZM23.9426 16.846L11.9996 24.012L0.0566406 16.846L5.72064 13.448L6.50364 14.214L2.00064 16.846L12.0006 22.846L22.0006 16.846L17.5186 14.192L18.2796 13.448L23.9446 16.847L23.9426 16.846Z"
                                         fill="white" /> </svg></i>
-                            <a href="https://maps.app.goo.gl/QajPwoLDjvLNqQDv9" target="_blank">56 Kokoda Cct, Mount
-                            Office No:380, 3rd floor, Al Zamil Business Centre, 2nd Industrial City, India</a></li>
+                            <a href="https://maps.app.goo.gl/1hdAmjhRSehvnPsH9" target="_blank">Office No:380, 3rd floor, <br>
+                                Al Zamil Business Centre, 2nd Industrial City, India</a></li>
                         <li class="phone"><i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 20 20" fill="none">
                                     <g clip-path="url(#clip0_1199_2220)">
@@ -154,7 +155,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg></i>
-                            <div> <a href="tel:+971889900889">(+971) 8 8990 0889, </a><a href="tel:+971889900889"> (+971) 8 8990 0889</a></div>
+                            <div> <a href="tel:+971889900889">(+971) 8 8990 0889, &nbsp;</a><a href="tel:+971889900889"> (+971) 8 8990 0889</a></div>
                         </li>
                         <li class="mail"><i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 20 20" fill="none">
@@ -219,8 +220,8 @@
 <div class="offcanvas offcanvas-start mobile_left_menu " tabindex="-1" id="mobileOffcanvasExample"
     aria-labelledby="offcanvasExampleLabel" role="dialog">
     <div class="offcanvas-header">
-        <a href="index.html" class=""><img src="web/images/logo.png" alt="Triniti" width="150" height="90"
-                class="h-auto"></a>
+        <a href="index.html" class=""><img src="web/images/logo.png" alt="Triniti" width="110" height="90"
+                class="h-auto " style="filter: invert(1);"></a>
 
         <button aria-controls="offcanvasExample" role="button" href="#mobileOffcanvasExample" data-bs-toggle="offcanvas"
             class="btn-close text-reset" type="button"></button>
@@ -230,8 +231,8 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li class="nav-item mobDropDown dropdown">
+                <li><a href="about.php">About Us</a></li>
+                <!-- <li class="nav-item mobDropDown dropdown">
                     <a href="services.php">Our Services</a>
                     <button class="" type="button" id="servicesMenu" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,23 +268,12 @@
                         <li><a href="gallery.php">Media</a></li>
 
                     </ul>
-                </li>
+                </li> -->
+                <li><a href="">Shipping Calculator</a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="blog.php">Blog</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
-                <li class="nav-item mobDropDown dropdown">
-                    <a href="service.php">Login</a>
-                    <button class="" type="button" id="servicesMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.51406 4.49656L9.79231 1.21831C9.92533 1.08449 10 0.903472 10 0.714787C10 0.526101 9.92533 0.345081 9.79231 0.211264C9.72592 0.144322 9.64692 0.0911882 9.55989 0.0549283C9.47285 0.0186685 9.3795 -2.71228e-08 9.28522 -3.12441e-08C9.19093 -3.53655e-08 9.09758 0.0186685 9.01055 0.0549283C8.92351 0.0911881 8.84452 0.144322 8.77812 0.211264L5.50701 3.49666C5.44062 3.5636 5.36162 3.61674 5.27459 3.653C5.18756 3.68926 5.0942 3.70792 4.99992 3.70792C4.90563 3.70792 4.81228 3.68926 4.72525 3.653C4.63821 3.61674 4.55922 3.5636 4.49282 3.49666L1.22171 0.211264C1.08817 0.076774 0.906672 0.000842317 0.717145 0.000172601C0.527617 -0.000497115 0.345586 0.0741506 0.211096 0.207693C0.0766069 0.341236 0.000674462 0.522734 4.74545e-06 0.712261C-0.000664971 0.901789 0.0739834 1.08382 0.207526 1.21831L3.48578 4.49656C3.88753 4.89781 4.43211 5.12319 4.99992 5.12319C5.56772 5.12319 6.11231 4.89781 6.51406 4.49656Z"
-                                fill="white"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="servicesMenu" style="">
-                        <li><a href=" ">Sign In</a></li>
-                        <li><a href=" ">Register</a></li>
-
-                    </ul>
-                </li>
+            
             </ul>
 
         </nav>

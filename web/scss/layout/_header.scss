@@ -1,5 +1,5 @@
 .brand{
-    width: 210px;
+    width: 320px;
     @include min(992){
         width: 16.28%;
 
@@ -67,7 +67,7 @@ header{
             }
         }
         @include min(768){
-            width: 55%;
+            width:59%;
         }
         @include min(992){
             gap: 15px;

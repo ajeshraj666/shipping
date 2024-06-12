@@ -1,193 +1,212 @@
-<section class="testimonial">
-    <div class="container-ctn">
-        <div class="heading text-center">
-            <p><span>+</span> Client Testimonials <span>+</span></p>
-            <h2>What They’re Talking About Our <br> Caring</h2>
-        </div>
-
-        <div class="testimonialSlider">
-            <div class="testimonailSlider-item">
-                <a class="profile" href="">
-                    <picture><img src="web/images/home/client.jpg" width="80" height="80" alt=""></picture>
-                    <div>
-                        <h3>Daisy Welch</h3>
-                        <p>Chief Branding Producer</p>
-                    </div>
-                </a>
-                <div class="testimonailSlider-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever
-                </div>
-                <div class="rating">
-                    <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                            <g clip-path="url(#clip0_1089_112)">
-                                <path
-                                    d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
-                                    fill="#FBBB00" />
-                                <path
-                                    d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
-                                    fill="#518EF8" />
-                                <path
-                                    d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
-                                    fill="#28B446" />
-                                <path
-                                    d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
-                                    fill="#F14336" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1089_112">
-                                    <rect width="25" height="25" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg></i>
-                    <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
-
-                </div>
+<section class="testimonials ">
+    <div class="container-ctn commonPadding">
+        <div class="row">
+            <div class="heading">
+                <span>Testimonilas</span>
+                <h2>Client’s Voice</h2>
             </div>
-            <div class="testimonailSlider-item">
-                <a class="profile video" href="https://www.youtube.com/watch?v=a3ICNMQW7Ok" data-fancybox="group"
-                    aria-label="click to watch video">
-                    <picture><img src="web/images/home/client-male.jpg" width="80" height="80" alt=""></picture>
-                    <div>
-                        <h3>Thomas Paul</h3>
-                        <p>Chief Branding Producer</p>
+            <div class="testimonialSlider">
+                <div>
+                    <div class="author">
+                        <picture><img src="web/images/icon/male.png" alt=""></picture>
+                        <div class="title">
+                            <h3>Indarajith </h3>
+                            <span>Digital Marketing, Canada</span>
+                        </div>
                     </div>
-                </a>
-                <div class="testimonailSlider-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever
-                </div>
-                <div class="rating">
-                    <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                            <g clip-path="url(#clip0_1089_112)">
-                                <path
-                                    d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
-                                    fill="#FBBB00" />
-                                <path
-                                    d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
-                                    fill="#518EF8" />
-                                <path
-                                    d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
-                                    fill="#28B446" />
-                                <path
-                                    d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
-                                    fill="#F14336" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1089_112">
-                                    <rect width="25" height="25" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg></i>
-                    <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
+                    <div class="rating">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_1089_112)">
+                                    <path
+                                        d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
+                                        fill="#FBBB00" />
+                                    <path
+                                        d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
+                                        fill="#518EF8" />
+                                    <path
+                                        d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
+                                        fill="#28B446" />
+                                    <path
+                                        d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
+                                        fill="#F14336" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1089_112">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></i>
+                        <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
 
-                </div>
-            </div>
-            <div class="testimonailSlider-item">
-                <a class="profile" href="">
-                    <picture><img src="web/images/home/client-female.jpg" width="80" height="80" alt=""></picture>
-                    <div>
-                        <h3>Aisha Rahman</h3>
-                        <p>Chief Branding Producer</p>
                     </div>
-                </a>
-                <div class="testimonailSlider-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever
-                </div>
-                <div class="rating">
-                    <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                            <g clip-path="url(#clip0_1089_112)">
-                                <path
-                                    d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
-                                    fill="#FBBB00" />
-                                <path
-                                    d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
-                                    fill="#518EF8" />
-                                <path
-                                    d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
-                                    fill="#28B446" />
-                                <path
-                                    d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
-                                    fill="#F14336" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1089_112">
-                                    <rect width="25" height="25" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg></i>
-                    <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
+                    <h4>Really excellent!</h4>
+                    <div class="description">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 
-                </div>
-            </div>
-            <div class="testimonailSlider-item">
-                <a class="profile" href="">
-                    <picture><img src="web/images/home/client.jpg" width="80" height="80" alt=""></picture>
-                    <div>
-                        <h3>Aisha Rahman</h3>
-                        <p>Chief Branding Producer</p>
                     </div>
-                </a>
-                <div class="testimonailSlider-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever
                 </div>
-                <div class="rating">
-                    <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                            <g clip-path="url(#clip0_1089_112)">
-                                <path
-                                    d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
-                                    fill="#FBBB00" />
-                                <path
-                                    d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
-                                    fill="#518EF8" />
-                                <path
-                                    d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
-                                    fill="#28B446" />
-                                <path
-                                    d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
-                                    fill="#F14336" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1089_112">
-                                    <rect width="25" height="25" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg></i>
-                    <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
 
+                <div>
+                    <div class="author">
+                        <picture><img src="web/images/icon/female.png" alt=""></picture>
+                        <div class="title">
+                            <h3>Dr.Welvin</h3>
+                            <span>Digital Marketing, Canada</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_1089_112)">
+                                    <path
+                                        d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
+                                        fill="#FBBB00" />
+                                    <path
+                                        d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
+                                        fill="#518EF8" />
+                                    <path
+                                        d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
+                                        fill="#28B446" />
+                                    <path
+                                        d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
+                                        fill="#F14336" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1089_112">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></i>
+                        <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
+
+                    </div>
+                    <h4>Great Experience..</h4>
+                    <div class="description">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
                 </div>
+
+                <div>
+                    <div class="author">
+                        <picture><img src="web/images/icon/female.png" alt=""></picture>
+                        <div class="title">
+                            <h3>Muhammed Rafeeq</h3>
+                            <span>Digital Marketing, Canada</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_1089_112)">
+                                    <path
+                                        d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
+                                        fill="#FBBB00" />
+                                    <path
+                                        d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
+                                        fill="#518EF8" />
+                                    <path
+                                        d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
+                                        fill="#28B446" />
+                                    <path
+                                        d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
+                                        fill="#F14336" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1089_112">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></i>
+                        <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
+
+                    </div>
+
+                    <h4>Best partner in Digital Marketing!</h4>
+                    <div class="description">
+                       <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="author">
+                        <picture><img src="web/images/icon/female.png" alt=""></picture>
+                        <div class="title">
+                            <h3>Shibin</h3>
+                            <span>Digital Marketing, Canada</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_1089_112)">
+                                    <path
+                                        d="M5.54053 15.1064L4.67031 18.3551L1.4897 18.4224C0.53916 16.6593 0 14.6422 0 12.4986C0 10.4258 0.504102 8.47114 1.39766 6.75H1.39834L4.22998 7.26914L5.47041 10.0838C5.21079 10.8407 5.06929 11.6532 5.06929 12.4986C5.06938 13.4162 5.2356 14.2954 5.54053 15.1064Z"
+                                        fill="#FBBB00" />
+                                    <path
+                                        d="M24.7822 10.1641C24.9257 10.9202 25.0006 11.7011 25.0006 12.4992C25.0006 13.3941 24.9065 14.2671 24.7272 15.1091C24.1188 17.9745 22.5288 20.4766 20.3262 22.2472L20.3255 22.2465L16.7589 22.0645L16.2541 18.9134C17.7156 18.0563 18.8578 16.7149 19.4595 15.1091H12.7754V10.1641H19.557H24.7822Z"
+                                        fill="#518EF8" />
+                                    <path
+                                        d="M20.3234 22.2488L20.3241 22.2495C18.182 23.9713 15.4608 25.0015 12.4986 25.0015C7.73828 25.0015 3.59956 22.3408 1.48828 18.4253L5.53911 15.1094C6.59473 17.9267 9.31245 19.9322 12.4986 19.9322C13.8681 19.9322 15.1511 19.562 16.252 18.9157L20.3234 22.2488Z"
+                                        fill="#28B446" />
+                                    <path
+                                        d="M20.4775 2.87773L16.4281 6.19297C15.2887 5.48076 13.9418 5.06934 12.4988 5.06934C9.24058 5.06934 6.47202 7.16685 5.46929 10.0852L1.39717 6.75137H1.39648C3.47686 2.74038 7.66777 0 12.4988 0C15.5318 0 18.3127 1.08037 20.4775 2.87773Z"
+                                        fill="#F14336" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1089_112">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></i>
+                        <div id="star-rating" data-rating="5" class="my-rating-readonly"></div>
+
+                    </div>
+                    <h4>Amazing Web Development services.</h4>
+                    <div class="description">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
 
-        <div class="slick-nav">
-            <div class="prev1 slick-arrow" style="">
-                <svg width="70" height="14" viewBox="0 0 70 14" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="70" height="14" transform="matrix(-1 0 0 1 70 0)" fill="url(#pattern0_1143_34)" />
+            <div class="slick-nav">
+         
+            <div class="prev1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_1521_3)">
+                        <path
+                            d="M20 40C8.97167 40 1.56866e-06 31.0283 3.49691e-06 20C5.42517e-06 8.97167 8.97167 2.52233e-06 20 4.45059e-06C31.0283 6.37884e-06 40 8.97167 40 20C40 31.0283 31.0283 40 20 40ZM20 1.66667C9.89167 1.66667 1.66667 9.89167 1.66667 20C1.66667 30.1083 9.89167 38.3333 20 38.3333C30.1083 38.3333 38.3333 30.1083 38.3333 20C38.3333 9.89167 30.1083 1.66667 20 1.66667Z"
+                            fill="#101010" />
+                        <path
+                            d="M16.7555 22.9482L21.4688 27.7465C21.7905 28.0749 21.7871 28.6032 21.4588 28.9265C21.1305 29.2465 20.6005 29.2432 20.2805 28.9165L15.5722 24.1232C15.2422 23.7932 14.7821 23.2899 14.3121 22.7599C12.9155 21.1865 12.9155 18.8132 14.3122 17.2382C14.7822 16.7099 15.2438 16.2049 15.5672 15.8815L20.2805 11.0832C20.4438 10.9165 20.6588 10.8349 20.8738 10.8349C21.0855 10.8349 21.2955 10.9149 21.4588 11.0749C21.7872 11.3965 21.7905 11.9249 21.4688 12.2532L16.7505 17.0565C16.4372 17.3699 16.0038 17.8482 15.5588 18.3465C14.7222 19.2899 14.7222 20.7132 15.5588 21.6582C16.0038 22.1599 16.4388 22.6365 16.7555 22.9532L16.7555 22.9482Z"
+                            fill="#101010" />
+                    </g>
                     <defs>
-                        <pattern id="pattern0_1143_34" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_1143_34" transform="matrix(0.00195312 0 0 0.00976562 0 -2)" />
-                        </pattern>
-                        <image id="image0_1143_34" width="512" height="512"
-                            xlink:href="data:image/png;base64,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" />
-                    </defs>
-                </svg> </div>
-            <div class="next1  " style="">
-                <svg width="70" height="14" viewBox="0 0 70 14" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="70" height="14" transform="matrix(1 0 0 -1 0 14)" fill="url(#pattern0_1143_34)" />
-                    <defs>
-                        <pattern id="pattern0_1143_34" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_1143_34" transform="matrix(0.00195312 0 0 0.00976562 0 -2)" />
-                        </pattern>
-                        <image id="image0_1143_34" width="512" height="512"
-                            xlink:href="data:image/png;base64,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" />
+                        <clipPath id="clip0_1521_3">
+                            <rect width="40" height="40" fill="white"
+                                transform="matrix(1 1.74846e-07 1.74846e-07 -1 0 40)" />
+                        </clipPath>
                     </defs>
                 </svg>
+            </div>
+            <div class="next1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_1472_181)">
+                        <path
+                            d="M20 0C31.0283 0 40 8.97167 40 20C40 31.0283 31.0283 40 20 40C8.97167 40 0 31.0283 0 20C0 8.97167 8.97167 0 20 0ZM20 38.3333C30.1083 38.3333 38.3333 30.1083 38.3333 20C38.3333 9.89167 30.1083 1.66667 20 1.66667C9.89167 1.66667 1.66667 9.89167 1.66667 20C1.66667 30.1083 9.89167 38.3333 20 38.3333Z"
+                            fill="#101010" />
+                        <path
+                            d="M23.2445 17.0518L18.5312 12.2535C18.2095 11.9251 18.2129 11.3968 18.5412 11.0735C18.8695 10.7535 19.3995 10.7568 19.7195 11.0835L24.4279 15.8768C24.7579 16.2068 25.2179 16.7101 25.6879 17.2401C27.0845 18.8135 27.0845 21.1868 25.6879 22.7618C25.2179 23.2901 24.7562 23.7951 24.4329 24.1185L19.7195 28.9168C19.5562 29.0835 19.3412 29.1651 19.1262 29.1651C18.9145 29.1651 18.7045 29.0851 18.5412 28.9251C18.2129 28.6035 18.2095 28.0751 18.5312 27.7468L23.2495 22.9435C23.5629 22.6301 23.9962 22.1518 24.4412 21.6535C25.2779 20.7101 25.2779 19.2868 24.4412 18.3418C23.9962 17.8401 23.5612 17.3635 23.2445 17.0468V17.0518Z"
+                            fill="#101010" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1472_181">
+                            <rect width="40" height="40" fill="white" transform="matrix(-1 0 0 1 40 0)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
             </div>
         </div>
     </div>

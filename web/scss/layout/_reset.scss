@@ -89,8 +89,8 @@ h1{
     }
 }
 h2,.h2 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 22px;
+    line-height: 30px;
     @include min(768){
         font-size: 34px;
         line-height: 40px   
@@ -118,32 +118,36 @@ h2,.h2 {
 }
 
 h3,.h3{
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height:30px;
     @include min(768){
-        font-size: 14px;
-        line-height: 24px;  
+        font-size: 22px;
+        line-height: 28px;  
     }
     @include min(992){
-        font-size: 16px;
-        line-height: 26px;  
+        font-size: 17px;
+        line-height: 22px;  
     }
     @include min(1200){
-        font-size: 16px;
-        line-height: 26px;  
+        font-size: 24px;
+        line-height: 30px;  
+    }
+    @include min(1280){
+        font-size: 26px;
+        line-height: 35px;  
     }
 
     @include min(1440){
-        font-size: 16px;
-        line-height: 26px;  
+        font-size: 28px;
+        line-height: 38px;  
     }
     @include min(1600){
-        font-size: 19px;
-        line-height: 29px;  
+        font-size: 32px;
+        line-height: 42px;  
     }
     @include min(1900){
-        font-size: 22px;
-        line-height: 35px;  
+        font-size: 40px;
+        line-height: 50px;  
     }
 }
 p,.p,a{ 
@@ -280,27 +284,13 @@ a{
     transform: translateY(0%);
     align-items: self-end;
     > div{
-        position: relative;
 
         height: 40px;
         display: flex;
         align-items: center;
         transition: 0.5s ease all;
 
-        &::after{
-            transition: 0.5s ease all;
-            box-shadow: 0px 0px 2px #00000030;
-            @extend .position;
-            width: 35px;
-            height: 35px;
-            background-color: #FAFAFD;
-            border-radius: 50%;
-            z-index: -1;
-            @include min(1200){
-                width: 40px;
-                height: 40px
-            }
-        }
+     
         &.prev, &.prev1,&.prev2,&.prev3,&.prev4,&.prev5{
             &::after{
                 left: 30px;
@@ -312,10 +302,27 @@ a{
            }
         }
         &:hover{
-           &::after{
-            background-color: $secondaryColor;
-            transition: 0.5s ease all;
-           }
+            path{
+                transition: 0.5s ease all;
+                fill: $primaryColor;
+            }
+        }
+       
+    }
+    svg{
+        height: auto;
+        width: 25px;
+        @include min(992){
+            width: 30px;
+        }
+        @include min(1440){
+            width: 36px;
+        }
+        @include min(1600){
+            width:38px;
+        }
+        @include min(1900){
+            width: 40px;
         }
     }
 }
@@ -323,7 +330,7 @@ a{
     display: flex;
     justify-content: center;
     bottom: -53px;
-    z-index: 9999;
+    z-index: 8;
     width: fit-content;
     margin: auto;
     left: 50%;
@@ -399,24 +406,24 @@ a{
     height: auto;
 }
 /* width */
-::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 7px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  *::-webkit-scrollbar-track {
     background-color: $primaryColor;
     border-radius: 10px;
   }
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  *::-webkit-scrollbar-thumb {
     background: $secondaryColor; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  *::-webkit-scrollbar-thumb:hover {
     background: $primaryColor; 
   }
 
@@ -824,6 +831,23 @@ margin-left: 10px;
         }
 
     }
+    &.themeBtnWhite{
+        background-color: $white;
+        color: $primaryColor;
+        transition: 0.3s ease all;
+
+        &:hover{
+            transition: 0.5s ease all;
+            background-color: $accentColor;
+            color: $white;
+            path{
+                transition: 0.5s ease all;
+
+                fill: $white;
+            }
+        }
+
+    }
     &.themeBtnPrimary{
         background-color: $primaryColor;
         transition: 0.3s ease all;
@@ -880,7 +904,7 @@ margin-left: 10px;
 
         }
         @include min(1200){
-            width: 50.32%; 
+            width: 51.32%; 
 
         }
     }
@@ -939,4 +963,20 @@ margin-left: 10px;
             margin-bottom: 20px;
         }
     }
+}
+
+.btnReadMore{
+    i{
+        position: relative;
+        transform: translateX();
+        transition: 0.5s ease all;
+    }
+    &:hover{
+        i{
+            transform: translateX(10px);
+        transition: 0.5s ease all;
+
+        }
+    }
+
 }

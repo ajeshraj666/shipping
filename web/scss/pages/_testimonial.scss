@@ -1,0 +1,601 @@
+.testimonials{
+    .slick-nav{
+        @include max(575){
+            margin-bottom: -50px;
+        }
+    }
+    position: relative;
+    .row{
+        width: 97%;
+        margin: auto;
+        @include min(576){
+            width: 93%;
+
+        }
+    }
+    .container-ctn{
+        background-color: $greyBg;
+        border-radius: 50px;
+        @include min(768){
+            border-radius: 65px;
+        }
+        @include min(992){
+            border-radius: 75px;
+        }
+        @include min(1200){
+            border-radius: 80px;
+        }
+        @include min(1440){
+            border-radius: 85px;
+        }
+        @include min(1600){
+            border-radius: 95px;
+        }
+        @include min(1900){
+            border-radius: 100px;
+        }
+    }
+   
+   .rating{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    @include min(1200){
+        margin-bottom: 22px;
+    }
+    @include min(1440){
+        margin-bottom: 28px;
+    }
+    @include min(1600){
+        margin-bottom: 30px;
+    }
+    @include min(1900){
+        margin-bottom: 35px;
+    }
+    i{
+        >svg{
+            height: auto;
+            width: 20px;
+
+            @include min(768){
+                width: 16px;
+            }
+            @include min(992){
+                width: 18px;
+            }
+            @include min(1200){
+                width: 20px;
+            }
+            @include min(1600){
+                width: 22px;
+            }
+            @include min(1900){
+                width: 25px;
+            }
+        }
+    }
+   }
+  
+
+}
+
+
+
+
+.testimonialSlider {
+    
+
+     .slick-slide{
+        background-color: $white;
+        transition: 0.5s ease all;
+        &:hover{
+            transition: 0.5s ease all;
+
+        }
+        &:hover{
+            box-shadow: 0px 10px 10px rgba(5, 115, 91, 0.4);
+            transition: 0.5s ease all;
+            @include min(992){
+                box-shadow: 0px 10px 22px rgba(5, 115, 91, 0.4);
+
+            }
+            @include min(1200){
+                box-shadow: 0px 10px 22px rgba(5, 115, 91, 0.4);
+
+            }
+            @include min(1600){
+                box-shadow: 0px 10px 22px rgba(5, 115, 91, 0.4);
+
+            }
+            @include min(1800){
+                box-shadow: 0px 10px 22px rgba(5, 115, 91, 0.4);
+
+            }
+
+        }
+        border: 1px solid #B1DED4;
+        border-radius: 15px;
+        padding: 20px 14px 20px 14px;
+        border-radius: 15px;
+
+        @include min(768){
+            padding: 39px 14px 33px 14px;
+
+        }
+        @include min(992){
+            padding: 29px 12px 20px 12px;
+            border-radius: 20px;
+        }
+        @include min(1200){
+            padding: 39px 14px 33px 14px;
+            border-radius: 20px;
+        }
+        @include min(1600){
+            padding: 47px 17px 40px 17px;
+            border-radius: 30px;
+        }
+        @include min(1900){
+            padding: 55px 20px 40px 20px;
+        }
+        margin: 0px 5px;
+        margin-bottom: 15px;
+
+        @include min(576){
+            margin: 0px 10px;
+            margin-bottom: 25px;
+
+           }
+           @include min(1200){
+            margin: 0px 16px;
+            margin-bottom: 30px;
+           }
+           @include min(1440){
+            margin: 0px 18px;
+            margin-bottom: 36px;
+
+           }
+           @include min(1600){
+            margin: 0px 19px;
+            margin-bottom: 38px;
+           }
+           @include min(1900){
+            margin: 0px 20px;
+            margin-bottom: 40px;
+           }
+
+       
+    }
+    .slick-list{
+        margin: 0px -5px;
+
+        @include min(576){
+         margin: 0px -10px;
+        }
+     
+        @include min(1200){
+         margin: 0px -16px;
+        }
+        @include min(1440){
+         margin: 0px -18px;
+        }
+        @include min(1600){
+         margin: 0px -19px;
+        }
+        @include min(1900){
+         margin: 0px -20px;
+        }
+
+    }
+    .author{
+        display: flex;
+        gap: 10px;
+        @include min(768){
+            gap: 12px;
+        }
+        @include min(992){
+            gap: 12px;
+        }
+        @include min(1200){
+            gap: 22px;
+        }
+        @include min(1600){
+            gap: 30px;
+        }
+        picture{
+                    width:40px;
+                    height: 40px;
+                    background: #168C72;
+                    border-radius: 10px;
+                    
+                    img{
+                        height: auto;
+                        width: 35px;
+                        margin: auto;
+                        object-fit: cover;
+                    }
+                    @include min(768){
+                        border-radius: 13px;
+                        width: 50px;
+                        height: 50px;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            margin-top: -11px;
+
+                        }
+
+                    }
+                    @include min(992){
+                        border-radius: 13px;
+                        width: 45px;
+                        height: 45px;
+                        img{
+                            width: 45px;
+                            height: 45px;
+                            margin-top: -11px;
+
+                        }
+
+                    }
+                    @include min(1200){
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 13px;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            margin-top: -11px;
+
+                        }
+
+                    }
+                    @include min(1600){
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 15px;
+
+                        img{
+                            width: 55px;
+                            height: 55px;
+                            margin-top: -13px;
+
+                        }
+                    }
+                    @include min(1800){
+                        width: 70px;
+                        height: 70px;
+                        img{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -15px;
+
+                        }
+                        border-radius: 20px;
+
+                    }
+            
+        }
+        .title{
+            // width: 328px;
+            width: 76%;
+            margin-bottom: 5px;
+            @include min(768){
+                margin-bottom: 15px;
+                margin-top: -7px;
+            }
+            @include min(992){
+                margin-bottom: 15px;
+            }
+            @include min(1200){
+                margin-bottom: 20px;
+            }
+
+            @include min(1800){
+                margin-bottom: 13px;
+            }
+
+        }
+        h3{
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            color: $primaryColor;
+            @include min(768){
+                font-size: 16px;
+                line-height: 26px;
+            }
+            @include min(992){
+                font-size: 14px;
+                line-height: 24px;
+            }
+            @include min(1200){
+                font-size: 16.8px;
+                line-height: 26px;
+            }
+            @include min(1600){
+                font-size: 19.6px;
+                line-height: 33px;
+                margin-bottom: 5px;
+
+            }
+            @include min(1800){
+                font-size: 24px;
+                line-height: 35px;
+                margin-bottom: 8px;
+
+            }
+        }
+        span{
+            font-size: 12px;
+            line-height: 22px;
+            @include min(768){
+                font-size: 13px;
+                 line-height: 23px;
+            }
+            @include min(992){
+                font-size: 12px;
+                line-height: 22px;
+            }
+            @include min(1200){
+                font-size: 14px;
+                line-height: 26px;
+            }
+            @include min(1600){
+                font-size: 17px;
+                line-height: 35px;
+            }
+            @include min(1800){
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+    h4{
+        color: $black;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px;
+        @include min(768){
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        @include min(992){
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 5px;
+        }
+        @include min(1200){
+            font-size: 17px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        @include min(1600){
+            font-size: 19.6px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        @include min(1800){
+            font-size: 24px;
+            line-height: 35px;
+            margin-bottom: 10px;
+        }
+
+    }
+    .description{
+        height: 120px;
+        overflow-y: auto;
+        @include max(575){
+            padding-right: 15px;
+        }
+        @include min(768){
+            height: 120px;
+        }
+        @include min(992){
+            height: 80px;
+        }
+        @include min(1200){
+            height: 91px;
+        }
+        @include min(1440){
+            height: 84px;
+        }
+        @include min(1600){
+            height: 108px;
+
+        }
+        @include min(1800){
+            height: 139px;
+
+        }
+         &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+          }
+          
+          &::-webkit-scrollbar-track {
+             background: $primaryColor;
+            border-radius: 2px;
+          }
+          
+          &::-webkit-scrollbar-thumb {
+            background: #4AAD97;
+            border-radius: 4px;
+            height: 3px;
+          }
+          
+          &::-webkit-scrollbar-thumb:hover {
+            background: $accentColor;
+          }
+        p{
+            font-weight: 500;
+        }
+    }
+
+}
+.slick-hmb{
+    .slick-arrow{
+        position: absolute;
+        top: 58%;
+        cursor: pointer;
+
+        @include min(1199){
+            top: 54.8%;
+        }
+        img{
+            transition: 0.5s ease all;
+                width: 25px;
+                height: 25px;
+                @include min(768){
+                    width: 28px;
+                    height: 28px;
+                }
+            @include min(992){
+                width: 30px;
+                height: 30px;
+            }
+            @include min(1200){
+                width: 35px;
+                height: 35px;
+            }
+            @include min(1600){
+                width: 40px;
+                height: 40px;
+            }
+            @include min(1800){
+                width: auto;
+                height: auto;
+            }
+
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: 0.5s ease all;
+        }
+    }
+    .prev {
+        left: 1.5%;
+        @include min(992){
+            left: 2.4%;
+        }
+        @include min(1200){
+            left: 2.2%;
+        }
+        @include min(1600){
+            left: 2.2%;
+        }
+        @include min(1800){
+            left: 2.2%;
+        }
+    }
+    .next {
+        right:1.5%;
+        @include min(992){
+            right:2.4%;
+        }
+        @include min(1200){
+            right:2.2%;
+        }
+        @include min(1600){
+            right: 2.2%;
+        }
+        @include min(1800){
+            right: 2.2%;
+        }
+        
+    }
+ }
+
+ .googleReview{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    @include min(768){
+        margin-bottom: 10px;
+
+    }
+    @include min(992){
+        margin-bottom: 10px;
+
+    }
+    @include min(1200){
+        margin-bottom: 25px;
+
+    }
+    @include min-max(1200,1599){
+        margin-top: 10px;
+    }
+    @include min(1600){
+        margin-bottom:33px;
+
+    }
+    @include min(1800){
+        margin-bottom: 38px;
+
+    }
+    &::before{
+        background-image: url(../images/svg/google.svg);
+        @extend .position;
+        background-size: cover;
+        width: 15px;
+            height: 15px;
+        @include min(768){
+            width: 17px;
+            height: 17px;
+        }
+        @include min(992){
+            width: 12px;
+            height: 12px;
+        }
+        @include min(1200){
+            width: 15px;
+            height: 15px;
+        }
+        @include min(1600){
+            width: 17px;
+            height: 17px;
+        }
+        @include min(1800){
+            width: 20px;
+            height: 20px;
+        }
+    }
+    img{
+        @include min(768){
+            width: 14px;
+            height: 14px;
+        }
+        @include min(992){
+            width: 10px;
+            height: 10px;
+        }
+        @include min(1200){
+            width: 11px;
+            height: 11px;
+        }
+        @include min(1600){
+            width: 13px;
+            height: 13px;
+        }
+        @include min(1800){
+            width: auto;
+        }
+    }
+    ul{
+        padding-left: 20px;
+        display: flex;
+        margin: 0;
+        @include min(1200){
+            padding-left: 23px;
+        }
+        @include min(1600){
+            padding-left: 26px;
+        }
+        @include min(1800){
+            padding-left: 30px;
+        }
+    }
+ }

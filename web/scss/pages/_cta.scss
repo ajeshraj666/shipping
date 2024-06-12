@@ -1,0 +1,246 @@
+.cta{
+    background: $themeBg;
+    border: 1px solid $border;
+    box-shadow: $boxShadow10;
+    padding: 40px 30px ;
+    border-radius: 50px;
+    margin-bottom: -172px;
+    @include min(576){
+        padding: 40px 45px ;
+ 
+    }
+    @include min(768){
+        border-radius: 100px;
+        padding: 50px 70px;
+        border-radius: 55px;
+
+    }
+    @include min(992){
+        padding: 0px 65px;
+        border-radius: 65px;
+
+    }
+    @include min(1200){
+        padding: 0px 75px;
+        border-radius: 75px;
+
+    }
+    @include min(1440){
+        padding: 0px 85px;
+        border-radius: 90px;
+    }
+    @include min(1600){
+        padding: 0px 95px;
+        border-radius: 95px;
+    }
+    @include min(1900){
+        border-radius: 100px;
+        padding: 0px 100px;
+    }
+    &::after{
+        @extend .position;
+        width: 90%;
+        height: 95%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        // background-image: url(../images/home/line.png);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        z-index: 0;
+        border-radius: 50px;
+        z-index: 0;
+        border: 1px dashed $white;
+        @include min(768){
+            width: 95%;
+            border-radius: 55px;
+        }
+        @include min(992){
+            width: 96%;
+            height: 85%;
+            border-radius: 65px;
+
+        }
+        @include min(1200){
+            border-radius: 75px;
+    
+        }
+        @include min(1440){
+            border-radius: 90px;
+        }
+        @include min(1600){
+            border-radius: 95px;
+        }
+        @include min(1900){
+            border-radius: 100px;
+        }
+    }
+    h3,span{
+        color: $white;
+    }
+    h3{
+
+        margin-bottom: 5px;
+        @include min(992){
+            margin-bottom: 10px;
+        }
+        @include min(1200){
+            margin-bottom: 15px;
+        }
+        @include min(1600){
+            margin-bottom: 20px;
+        }
+    }
+    span{
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        @include min(768){
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 15px;
+
+        }
+        @include min(992){
+            font-size: 13px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        @include min(1200){
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+        @include min(1280){
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+        @include min(1440){
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 45px;
+        }
+        @include min(1600){
+            font-size: 22px;
+            line-height: 36px;
+            margin-bottom: 55px;
+        }
+        @include min(1900){
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 60px;
+        }
+    }
+   
+}
+.shipping-items {
+    width: 100%;
+    @include max(991){
+        margin-bottom: 30px;
+    }
+    @include min(992){
+        width: 25.83%;
+
+    }
+    z-index: 2;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.shippin-bg {
+    width: 100%;
+    @include max(767){
+        margin-bottom: 20px;
+    }
+    @include min-max(768,991){
+        margin-bottom: 20px;
+    }
+    @include min(992){
+        width: 44.82%;
+
+    }
+    z-index: 1;
+  >   picture{
+    position: relative;
+    &::before{
+        @extend .position;
+        width: 100%;
+        height: 100%;
+        left: -5px;
+        background-size: contain;
+        background-image:  url("../images/home/mask-b.png");
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        @include min(768){
+            left: -27px;
+        }
+        @include min(992){
+            left: -27px;
+        }
+        @include min(1200){
+            left: -40px;
+        }
+        @include min(1440){
+            left: -50px;
+        }
+        @include min(1600){
+            left: -50px;
+        }
+        @include min(1900){
+            left: -57px;
+        }
+    }
+  }
+  >  picture img{
+        mask-image:  url("../images/home/mask.png");
+        mask-size: 100%;
+        mask-repeat: no-repeat;    
+        // width:770px;
+        height:100%;
+        z-index: 1;
+    }
+}
+.static-man {
+    width: 100%;
+    top: 0;
+    @include max(991){
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    
+    }
+    @include min(992){
+    top: -23px;
+    left: 10px;
+    }
+    @include min(1200){
+    top: -28px;
+    left: 30px;
+    }
+    @include min(1280){
+    top: -30px;
+    }
+    @include min(1350){
+    top: -32px;
+    }
+    @include min(1440){
+    top: -33px;
+    }
+    @include min(1600){
+    top: -37px;
+    left: 30px;
+    }
+    @include min(1900){
+    top: -46px;
+    left: 37px;
+    }
+    img{
+        width: 54.23%;
+        @include min(992){
+            width: 59.23%;
+
+        }
+    }
+}
