@@ -1,23 +1,21 @@
 .contact-page{
     @extend .commonPadding;
+
+    .heading{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    
+        h2{
+            width: 100%!important;
+           }
+    }
 }
 .contact-address{
     width: 100%;
-    @include min(992){
-        width: 35%;
-    }
-    @include min(1200){
-        width:30.12%;
-    }
-    @include min(1440){
-        width: 30.12%;
-    }
-    @include min(1600){
-        width: 30.12%
-    }
-    @include min(1900){
-        width: 30.12%;
-    }
+
     >div {
         display: flex;
         flex-wrap: wrap;

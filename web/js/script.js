@@ -104,25 +104,24 @@ $(document).ready(function() {
 
 
 // =====================Check Out Intl Tel Input================================================	
-// function initializePhoneInput(selector) {	
-//   const shippingFormWrapper = document.querySelector(selector + ' .phone_number');	
-//   if (shippingFormWrapper !== null) {	
-//       const phoneInput = window.intlTelInput(shippingFormWrapper, {	
-//           preferredCountries: ["ae", "in"],	
-//           excludeCountries: ["ru", "cu", "sy", "ir", "sd", "ss", "kp", "ye", "KR", "UA"],	
-//           utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",	
-//       });	
-//       $(selector + ' .phone_number').on('blur', function () {	
-//           contactPhone(selector, phoneInput);	
-//       });	
-//   }	
-// }	
-// function contactPhone(selector, phoneInput) {	
-//   const phoneNumber = phoneInput.getNumber();	
-//   $(selector + ' .phone_number').val(phoneNumber);	
-// }	
-// initializePhoneInput(".careerPopupBox");	
-// initializePhoneInput(".contact-enquiry");	
+function initializePhoneInput(selector) {	
+  const shippingFormWrapper = document.querySelector(selector + ' .phone_number');	
+  if (shippingFormWrapper !== null) {	
+      const phoneInput = window.intlTelInput(shippingFormWrapper, {	
+          preferredCountries: ["ae", "in"],	
+          excludeCountries: ["ru", "cu", "sy", "ir", "sd", "ss", "kp", "ye", "KR", "UA"],	
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",	
+      });	
+      $(selector + ' .phone_number').on('blur', function () {	
+          contactPhone(selector, phoneInput);	
+      });	
+  }	
+}	
+function contactPhone(selector, phoneInput) {	
+  const phoneNumber = phoneInput.getNumber();	
+  $(selector + ' .phone_number').val(phoneNumber);	
+}	
+initializePhoneInput(".contact-enquiry");	
 
 
 
@@ -138,24 +137,34 @@ window.addEventListener('scroll', function() {
 
 
 // ================== Read more button===============================
-// document.addEventListener("DOMContentLoaded", function() {
-//   var readMoreBtn = document.getElementById('read-more-btn');
-//   if (readMoreBtn) {
-//       readMoreBtn.addEventListener('click', function(event) {
-//           event.preventDefault();
-//           var description = document.querySelector('.about-page .about-company-long-description');
-//           description.classList.toggle('expanded');
-//           if (description.classList.contains('expanded')) {
-//               this.innerHTML = 'Show Less <svg xmlns="http://www.w3.org/2000/svg" width="71" height="16" viewBox="0 0 71 16" fill="none"> <path d="M70.7071 8.70711C71.0976 8.31658 71.0976 7.68342 70.7071 7.29289L64.3431 0.928932C63.9526 0.538408 63.3195 0.538408 62.9289 0.928932C62.5384 1.31946 62.5384 1.95262 62.9289 2.34315L68.5858 8L62.9289 13.6569C62.5384 14.0474 62.5384 14.6805 62.9289 15.0711C63.3195 15.4616 63.9526 15.4616 64.3431 15.0711L70.7071 8.70711ZM0 9H70V7H0V9Z" fill="#D400F8"></path> </svg>';
-//           } else {
-//               this.innerHTML = 'Read More <svg xmlns="http://www.w3.org/2000/svg" width="71" height="16" viewBox="0 0 71 16" fill="none"> <path d="M70.7071 8.70711C71.0976 8.31658 71.0976 7.68342 70.7071 7.29289L64.3431 0.928932C63.9526 0.538408 63.3195 0.538408 62.9289 0.928932C62.5384 1.31946 62.5384 1.95262 62.9289 2.34315L68.5858 8L62.9289 13.6569C62.5384 14.0474 62.5384 14.6805 62.9289 15.0711C63.3195 15.4616 63.9526 15.4616 64.3431 15.0711L70.7071 8.70711ZM0 9H70V7H0V9Z" fill="#D400F8"></path> </svg>';
-//           }
-//       });
-//   }
-// });
+document.addEventListener("DOMContentLoaded", function() {
+  var readMoreBtn = document.getElementById('read-more-btn');
+  if (readMoreBtn) {
+      readMoreBtn.addEventListener('click', function(event) {
+          event.preventDefault();
+          var description = document.querySelector('.aboutIntroDescriptionLong');
+          description.classList.toggle('expanded');
+          if (description.classList.contains('expanded')) {
+              this.innerHTML = 'Show Less <svg xmlns="http://www.w3.org/2000/svg" width="71" height="16" viewBox="0 0 71 16" fill="none"> <path d="M70.7071 8.70711C71.0976 8.31658 71.0976 7.68342 70.7071 7.29289L64.3431 0.928932C63.9526 0.538408 63.3195 0.538408 62.9289 0.928932C62.5384 1.31946 62.5384 1.95262 62.9289 2.34315L68.5858 8L62.9289 13.6569C62.5384 14.0474 62.5384 14.6805 62.9289 15.0711C63.3195 15.4616 63.9526 15.4616 64.3431 15.0711L70.7071 8.70711ZM0 9H70V7H0V9Z" fill="#07725B"/> </svg>';
+          } else {
+              this.innerHTML = 'Read More <svg xmlns="http://www.w3.org/2000/svg" width="71" height="16" viewBox="0 0 71 16" fill="none"> <path d="M70.7071 8.70711C71.0976 8.31658 71.0976 7.68342 70.7071 7.29289L64.3431 0.928932C63.9526 0.538408 63.3195 0.538408 62.9289 0.928932C62.5384 1.31946 62.5384 1.95262 62.9289 2.34315L68.5858 8L62.9289 13.6569C62.5384 14.0474 62.5384 14.6805 62.9289 15.0711C63.3195 15.4616 63.9526 15.4616 64.3431 15.0711L70.7071 8.70711ZM0 9H70V7H0V9Z" fill="#07725B"/> </svg>';
+          }
+      });
+  }
+});
 
-// ======================validations======================
+// ======================Abou Tab======================
+document.getElementById('missionButton').addEventListener('click', function() {
+  document.querySelector('.mission').classList.add('active');
+  document.querySelector('.vision').classList.remove('active');
+  this.classList.add('active');
+  document.getElementById('visionButton').classList.remove('active');
+});
 
-
-// ==========================service form validation============================================
+document.getElementById('visionButton').addEventListener('click', function() {
+  document.querySelector('.vision').classList.add('active');
+  document.querySelector('.mission').classList.remove('active');
+  this.classList.add('active');
+  document.getElementById('missionButton').classList.remove('active');
+});
 

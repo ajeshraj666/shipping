@@ -18,9 +18,37 @@
 
 <section class="contact-page">
     <div class="container-ctn">
-        <div class="heading text-center">
-            <p><span>+</span> Contact <span>+</span></p>
-            <h2>Contact us for NDIS Services</h2>
+        <div class="heading ">
+            <span>Get in Touch</span>
+            <h2>Business Models you can Consider</h2>
+            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="contact-address">
+                <div class="phone">
+                    <strong>CALL US</strong>
+                    <a href="tel:0283199433">02 8319 9433 (SYD)</a>
+                    <a href="tel:0385950933">03 8595 0933 (MEL)</a>
+                </div>
+                <div class="email">
+                    <strong>E-MAIL US</strong>
+                    <a href="mailto:info@triniticare.com.au">info@triniticare.com.au (SYD) </a>
+                    <a href="mailto:contact@triniticare.com.au">contact@triniticare.com.au (MEL)</a>
+                </div>
+                <div class="address">
+                    <strong>LOCATE US</strong>
+                    <div>
+                        <p>56 Kokoda Cct, Mount Annan NSW 2567, Australia.</p>
+                        <a href="https://maps.app.goo.gl/QajPwoLDjvLNqQDv9" target="_blank">View on Map</a>
+                    </div>
+                    <div>
+                        <p>Shop L080 200 Gilchrist DR, Campbelltown NSW 2560</p>
+                        <a href="https://maps.app.goo.gl/Q5iAtRwi3tGMkZV98" target="_blank">View on Map</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
         <div class="d-flex flex-wrap justify-content-between">
             <div class="contact-address">

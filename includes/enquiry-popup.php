@@ -6,7 +6,7 @@
 
             <div class="modal-body p-0">
                 <div class="d-flex careerPopupBox">
-                <picture><img src="web/images/home/about.png" width="580" height="720" alt="" class="w-100 img-fluid h-100"></picture>
+                <picture><img src="web/images/about/mission.jpg" width="580" height="720" alt="" class="w-100 img-fluid h-100"></picture>
                     <div>
                     <p>ENQUIRY</p>
                     <form action="" method="post" enctype="multipart/form-data">

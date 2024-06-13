@@ -179,66 +179,6 @@
 //Bloge Home End
 
 
-
-
-
-
-
-
-
-.newsList{
-    @extend .commonPadding;
-    .container-ctn{
-        >.btn{
-            @include max(575){
-                margin: auto;
-                margin-top: 20px;
-            }
-            margin-top: 30px;
-            @include min(992){
-                margin-top: 60px;
-            }
-        }
-    }
-    .d-flex{
-        gap: 15px;
-        @include min(768){
-            gap: 20px;
-        }
-        @include min(992){
-            gap: 20px;
-        }
-        @include min(1200){
-            gap: 24px;
-        }
-        @include min(1440){
-            gap: 29px;
-        }
-        @include min(1600){
-            gap: 33px;
-        }
-        @include min(1900){
-            gap: 39px;
-        }
-        
-    }
-    a{
-        width:100%;
-        @include min(576){
-            width: 48.46%;
-        }
-        @include min(768){
-            width: 31.37%;
-        }
-        @include min(992){
-            width: 31.82%;
-        }
-        @include min(1200){
-            width: 23.26%;
-        }
-    }
-}
-
 // ========================================Blog Detail==============================================
 .newsDetail{
     @extend .commonPadding;
@@ -376,11 +316,15 @@
         a{
             &:hover{
                 svg{
-
-                    background-color: $secondaryColor;
+                    border: 1px solid $primaryColor;
+                    background-color: $primaryColor;
                     border-radius: 50%;
                     rect{
-                        fill: $secondaryColor;
+                        fill: $primaryColor;
+                    }
+                    path{
+                        fill: $white;
+                    stroke: #fff;
                     }
                     
                 }
@@ -401,6 +345,9 @@
                         fill: $primaryColor;
                     }
                 }
+               p,span{
+                color: $primaryColor;
+               }
             }
         }
         a+a{
@@ -441,9 +388,11 @@
         top: 100px;
         border: 1px solid #ECECEC;
         background: #FFF;
-        box-shadow: 0px 15px 15px 0px rgba(106, 40, 117, 0.15);
+        box-shadow: $boxShadow15;
         width: 100%;
         padding:35px 20px;
+        border-radius: 20px;
+
         @include max(767){
             margin-top: 40px;
         }
@@ -509,27 +458,34 @@
             }
         }
         img{
+            object-fit: cover;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
         picture{
             width: 60px;
+            height: 45px;
             @include min(768){
                 width: 66px;
             }
             @include min(992){
                 width: 52px;
+                height: 40px;
             }
             @include min(1200){
                 width: 56px;
+                height: 50px;
             }
             @include min(1440){
                 width: 52px;
+                height: 47px;
             }
             @include min(1600){
+                height: 57px;
                 width: 66px;
             }
             @include min(1900){
+                height: 60px;
                 width: 69px;
             }
         }
@@ -660,6 +616,9 @@
                 height: 45px;
                 overflow: hidden;
                 margin-bottom: 10px;
+                @include min(576){
+                    height: 46px;
+                }
                 @include min(992){
                     height: 46px;
                 }
@@ -678,4 +637,283 @@
             }
         }
     }
+}
+
+//====================================  Blog Listing  ====================================
+.newsDetail,.newsList{
+
+    .heading {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        h2{
+            margin-bottom: 0!important;
+            width: 100%!important;
+           }
+    }
+}
+.newsList{
+
+    .heading {
+        justify-content: center;
+        text-align: center;
+    }
+}
+.newsList{
+    
+    >.container-ctn{
+       .d-flex{
+        gap: 28px 8px;
+        margin-bottom: 28px;
+        @include min(768){
+            gap: 27px;
+        }
+        @include min(992){
+            gap: 25px 10px;
+            margin-bottom: 28px;
+        }
+        @include min(1200){
+            gap: 25px 12px;
+            margin-bottom: 30px;
+        }
+        @include min(1280){
+            gap: 28px 13px;
+            margin-bottom: 30px;
+        }
+        @include min(1350){
+            gap: 33px 14px;
+            margin-bottom: 30px;
+        }
+        @include min(1440){
+            gap: 34px 15px;
+            margin-bottom: 34px;
+        }
+        @include min(1600){
+            gap: 36px 16px;
+            margin-bottom: 36px;
+        }
+        @include min(1900){
+            gap: 40px 20px;
+            margin-bottom: 40px;
+        }
+     
+       }
+    }
+  
+    img{
+        @extend .wh-100;
+    }
+}
+.blogCard{
+    position: relative;
+    @include min(576){
+        width: 48%;
+    }
+    @include min(992){
+        width: 24.12%;
+    }
+    >div{
+        position: relative;
+        padding: 43px 10px 20px 10px;
+         height: 175px;
+        @include min(576){
+            padding: 40px 12px 17px 12px;
+            height: 180px;
+        }
+        @include min(768){
+            padding: 45px 12px 17px 12px;
+            height: 180px;
+        }
+        @include min(992){
+            padding: 20px 9px 15px 9px;
+            height: 175px;
+        }
+        @include min(1200){
+            padding: 25px 14px 20px 14px;
+            height: 185px;
+        }
+        @include min(1440){
+            padding: 30px 16px 25px 16px;
+            height: 200px;
+        }
+        @include min(1600){
+            padding: 40px 18px 30px 18px;
+            height: 210px;
+        }
+        @include min(1900){
+            padding: 50px 20px 40px 20px;
+            height: 280px;
+        }
+    }
+    background-color: $white;
+    border: 1px solid $border;
+    span{
+        justify-content: center;
+        background-color: $greycolor;
+        padding: 8px;
+        display: flex;
+        width: 100%;
+        margin-top: -75px;
+        z-index: 1;
+        position: relative;
+        @include min(576){
+            margin-top: -69px;
+            padding: 8px;
+
+        }
+        @include min(768){
+            margin-top: -77px;
+            padding: 10px;
+
+        }
+        @include min(992){
+            margin-top: -50px;
+            padding: 12px;
+
+        }
+        @include min(1200){
+            margin-top: -65px;
+            padding: 15px;
+
+        }
+        @include min(1440){
+            margin-top: -70px;
+            padding: 18px;
+        }
+        @include min(1600){
+            margin-top: -95px;
+            padding: 20px;
+        }
+        @include min(1900){
+            margin-top: -105px;
+        }
+    
+    }
+    h3{
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 26px;
+        height: 50px;
+
+        @include min(576){
+            margin-top: 19px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 20px;
+            height: 40px;
+        }
+        @include min(768){
+            margin-top: 22px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 28px;
+            height: 54px;
+        }
+        @include min(992){
+            margin-top: 18px;
+            margin-bottom: 11px;
+            font-size: 12.5px;
+            line-height: 23px;
+            height: 50px;
+        }
+        @include min(1200){
+            margin-top: 20px;
+            margin-bottom: 11px;
+            font-size: 17px;
+            line-height: 27px;
+            height: 50px;
+        }
+        @include min(1440){
+            margin-top: 22px;
+            margin-bottom: 13px;
+            font-size: 18px;
+            line-height: 29px;
+            height: 55px;
+        }
+        @include min(1600){
+            margin-top: 26px;
+            margin-bottom: 16px;
+            font-size: 20px;
+            line-height: 30px;
+            height: 70px;
+        }
+        @include min(1900){
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 35px;
+            height: 70px;
+        }
+    }
+    .description{
+        display: none;
+        transition: 0.5s ease all;
+
+        overflow: hidden;
+        @include min(576){
+            height: 48px;
+        }
+        @include min(768){
+            height: 24px;
+        }
+        @include min(992){
+            height: 36px;
+        }
+        @include min(1200){
+            height: 21px;
+        }
+        @include min(1440){
+            height: 21px;
+        }
+        @include min(1600){
+            height: 28px;
+        }
+        @include min(1900){
+            height: 27px;
+        }
+    }
+    .arrowBtn{
+        font-weight: 700;
+        margin-top: 20px;
+        position: absolute;
+         bottom: 18px;
+        @include min(1200){
+            margin-top: 18px;
+            bottom: 28px;
+        }
+        @include min(1440){
+            margin-top: 20px;
+        }
+        @include min(1600){
+            margin-top: 25px;
+            bottom: 35px;
+
+        }
+        @include min(1900){
+            margin-top: 40px;
+            bottom: 40px;
+
+        }
+        &:hover{
+            color: $primaryColor;
+            path{
+                fill: $primaryColor;
+            }
+        }
+    }
+    &:hover{
+        .description{
+            display: block;
+            transition: 0.5s ease all;
+        }
+        span{
+            color: $white;
+            background-color: $secondaryColor;
+        }
+        box-shadow: $boxShadow15;
+    }
+    
 }

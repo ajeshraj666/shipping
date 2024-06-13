@@ -25,6 +25,10 @@
         img{
             @extend .wh-100;
             object-fit: cover;
+            @include max(991){
+                height: 250px;
+            }
+         
         }
     }
     .container-ctn{
@@ -33,7 +37,7 @@
         width: 100%;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-70%);
+        transform: translate(-50%,-50%);
         @include min(576){
             transform: translate(-50%,-11%);
 
@@ -57,13 +61,12 @@
             align-items: center;
        
             li,a{
-                text-transform: uppercase;
                 color: $white;
               
             }
             li{
                 &:last-child{
-                    font-weight: 700;
+                    font-weight: 600;
                 }
             }
         }

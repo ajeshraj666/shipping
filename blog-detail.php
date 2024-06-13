@@ -2,7 +2,7 @@
 <?php include('includes/header.php') ?>
 
     <section class="innerBanner">
-        <picture><img src="web/images/banner/about.jpg" alt=""></picture>
+        <picture><img src="web/images/banner/blog.jpg" alt=""></picture>
         <div class="container-ctn">
             <div class="head">
                 <h1>Our Blog</h1>
@@ -11,24 +11,23 @@
       
         <div class="breadCrumb">
             <ul>
-                <li><a href="index.html">HOME</a>&nbsp; / &nbsp;</li>
-                <li>Our Blog</li>
+                <li><a href="index.php">HOME</a>&nbsp; / &nbsp;</li>
+                <li><a href="blog.php">Blogs</a>&nbsp; / &nbsp;</li>
+                <li>Details</li>
             </ul>
         </div>
     </section>
 
-    <section class="  newsDetail">
-        
-        
+    <section class="newsDetail">
         <div class="container-ctn">
             <div class="d-flex flex-wrap justify-content-between ">
                 <article>
                     <div class="heading">
-                        <p><span>+ </span>News and Articles<span> +</span></p>
-                        <h2>Lorem Ipsum is very simply dummy text.</h2>
-                        <span>Sep 03, 2024 by John Smith</span>
+                        <span>Company News</span>
+                        <h2>Lorem Ipsum is simply dummy text of the printing and type setting</h2>
                     </div>
-                    <picture><img src="web/images/blog/blog.jpg" width="1015" height="761" alt=""></picture>
+                    <span>Sep 03, 2024 by John Smith</span>
+                    <picture><img src="web/images/blog/blog-9.jpg" width="1015" height="730" alt=""></picture>
                     <p>We,the dedicated team of NDIS providers in Central Coast,Campbelltown and Liverpool ensure comprehensive support for participants in their day-to-day activities. This includes aiding participants with:</p>
                     <ul>
                         <li>Showering, bathing, dressing, oral hygiene, and grooming.</li>
@@ -70,7 +69,7 @@
                     </div>
                 </article>
                 <aside>
-                    <h2>TOP POSTS</h2>
+                    <h2>Latest Blogs</h2>
                     <ul>
                         <li>
                             <picture><img src="web/images/blog/1.jpg" width="69" height="60" alt=""></picture>
