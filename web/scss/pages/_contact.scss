@@ -1,616 +1,610 @@
-.contact-page{
-    @extend .commonPadding;
+.contact-page {
+  @extend .commonPadding;
 
-    .heading{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    
-        h2{
-            width: 100%!important;
-           }
-    }
-}
-.contact-address{
+  .heading {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    z-index: 1;
-    position: relative;
-    margin-bottom: -472px;
-    @include min(576){
-        justify-content: space-between;
-        margin-bottom: -141px;
+    text-align: center;
+
+    h2 {
+      width: 100% !important;
     }
-    @include min(768){
-        margin-bottom: -135px;
+  }
+}
+.contact-address {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin-bottom: -472px;
+  @include min(576) {
+    justify-content: space-between;
+    margin-bottom: -141px;
+  }
+  @include min(768) {
+    margin-bottom: -135px;
+  }
+  @include min(992) {
+    margin-bottom: -153px;
+  }
+  @include min(1200) {
+    margin-bottom: -175px;
+  }
+  @include min(1280) {
+    margin-bottom: -180px;
+  }
+  @include min(1440) {
+    margin-bottom: -202px;
+  }
+  @include min(1600) {
+    margin-bottom: -212px;
+  }
+  @include min(1900) {
+    margin-bottom: -212px;
+  }
+  @include max(575) {
+    gap: 20px;
+  }
+
+  > div {
+    box-shadow: $boxShadow15;
+    background-color: $white;
+    border: 1px solid $greycolor;
+    border-radius: 20px;
+    width: 80%;
+    padding: 25px 20px 20px;
+    @include min(576) {
+      border-radius: 20px;
+      width: 32.26%;
+      padding: 20px 10px 20px;
     }
-    @include min(992){
-        margin-bottom: -153px;
+    @include min(768) {
+      border-radius: 28px;
+      width: 32.26%;
+      padding: 30px 15px 15px;
     }
-    @include min(1200){
-        margin-bottom: -175px;
+    @include min(992) {
+      border-radius: 30px;
+      width: 27.26%;
+      padding: 40px 20px 20px;
     }
-    @include min(1280){
-        margin-bottom: -180px;
+    @include min(1200) {
+      width: 23.26%;
+      border-radius: 35px;
+      padding: 45px 24px 24px;
     }
-    @include min(1440){
-        margin-bottom: -202px;
+    @include min(1440) {
+      border-radius: 40px;
+      padding: 50px 26px 26px;
     }
-    @include min(1600){
-        margin-bottom: -212px;
+    @include min(1600) {
+      border-radius: 45px;
+      padding: 55px 26px 26px;
     }
-    @include min(1900){
-        margin-bottom: -212px;
+    @include min(1900) {
+      border-radius: 50px;
+      padding: 60px 30px 30px;
     }
-    @include max(575){
-        gap: 20px;
+    &:last-child {
+      @include min(992) {
+        margin-bottom: 0;
+      }
+    }
+    > p,
+    a {
+      line-height: normal;
+    }
+    > p,
+    a,
+    strong {
+      display: flex;
+    }
+    a {
+      @include min(576) {
+        margin-bottom: 5px;
+      }
+
+      @include min(1440) {
+        margin-bottom: 6px;
+      }
+      @include min(1600) {
+        margin-bottom: 8px;
+      }
+      @include min(1900) {
+        margin-bottom: 10px;
+      }
+      + a {
+        margin-bottom: 0;
+      }
+    }
+    > strong {
+      font-weight: 600;
+      padding-left: 42px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      @include min(576) {
+        padding-left: 35px;
+        line-height: 29px;
+        margin-bottom: 5px;
+      }
+      @include min(768) {
+        margin-bottom: 15px;
+        padding-left: 45px;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      @include min(992) {
+        margin-bottom: 20px;
+        padding-left: 45px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include min(1200) {
+        padding-left: 60px;
+        font-size: 22px;
+        line-height: 35px;
+      }
+      @include min(1440) {
+        padding-left: 65px;
+        font-size: 24px;
+        line-height: 40px;
+      }
+      @include min(1600) {
+        padding-left: 75px;
+        font-size: 28px;
+        line-height: 48px;
+      }
+      @include min(1900) {
+        padding-left: 80px;
+        font-size: 30px;
+        line-height: 50px;
+      }
+    }
+    a,
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      @include min(576) {
+        font-size: 12px;
+        line-height: 17px;
+      }
+      @include min(768) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      @include min(992) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      @include min(1200) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      @include min(1280) {
+        font-size: 15px;
+        line-height: 22px;
+      }
+      @include min(1350) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+      @include min(1440) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      @include min(1600) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include min(1900) {
+        font-size: 24px;
+        line-height: 40px;
+      }
+    }
+    strong,
+    a,
+    p {
+      color: $black;
+    }
+    strong,
+    a {
+      width: 100%;
     }
 
-    >div {
-        box-shadow: $boxShadow15;
-        background-color: $white;
-        border: 1px solid $greycolor;
-        border-radius: 20px;
-        width: 80%;
-        padding: 25px 20px 20px;
-        @include min(576){
-            border-radius: 20px;
-            width: 32.26%;
-            padding: 20px 10px 20px;
-        }
-        @include min(768){
-            border-radius: 28px;
-            width: 32.26%;
-            padding: 30px 15px 15px;
-        }
-        @include min(992){
-            border-radius: 30px;
-            width: 27.26%;
-            padding: 40px 20px 20px;
-        }
-        @include min(1200){
-            width: 23.26%;
-            border-radius: 35px;
-            padding: 45px 24px 24px;
-        }
-        @include min(1440){
-            border-radius: 40px;
-            padding: 50px 26px 26px;
-        }
-        @include min(1600){
-            border-radius: 45px;
-            padding: 55px 26px 26px;
-        }
-        @include min(1900){
-            border-radius: 50px;
-            padding: 60px 30px 30px;
+    &.phone {
+      strong::before {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none"><rect width="35" height="35" rx="17.5" fill="%78BB60"/><path d="M18.8184 8.83604C18.8184 8.61466 18.9063 8.40235 19.0629 8.24581C19.2194 8.08927 19.4317 8.00133 19.6531 8.00133C21.8661 8.00376 23.9877 8.88396 25.5526 10.4488C27.1174 12.0137 27.9976 14.1354 28 16.3484C28 16.5698 27.9121 16.7821 27.7555 16.9386C27.599 17.0951 27.3867 17.1831 27.1653 17.1831C26.9439 17.1831 26.7316 17.0951 26.5751 16.9386C26.4186 16.7821 26.3306 16.5698 26.3306 16.3484C26.3286 14.578 25.6245 12.8806 24.3726 11.6288C23.1208 10.3769 21.4235 9.67273 19.6531 9.67074C19.4317 9.67074 19.2194 9.5828 19.0629 9.42626C18.9063 9.26973 18.8184 9.05741 18.8184 8.83604ZM19.6531 13.0096C20.5386 13.0096 21.3878 13.3613 22.0139 13.9875C22.6401 14.6136 22.9918 15.4629 22.9918 16.3484C22.9918 16.5698 23.0798 16.7821 23.2363 16.9386C23.3929 17.0951 23.6052 17.1831 23.8265 17.1831C24.0479 17.1831 24.2602 17.0951 24.4168 16.9386C24.5733 16.7821 24.6612 16.5698 24.6612 16.3484C24.6599 15.0205 24.1318 13.7474 23.1929 12.8085C22.254 11.8696 20.9809 11.3415 19.6531 11.3402C19.4317 11.3402 19.2194 11.4281 19.0629 11.5846C18.9063 11.7412 18.8184 11.9535 18.8184 12.1749C18.8184 12.3962 18.9063 12.6085 19.0629 12.7651C19.2194 12.9216 19.4317 13.0096 19.6531 13.0096ZM27.2429 21.9735C27.7266 22.4585 27.9983 23.1156 27.9983 23.8006C27.9983 24.4856 27.7266 25.1427 27.2429 25.6278L26.4834 26.5034C19.6472 33.0483 3.01181 16.4168 9.45564 9.55889L10.4155 8.72419C10.9011 8.25398 11.5523 7.99386 12.2282 8.00011C12.9042 8.00636 13.5504 8.27847 14.0272 8.75758C14.0531 8.78345 15.5998 10.7926 15.5998 10.7926C16.0587 11.2747 16.3142 11.9152 16.3131 12.5809C16.3121 13.2465 16.0545 13.8861 15.594 14.3668L14.6274 15.5821C15.1623 16.8818 15.9488 18.0631 16.9416 19.0579C17.9344 20.0527 19.114 20.8416 20.4126 21.3791L21.6355 20.4067C22.1162 19.9466 22.7557 19.6893 23.4211 19.6883C24.0866 19.6874 24.7268 19.9429 25.2088 20.4017C25.2088 20.4017 27.2171 21.9476 27.2429 21.9735ZM26.0944 23.1871C26.0944 23.1871 24.097 21.6504 24.0711 21.6245C23.8991 21.454 23.6668 21.3584 23.4246 21.3584C23.1825 21.3584 22.9501 21.454 22.7782 21.6245C22.7556 21.6479 21.0721 22.9893 21.0721 22.9893C20.9586 23.0796 20.8236 23.1388 20.6803 23.161C20.537 23.1833 20.3904 23.1678 20.2549 23.1162C18.5725 22.4898 17.0444 21.5091 15.7741 20.2407C14.5038 18.9722 13.5209 17.4455 12.8921 15.7641C12.8363 15.6267 12.8181 15.477 12.8394 15.3303C12.8607 15.1836 12.9206 15.0452 13.0131 14.9294C13.0131 14.9294 14.3544 13.2449 14.377 13.2232C14.5475 13.0513 14.6432 12.8189 14.6432 12.5768C14.6432 12.3346 14.5475 12.1022 14.377 11.9303C14.3511 11.9052 12.8144 9.90613 12.8144 9.90613C12.6399 9.74963 12.4121 9.66581 12.1778 9.67187C11.9434 9.67792 11.7203 9.77338 11.5541 9.93868L10.5942 10.7734C5.88483 16.436 20.3008 30.0526 25.263 25.3632L26.0234 24.4867C26.2016 24.3217 26.3087 24.0938 26.3219 23.8513C26.3351 23.6088 26.2536 23.3706 26.0944 23.1871Z" fill="white"/></svg>');
+      }
+    }
+    &.email {
+      strong::before {
+        background-image: url('data:image/svg+xml,<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="35" height="35" rx="17.5" fill="%78BB60"/><g clip-path="url(%23clip0_1272_2561)"><path d="M22.8333 8.83594H11.1667C10.062 8.83726 9.00296 9.27667 8.22185 10.0578C7.44073 10.8389 7.00132 11.8979 7 13.0026L7 23.0026C7.00132 24.1073 7.44073 25.1663 8.22185 25.9474C9.00296 26.7285 10.062 27.1679 11.1667 27.1693H22.8333C23.938 27.1679 24.997 26.7285 25.7782 25.9474C26.5593 25.1663 26.9987 24.1073 27 23.0026V13.0026C26.9987 11.8979 26.5593 10.8389 25.7782 10.0578C24.997 9.27667 23.938 8.83726 22.8333 8.83594ZM11.1667 10.5026H22.8333C23.3323 10.5036 23.8196 10.6539 24.2325 10.9341C24.6453 11.2143 24.9649 11.6117 25.15 12.0751L18.7683 18.4576C18.2987 18.9254 17.6628 19.188 17 19.188C16.3372 19.188 15.7013 18.9254 15.2317 18.4576L8.85 12.0751C9.03512 11.6117 9.35468 11.2143 9.76754 10.9341C10.1804 10.6539 10.6677 10.5036 11.1667 10.5026ZM22.8333 25.5026H11.1667C10.5036 25.5026 9.86774 25.2392 9.3989 24.7704C8.93006 24.3015 8.66667 23.6656 8.66667 23.0026V14.2526L14.0533 19.6359C14.8355 20.4162 15.8952 20.8543 17 20.8543C18.1048 20.8543 19.1645 20.4162 19.9467 19.6359L25.3333 14.2526V23.0026C25.3333 23.6656 25.0699 24.3015 24.6011 24.7704C24.1323 25.2392 23.4964 25.5026 22.8333 25.5026Z" fill="white"/></g><defs><clipPath id="clip0_1272_2561"><rect width="20" height="20" fill="white" transform="translate(7 8)"/></clipPath></defs></svg>');
+      }
+    }
+    &.address {
+      strong::before {
+        background-image: url('data:image/svg+xml,<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="35" height="35" rx="17.5" fill="%78BB60"/><g clip-path="url(%23clip0_1272_2569)"><path d="M14.553 20.398C15.228 21.058 16.114 21.388 17 21.388C17.886 21.388 18.772 21.058 19.447 20.398L21.949 17.95C23.271 16.628 24 14.87 24 13C24 11.13 23.271 9.373 21.949 8.05C20.628 6.728 18.87 6 17 6C15.13 6 13.372 6.728 12.05 8.05C9.321 10.779 9.321 15.22 12.058 17.957L14.553 20.397V20.398ZM13.464 9.465C14.408 8.521 15.664 8.001 17 8.001C18.336 8.001 19.591 8.521 20.535 9.465C21.479 10.409 22 11.665 22 13.001C22 14.337 21.479 15.592 20.543 16.529L18.049 18.969C17.471 19.533 16.529 19.533 15.951 18.969L13.464 16.537C11.515 14.587 11.515 11.414 13.464 9.465ZM14 12.991C14 11.334 15.343 9.991 17 9.991C18.657 9.991 20 11.334 20 12.991C20 14.648 18.657 15.991 17 15.991C15.343 15.991 14 14.648 14 12.991ZM29 22.768C29 23.12 28.815 23.445 28.515 23.625L18.654 29.542C18.144 29.848 17.572 30.001 17.001 30.001C16.43 30.001 15.857 29.848 15.348 29.542L5.485 23.626C5.184 23.445 5 23.12 5 22.769C5 22.418 5.185 22.092 5.485 21.912L9.714 19.375C10.189 19.09 10.803 19.244 11.086 19.718C11.37 20.192 11.217 20.806 10.743 21.09L7.943 22.77L16.376 27.83C16.761 28.06 17.239 28.06 17.624 27.83L26.057 22.77L23.257 21.09C22.783 20.806 22.63 20.192 22.914 19.718C23.198 19.244 23.811 19.09 24.286 19.375L28.515 21.912C28.816 22.093 29 22.417 29 22.768Z" fill="white"/></g><defs><clipPath id="clip0_1272_2569"><rect width="24" height="24" fill="white" transform="translate(5 6)"/></clipPath></defs></svg>');
+      }
+    }
+    strong {
+      position: relative;
 
-        }
-        &:last-child{
-           @include min(992){
-            margin-bottom: 0;
-           }
-        }
-        >p,a{
-            line-height: normal;
-        }
-        >p,a,strong{
-            display: flex;
-        }
-        a{
-            @include min(576){
-                margin-bottom: 5px;
-            }
-
-           @include min(1440){
-               margin-bottom: 6px;
-           }
-           @include min(1600){
-               margin-bottom: 8px;
-           }
-           @include min(1900){
-               margin-bottom: 10px;
-           }
-            + a{
-                margin-bottom: 0;
-            }
-        }
-       > strong{
-        font-weight: 600;
-        padding-left: 42px;
-        line-height: 30px;    
-            margin-bottom: 10px;
-            @include min(576){
-                padding-left: 35px;
-                line-height: 29px;
-                margin-bottom: 5px;
-            }
-            @include min(768){
-                margin-bottom: 15px;
-                padding-left:45px;
-                font-size: 18px;
-                line-height: 30px;
-            }
-            @include min(992){
-                margin-bottom: 20px;
-                padding-left:45px;
-                font-size: 20px;
-                line-height: 30px;
-            }
-            @include min(1200){
-                padding-left: 60px;
-                font-size: 22px;
-                line-height: 35px;
-            }
-            @include min(1440){
-                padding-left: 65px;
-                font-size: 24px;
-                line-height: 40px;
-            }
-            @include min(1600){
-                padding-left: 75px;
-                font-size: 28px;
-                line-height: 48px;
-            }
-            @include min(1900){
-                padding-left: 80px;
-                font-size: 30px;
-                line-height: 50px;
-            }
-        }
-        a,p{
-            font-size: 15px;
-            line-height: 25px;
-            @include min(576){
-                font-size: 12px;
-                 line-height: 17px;
-            }
-            @include min(768){
-                font-size: 14px;
-                line-height: 22px;
-            }
-            @include min(992){
-                font-size: 15px;
-                line-height: 20px;
-            }
-            @include min(1200){
-                font-size: 14px;
-                line-height: 20px;
-            }
-            @include min(1280){
-                font-size: 15px;
-                line-height: 22px;
-            }
-            @include min(1350){
-                font-size: 17px;
-                line-height: 24px;
-            }
-            @include min(1440){
-                font-size: 18px;
-                line-height: 30px;
-            }
-            @include min(1600){
-                font-size: 20px;
-                line-height: 32px;
-            }
-            @include min(1900){
-                font-size: 24px;
-                line-height: 40px;
-            }
-        }
-        strong,a,p{
-            color: $black;
-        }
-        strong,a{
-            width: 100%;
-        }
-        
-        &.phone{
-            strong::before{
-                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none"><rect width="35" height="35" rx="17.5" fill="%78BB60"/><path d="M18.8184 8.83604C18.8184 8.61466 18.9063 8.40235 19.0629 8.24581C19.2194 8.08927 19.4317 8.00133 19.6531 8.00133C21.8661 8.00376 23.9877 8.88396 25.5526 10.4488C27.1174 12.0137 27.9976 14.1354 28 16.3484C28 16.5698 27.9121 16.7821 27.7555 16.9386C27.599 17.0951 27.3867 17.1831 27.1653 17.1831C26.9439 17.1831 26.7316 17.0951 26.5751 16.9386C26.4186 16.7821 26.3306 16.5698 26.3306 16.3484C26.3286 14.578 25.6245 12.8806 24.3726 11.6288C23.1208 10.3769 21.4235 9.67273 19.6531 9.67074C19.4317 9.67074 19.2194 9.5828 19.0629 9.42626C18.9063 9.26973 18.8184 9.05741 18.8184 8.83604ZM19.6531 13.0096C20.5386 13.0096 21.3878 13.3613 22.0139 13.9875C22.6401 14.6136 22.9918 15.4629 22.9918 16.3484C22.9918 16.5698 23.0798 16.7821 23.2363 16.9386C23.3929 17.0951 23.6052 17.1831 23.8265 17.1831C24.0479 17.1831 24.2602 17.0951 24.4168 16.9386C24.5733 16.7821 24.6612 16.5698 24.6612 16.3484C24.6599 15.0205 24.1318 13.7474 23.1929 12.8085C22.254 11.8696 20.9809 11.3415 19.6531 11.3402C19.4317 11.3402 19.2194 11.4281 19.0629 11.5846C18.9063 11.7412 18.8184 11.9535 18.8184 12.1749C18.8184 12.3962 18.9063 12.6085 19.0629 12.7651C19.2194 12.9216 19.4317 13.0096 19.6531 13.0096ZM27.2429 21.9735C27.7266 22.4585 27.9983 23.1156 27.9983 23.8006C27.9983 24.4856 27.7266 25.1427 27.2429 25.6278L26.4834 26.5034C19.6472 33.0483 3.01181 16.4168 9.45564 9.55889L10.4155 8.72419C10.9011 8.25398 11.5523 7.99386 12.2282 8.00011C12.9042 8.00636 13.5504 8.27847 14.0272 8.75758C14.0531 8.78345 15.5998 10.7926 15.5998 10.7926C16.0587 11.2747 16.3142 11.9152 16.3131 12.5809C16.3121 13.2465 16.0545 13.8861 15.594 14.3668L14.6274 15.5821C15.1623 16.8818 15.9488 18.0631 16.9416 19.0579C17.9344 20.0527 19.114 20.8416 20.4126 21.3791L21.6355 20.4067C22.1162 19.9466 22.7557 19.6893 23.4211 19.6883C24.0866 19.6874 24.7268 19.9429 25.2088 20.4017C25.2088 20.4017 27.2171 21.9476 27.2429 21.9735ZM26.0944 23.1871C26.0944 23.1871 24.097 21.6504 24.0711 21.6245C23.8991 21.454 23.6668 21.3584 23.4246 21.3584C23.1825 21.3584 22.9501 21.454 22.7782 21.6245C22.7556 21.6479 21.0721 22.9893 21.0721 22.9893C20.9586 23.0796 20.8236 23.1388 20.6803 23.161C20.537 23.1833 20.3904 23.1678 20.2549 23.1162C18.5725 22.4898 17.0444 21.5091 15.7741 20.2407C14.5038 18.9722 13.5209 17.4455 12.8921 15.7641C12.8363 15.6267 12.8181 15.477 12.8394 15.3303C12.8607 15.1836 12.9206 15.0452 13.0131 14.9294C13.0131 14.9294 14.3544 13.2449 14.377 13.2232C14.5475 13.0513 14.6432 12.8189 14.6432 12.5768C14.6432 12.3346 14.5475 12.1022 14.377 11.9303C14.3511 11.9052 12.8144 9.90613 12.8144 9.90613C12.6399 9.74963 12.4121 9.66581 12.1778 9.67187C11.9434 9.67792 11.7203 9.77338 11.5541 9.93868L10.5942 10.7734C5.88483 16.436 20.3008 30.0526 25.263 25.3632L26.0234 24.4867C26.2016 24.3217 26.3087 24.0938 26.3219 23.8513C26.3351 23.6088 26.2536 23.3706 26.0944 23.1871Z" fill="white"/></svg>');
-            }
-        }
-        &.email{
-            strong::before{
-                background-image: url('data:image/svg+xml,<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="35" height="35" rx="17.5" fill="%78BB60"/><g clip-path="url(%23clip0_1272_2561)"><path d="M22.8333 8.83594H11.1667C10.062 8.83726 9.00296 9.27667 8.22185 10.0578C7.44073 10.8389 7.00132 11.8979 7 13.0026L7 23.0026C7.00132 24.1073 7.44073 25.1663 8.22185 25.9474C9.00296 26.7285 10.062 27.1679 11.1667 27.1693H22.8333C23.938 27.1679 24.997 26.7285 25.7782 25.9474C26.5593 25.1663 26.9987 24.1073 27 23.0026V13.0026C26.9987 11.8979 26.5593 10.8389 25.7782 10.0578C24.997 9.27667 23.938 8.83726 22.8333 8.83594ZM11.1667 10.5026H22.8333C23.3323 10.5036 23.8196 10.6539 24.2325 10.9341C24.6453 11.2143 24.9649 11.6117 25.15 12.0751L18.7683 18.4576C18.2987 18.9254 17.6628 19.188 17 19.188C16.3372 19.188 15.7013 18.9254 15.2317 18.4576L8.85 12.0751C9.03512 11.6117 9.35468 11.2143 9.76754 10.9341C10.1804 10.6539 10.6677 10.5036 11.1667 10.5026ZM22.8333 25.5026H11.1667C10.5036 25.5026 9.86774 25.2392 9.3989 24.7704C8.93006 24.3015 8.66667 23.6656 8.66667 23.0026V14.2526L14.0533 19.6359C14.8355 20.4162 15.8952 20.8543 17 20.8543C18.1048 20.8543 19.1645 20.4162 19.9467 19.6359L25.3333 14.2526V23.0026C25.3333 23.6656 25.0699 24.3015 24.6011 24.7704C24.1323 25.2392 23.4964 25.5026 22.8333 25.5026Z" fill="white"/></g><defs><clipPath id="clip0_1272_2561"><rect width="20" height="20" fill="white" transform="translate(7 8)"/></clipPath></defs></svg>');
-            }
-        }
-        &.address{
-            strong::before{
-                background-image: url('data:image/svg+xml,<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="35" height="35" rx="17.5" fill="%78BB60"/><g clip-path="url(%23clip0_1272_2569)"><path d="M14.553 20.398C15.228 21.058 16.114 21.388 17 21.388C17.886 21.388 18.772 21.058 19.447 20.398L21.949 17.95C23.271 16.628 24 14.87 24 13C24 11.13 23.271 9.373 21.949 8.05C20.628 6.728 18.87 6 17 6C15.13 6 13.372 6.728 12.05 8.05C9.321 10.779 9.321 15.22 12.058 17.957L14.553 20.397V20.398ZM13.464 9.465C14.408 8.521 15.664 8.001 17 8.001C18.336 8.001 19.591 8.521 20.535 9.465C21.479 10.409 22 11.665 22 13.001C22 14.337 21.479 15.592 20.543 16.529L18.049 18.969C17.471 19.533 16.529 19.533 15.951 18.969L13.464 16.537C11.515 14.587 11.515 11.414 13.464 9.465ZM14 12.991C14 11.334 15.343 9.991 17 9.991C18.657 9.991 20 11.334 20 12.991C20 14.648 18.657 15.991 17 15.991C15.343 15.991 14 14.648 14 12.991ZM29 22.768C29 23.12 28.815 23.445 28.515 23.625L18.654 29.542C18.144 29.848 17.572 30.001 17.001 30.001C16.43 30.001 15.857 29.848 15.348 29.542L5.485 23.626C5.184 23.445 5 23.12 5 22.769C5 22.418 5.185 22.092 5.485 21.912L9.714 19.375C10.189 19.09 10.803 19.244 11.086 19.718C11.37 20.192 11.217 20.806 10.743 21.09L7.943 22.77L16.376 27.83C16.761 28.06 17.239 28.06 17.624 27.83L26.057 22.77L23.257 21.09C22.783 20.806 22.63 20.192 22.914 19.718C23.198 19.244 23.811 19.09 24.286 19.375L28.515 21.912C28.816 22.093 29 22.417 29 22.768Z" fill="white"/></g><defs><clipPath id="clip0_1272_2569"><rect width="24" height="24" fill="white" transform="translate(5 6)"/></clipPath></defs></svg>');
-            }
-        }
-        strong{
-            position: relative;
-     
-            &::before{
-                @extend .position;
-                border-radius: 50%;
-                left:0;
-                background-size: contain!important;
-                background-repeat: no-repeat!important;
-                width: 30px;
-                height: 30px;
-                background-color: $primaryColor;
-                @include min(576){
-                    width: 25px;
-                    height: 25px;
-                }
-                @include min(768){
-                    width: 30px;
-                    height: 30px;
-                }
-                @include min(1200){
-                    width: 35px;
-                    height: 35px;
-                }
-                @include min(1300){
-                    width: 35px;
-                    height: 35px;
-                }
-                @include min(1440){
-                    width: 43px;
-                    height: 43px;
-                }
-                @include min(1600){
-                    width: 48px;
-                    height: 48px;
-                }
-                @include min(1900){
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-        }
-        transition: 0.3s ease all;
-
-      &:hover{
+      &::before {
+        @extend .position;
+        border-radius: 50%;
+        left: 0;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        width: 30px;
+        height: 30px;
         background-color: $primaryColor;
-        transition: 0.5s ease all;
-
-        p,a,strong{
-            color: $white;
-            transition: 0.5s ease all;
-
+        @include min(576) {
+          width: 25px;
+          height: 25px;
         }
-        strong::before{
-            background-color: $secondaryColor;
-            transition: 0.5s ease all;
+        @include min(768) {
+          width: 30px;
+          height: 30px;
+        }
+        @include min(1200) {
+          width: 35px;
+          height: 35px;
+        }
+        @include min(1300) {
+          width: 35px;
+          height: 35px;
+        }
+        @include min(1440) {
+          width: 43px;
+          height: 43px;
+        }
+        @include min(1600) {
+          width: 48px;
+          height: 48px;
+        }
+        @include min(1900) {
+          width: 50px;
+          height: 50px;
         }
       }
-      
     }
+    transition: 0.3s ease all;
+
+    &:hover {
+      background-color: $primaryColor;
+      transition: 0.5s ease all;
+
+      p,
+      a,
+      strong {
+        color: $white;
+        transition: 0.5s ease all;
+      }
+      strong::before {
+        background-color: $secondaryColor;
+        transition: 0.5s ease all;
+      }
+    }
+  }
 }
-.contact-form{
-    background: $themeBgLight;
-    padding-top: 460px;
-    padding-bottom: 160px;
-    position: relative;
-    @include min(576){
-        padding-bottom: 240px;
-        padding-top: 130px;
-
-
+.contact-form {
+  background: $themeBgLight;
+  padding-top: 460px;
+  padding-bottom: 160px;
+  position: relative;
+  @include min(576) {
+    padding-bottom: 240px;
+    padding-top: 130px;
+  }
+  @include min(768) {
+    padding-top: 190px;
+    padding-bottom: 45px;
+  }
+  @include min(992) {
+    padding-top: 190px;
+    padding-bottom: 45px;
+  }
+  @include min(1200) {
+    padding-top: 195px;
+    padding-bottom: 60px;
+  }
+  @include min(1440) {
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+  @include min(1600) {
+    padding-top: 200px;
+    padding-bottom: 70px;
+  }
+  @include min(1900) {
+    padding-top: 230px;
+    padding-bottom: 100px;
+  }
+  picture {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 40.7%;
+    img {
+      height: auto;
+      width: 96%;
+      @include min(992) {
+        width: 88%;
+      }
+      @include min(1200) {
+        width: 85.91%;
+      }
     }
-    @include min(768){
-        padding-top: 190px;
-        padding-bottom: 45px;
-    }
-    @include min(992){
-        padding-top: 190px;
-        padding-bottom: 45px;
-    }
-    @include min(1200){
-        padding-top: 195px;
-        padding-bottom: 60px;
-    }
-    @include min(1440){
-        padding-top: 190px;
-        padding-bottom: 60px;
-    }
-    @include min(1600){
-        padding-top: 200px;
-        padding-bottom: 70px;
-    }
-    @include min(1900){
-        padding-top: 230px;
-        padding-bottom: 100px;
-    }
-    picture{
-        position: absolute;
-            left: 5%;
-            bottom: 0;
-        width: 40.7%;
-        img{
-            height: auto;
-            width: 96%;
-            @include min(992){
-            width:88%;
-            }
-            @include min(1200){
-                width:85.91%;
-
-            }
-        }
-    }
+  }
 }
-.form-container{
-    width: 100%;
-    position: relative;
+.form-container {
+  width: 100%;
+  position: relative;
 
-    @include min(992){
-        width: 60.07%;
-    }
-    @include min(1200){
-        width: 64.07%;
-    }
-    @include min(1440){
-        width: 64.07%;
-    }
+  @include min(992) {
+    width: 60.07%;
+  }
+  @include min(1200) {
+    width: 64.07%;
+  }
+  @include min(1440) {
+    width: 64.07%;
+  }
 }
 .form-wrapper {
-    background: #F6FDF3;
-    padding: 30px;
+  background: #f6fdf3;
+  padding: 30px;
+  width: 100%;
+  @include min(768) {
+    width: 49.42%;
+    padding: 20px 35px;
+  }
+  @include min(992) {
+    padding: 36px 50px;
+  }
+  @include min(1200) {
+    padding: 38px 60px;
+  }
+  @include min(1440) {
+    padding: 50px 60px;
+  }
+  @include min(1600) {
+    padding: 48px 72px;
+  }
+  @include min(1900) {
+    padding: 60px 90px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px 0px;
+    @include min(992) {
+      gap: 22px 0px;
+    }
+    @include min(1200) {
+      gap: 25px 0px;
+    }
+    @include min(1440) {
+      gap: 30px 0px;
+    }
+    @include min(1600) {
+      gap: 36px 0px;
+    }
+    @include min(1900) {
+      gap: 40px 0px;
+    }
+    input,
+    select,
+    textarea,
+    .formGroup {
+      width: 100%;
+      color: $accentColor;
+      &::placeholder {
+        color: $accentColor;
+      }
+    }
+  }
+
+  h3,
+  .h3 {
+    font-weight: 600;
+
+    color: $black;
+    margin-bottom: 20px;
+    @include min(992) {
+      margin-bottom: 25px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include min(1200) {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    @include min(1440) {
+      margin-bottom: 33px;
+      font-size: 25px;
+      line-height: 37px;
+    }
+    @include min(1600) {
+      margin-bottom: 36px;
+      font-size: 26px;
+      line-height: 38px;
+    }
+    @include min(1900) {
+      margin-bottom: 39px;
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+}
+
+.theme-form {
+  input,
+  textarea,
+  select {
+    border-radius: 0;
+    background: unset;
+    border: unset;
     width: 100%;
-    @include min(768){
-        width: 49.42%;
-        padding: 20px 35px;
+    color: $white;
+    border-bottom: 1px solid #969696;
 
+    padding: 2px 30px;
+    // font-size: 15px;
+    @include max(575) {
+      // height: 32px;
     }
-    @include min(992){
-
-        padding: 36px 50px;
-
+    @include min(768) {
+      //   font-size: 14px;
     }
-    @include min(1200){
-        padding: 38px 60px;
-
+    @include min(992) {
+      //   font-size: 15px;
+      padding: 0px 30px;
     }
-    @include min(1440){
-        padding: 50px 60px;
-
+    @include min(1200) {
+      padding: 0px 44px;
+      //   font-size: 16px;
     }
-    @include min(1600){
-        padding: 48px 72px;
-
+    @include min(1440) {
+      padding: 0px 48px;
+      //   font-size: 17px;
     }
-    @include min(1900){
-        padding: 60px 90px;
+    @include min(1600) {
+      padding: 0px 50px;
+      //   font-size: 18px;
     }
-    form{
-
-        display: flex;
-        flex-wrap: wrap;
-        gap: 33px 0px;
-        @include min(992){
-            gap: 22px 0px;
-        }
-        @include min(1200){
-            gap: 25px 0px;
-        }
-        @include min(1440){
-            gap: 30px 0px;
-        }
-        @include min(1600){
-            gap: 36px 0px;
-        }
-        @include min(1900){
-            gap: 40px 0px;
-        }
-        input,select,textarea,.formGroup{
-            width: 100%;
-            color: $accentColor;
-            &::placeholder{
-                color: $accentColor;
-            }
-        }
+    @include min(1900) {
+      //   padding-left: 54px;
+      //   font-size: 20px;
     }
-
-    h3,.h3{
-        font-weight: 600;
-
-        color: $black;
-        margin-bottom: 20px;
-        @include min(992){
-            margin-bottom: 25px;
-            font-size: 20px;
-            line-height: 30px; 
-        }
-        @include min(1200){
-            margin-bottom: 30px;
-            font-size: 24px;
-            line-height: 36px; 
-        }
-        @include min(1440){
-            margin-bottom: 33px;
-            font-size: 25px;
-            line-height: 37px; 
-        }
-        @include min(1600){
-            margin-bottom: 36px;
-            font-size: 26px;
-            line-height: 38px; 
-        }
-        @include min(1900){
-            margin-bottom: 39px;
-            font-size: 28px;
-            line-height: 40px; 
-        }
-
+    &::placeholder {
+      color: $white;
     }
+  }
+  select {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><g clip-path="url(%23clip0_945_2206)"><path d="M7.50256 10.7307C7.0919 10.7314 6.68513 10.6512 6.30549 10.4946C5.92586 10.3381 5.5808 10.1082 5.29006 9.81818L0.183807 4.71193C0.0661174 4.59424 0 4.43462 0 4.26818C0 4.10174 0.0661174 3.94212 0.183807 3.82443C0.301497 3.70674 0.461119 3.64062 0.627557 3.64062C0.793996 3.64062 0.953617 3.70674 1.07131 3.82443L6.17756 8.93068C6.52912 9.28181 7.00568 9.47903 7.50256 9.47903C7.99943 9.47903 8.47599 9.28181 8.82756 8.93068L13.9338 3.82443C14.0515 3.70674 14.2111 3.64063 14.3776 3.64062C14.544 3.64062 14.7036 3.70674 14.8213 3.82443C14.939 3.94212 15.0051 4.10174 15.0051 4.26818C15.0051 4.43462 14.939 4.59424 14.8213 4.71193L9.71506 9.81818C9.42431 10.1082 9.07926 10.3381 8.69962 10.4946C8.31999 10.6512 7.91321 10.7314 7.50256 10.7307Z" fill="white"/></g><defs><clipPath id="clip0_945_2206"><rect width="15" height="15" fill="white"/></clipPath></defs></svg>');
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .formGroup {
+    > div {
+      position: relative;
+      height: 25px;
+      @include min(992) {
+        height: 25px;
+      }
+      @include min(1200) {
+        height: 36px;
+      }
+
+      &::before {
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        @extend .position;
+        left: 0;
+        top: 0;
+        width: 21px;
+        height: 21px;
+        @include min(768) {
+        }
+        @include min(992) {
+          left: 0;
+          width: 20px;
+          height: 20px;
+        }
+        @include min(1200) {
+          top: -5px;
+          width: 24px;
+          height: 24px;
+        }
+        @include min(1440) {
+          width: 26px;
+          height: 26px;
+        }
+        @include min(1600) {
+          width: 28px;
+          height: 28px;
+        }
+        @include min(1900) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      &.name {
+        &::before {
+          background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="%2378BB60"/><path d="M21.7676 19.9141C21.3992 19.0414 20.8645 18.2486 20.1934 17.5801C19.5243 16.9096 18.7317 16.375 17.8594 16.0059C17.8516 16.002 17.8438 16 17.836 15.9961C19.0528 15.1172 19.8438 13.6855 19.8438 12.0703C19.8438 9.39453 17.6758 7.22656 15 7.22656C12.3243 7.22656 10.1563 9.39453 10.1563 12.0703C10.1563 13.6855 10.9473 15.1172 12.1641 15.998C12.1563 16.002 12.1485 16.0039 12.1407 16.0078C11.2657 16.377 10.4805 16.9062 9.80669 17.582C9.1362 18.2511 8.60162 19.0437 8.23247 19.916C7.86982 20.77 7.67423 21.6856 7.6563 22.6133C7.65578 22.6341 7.65943 22.6549 7.66705 22.6743C7.67467 22.6937 7.6861 22.7114 7.70066 22.7263C7.71522 22.7412 7.73262 22.7531 7.75184 22.7612C7.77105 22.7693 7.7917 22.7734 7.81255 22.7734H8.98442C9.07036 22.7734 9.13872 22.7051 9.14067 22.6211C9.17974 21.1133 9.7852 19.7012 10.8555 18.6309C11.9629 17.5234 13.4336 16.9141 15 16.9141C16.5665 16.9141 18.0372 17.5234 19.1446 18.6309C20.2149 19.7012 20.8204 21.1133 20.8594 22.6211C20.8614 22.707 20.9297 22.7734 21.0157 22.7734H22.1875C22.2084 22.7734 22.229 22.7693 22.2483 22.7612C22.2675 22.7531 22.2849 22.7412 22.2994 22.7263C22.314 22.7114 22.3254 22.6937 22.333 22.6743C22.3407 22.6549 22.3443 22.6341 22.3438 22.6133C22.3243 21.6797 22.1309 20.7715 21.7676 19.9141ZM15 15.4297C14.1036 15.4297 13.2598 15.0801 12.625 14.4453C11.9903 13.8105 11.6407 12.9668 11.6407 12.0703C11.6407 11.1738 11.9903 10.3301 12.625 9.69531C13.2598 9.06055 14.1036 8.71094 15 8.71094C15.8965 8.71094 16.7403 9.06055 17.375 9.69531C18.0098 10.3301 18.3594 11.1738 18.3594 12.0703C18.3594 12.9668 18.0098 13.8105 17.375 14.4453C16.7403 15.0801 15.8965 15.4297 15 15.4297Z" fill="white"/></svg>');
+          // background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="%2378BB60" stroke="white"/><path d="M22.1114 19.6875C21.7429 18.8148 21.2083 18.0221 20.5372 17.3535C19.8681 16.683 19.0755 16.1484 18.2032 15.7793C18.1954 15.7754 18.1875 15.7734 18.1797 15.7695C19.3965 14.8906 20.1875 13.459 20.1875 11.8438C20.1875 9.16797 18.0196 7 15.3438 7C12.668 7 10.5 9.16797 10.5 11.8438C10.5 13.459 11.2911 14.8906 12.5079 15.7715C12.5 15.7754 12.4922 15.7773 12.4844 15.7812C11.6094 16.1504 10.8243 16.6797 10.1504 17.3555C9.47995 18.0245 8.94537 18.8171 8.57622 19.6895C8.21357 20.5435 8.01798 21.4591 8.00005 22.3867C7.99953 22.4076 8.00318 22.4283 8.0108 22.4477C8.01842 22.4671 8.02985 22.4848 8.04441 22.4997C8.05897 22.5147 8.07637 22.5265 8.09559 22.5346C8.1148 22.5427 8.13545 22.5469 8.1563 22.5469H9.32817C9.41411 22.5469 9.48247 22.4785 9.48442 22.3945C9.52349 20.8867 10.129 19.4746 11.1993 18.4043C12.3067 17.2969 13.7774 16.6875 15.3438 16.6875C16.9102 16.6875 18.3809 17.2969 19.4883 18.4043C20.5586 19.4746 21.1641 20.8867 21.2032 22.3945C21.2051 22.4805 21.2735 22.5469 21.3594 22.5469H22.5313C22.5522 22.5469 22.5728 22.5427 22.592 22.5346C22.6112 22.5265 22.6286 22.5147 22.6432 22.4997C22.6578 22.4848 22.6692 22.4671 22.6768 22.4477C22.6844 22.4283 22.6881 22.4076 22.6875 22.3867C22.668 21.4531 22.4747 20.5449 22.1114 19.6875V19.6875ZM15.3438 15.2031C14.4473 15.2031 13.6036 14.8535 12.9688 14.2188C12.334 13.584 11.9844 12.7402 11.9844 11.8438C11.9844 10.9473 12.334 10.1035 12.9688 9.46875C13.6036 8.83398 14.4473 8.48438 15.3438 8.48438C16.2403 8.48438 17.084 8.83398 17.7188 9.46875C18.3536 10.1035 18.7032 10.9473 18.7032 11.8438C18.7032 12.7402 18.3536 13.584 17.7188 14.2188C17.084 14.8535 16.2403 15.2031 15.3438 15.2031Z" fill="white"/></svg>');
+        }
+      }
+      &.mail {
+        &::before {
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none"><rect y="0.789062" width="30" height="30" rx="15" fill="%2378BB60"/><rect x="7" y="10" width="16" height="12" stroke="white" stroke-width="1.5"/><path d="M7 10L15 16L23 10" stroke="white" stroke-width="1.5"/></svg>');
+        }
+      }
+      &.phone {
+        &::before {
+          background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="%2378BB60"/><rect x="9" y="6" width="12" height="18" stroke="white" stroke-width="1.5"/><circle cx="15" cy="20" r="1" fill="white"/></svg>');
+          // background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="%2378BB60" stroke="white"/><rect x="9" y="6" width="12" height="18" stroke="white" stroke-width="1.5"/><circle cx="15" cy="20" r="0.5" fill="%23101010" stroke="white"/></svg>');
+        }
+      }
+
+      &.message {
+        &::before {
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="15" fill="%2378BB60"/><path d="M18.9491 6.84055L7.38824 18.4182C6.94668 18.858 6.59663 19.3811 6.35834 19.9573C6.12005 20.5336 5.99826 21.1514 6.00002 21.775V23.0504C6.00002 23.3022 6.09992 23.5438 6.27775 23.7218C6.45558 23.8999 6.69677 24 6.94826 24H8.22174C8.8445 24.0017 9.46143 23.8798 10.0368 23.6411C10.6122 23.4025 11.1346 23.0519 11.5738 22.6098L23.1347 11.0321C23.6888 10.4758 24 9.72211 24 8.93633C24 8.15056 23.6888 7.39686 23.1347 6.84055C22.5711 6.30107 21.8215 6 21.0419 6C20.2623 6 19.5127 6.30107 18.9491 6.84055ZM21.7938 9.68937L10.2329 21.267C9.69826 21.7992 8.97559 22.0988 8.22174 22.1008H7.89649V21.775C7.89847 21.0201 8.19762 20.2964 8.72904 19.7609L20.2899 8.18329C20.4925 7.98953 20.7618 7.88141 21.0419 7.88141C21.322 7.88141 21.5913 7.98953 21.7938 8.18329C21.9929 8.3832 22.1047 8.65401 22.1047 8.93633C22.1047 9.21866 21.9929 9.48947 21.7938 9.68937Z" fill="white"/></svg>');
+        }
+      }
+    }
+  }
+  .iti input {
+    padding-left: 84px !important;
+    @include min(992) {
+      padding-left: 84px !important;
+    }
+    @include min(1200) {
+      padding-left: 98px !important;
+    }
+    @include min(1440) {
+      padding-left: 106px !important;
+    }
+    @include min(1600) {
+      padding-left: 104px !important;
+    }
+  }
+  .iti--allow-dropdown .iti__flag-container,
+  .iti--separate-dial-code .iti__flag-container {
+    left: 27px;
+    @include min(992) {
+      left: 27px;
+    }
+    @include min(1200) {
+      left: 40px;
+    }
+    @include min(1440) {
+      left: 48px;
+    }
+  }
 }
-
-.theme-form{
-    input,textarea,select{
-        border-radius: 0;
-        background: unset;
-        border: unset;
-        width: 100%;
-        color: $white;
-        border-bottom: 1px solid #969696;
-
-        
-        padding:2px 30px ;
-        // font-size: 15px;
-        @include max(575){
-            // height: 32px;
-        }
-        @include min(768){
-        //   font-size: 14px;
-        }
-        @include min(992){
-        //   font-size: 15px;
-        padding: 0px 30px ;
-        }
-        @include min(1200){
-          padding: 0px 44px ;
-        //   font-size: 16px;
-        }
-        @include min(1440){
-          padding: 0px 48px ;
-        //   font-size: 17px;
-        }
-        @include min(1600){
-          padding: 0px 50px ;
-        //   font-size: 18px;
-        }
-        @include min(1900){
-        //   padding-left: 54px;
-        //   font-size: 20px;
-        }
-        &::placeholder{
-            color: $white;
-
-        }
-    }
-    select{
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><g clip-path="url(%23clip0_945_2206)"><path d="M7.50256 10.7307C7.0919 10.7314 6.68513 10.6512 6.30549 10.4946C5.92586 10.3381 5.5808 10.1082 5.29006 9.81818L0.183807 4.71193C0.0661174 4.59424 0 4.43462 0 4.26818C0 4.10174 0.0661174 3.94212 0.183807 3.82443C0.301497 3.70674 0.461119 3.64062 0.627557 3.64062C0.793996 3.64062 0.953617 3.70674 1.07131 3.82443L6.17756 8.93068C6.52912 9.28181 7.00568 9.47903 7.50256 9.47903C7.99943 9.47903 8.47599 9.28181 8.82756 8.93068L13.9338 3.82443C14.0515 3.70674 14.2111 3.64063 14.3776 3.64062C14.544 3.64062 14.7036 3.70674 14.8213 3.82443C14.939 3.94212 15.0051 4.10174 15.0051 4.26818C15.0051 4.43462 14.939 4.59424 14.8213 4.71193L9.71506 9.81818C9.42431 10.1082 9.07926 10.3381 8.69962 10.4946C8.31999 10.6512 7.91321 10.7314 7.50256 10.7307Z" fill="white"/></g><defs><clipPath id="clip0_945_2206"><rect width="15" height="15" fill="white"/></clipPath></defs></svg>');
-        background-repeat: no-repeat;
-        background-position: right;
-    }
-    .formGroup{
-        >div{
-            position: relative;
-            height: 25px;
-            @include min(992){
-                height: 25px;
-            }
-            @include min(1200){
-                height: 36px;
-            }
-            
-            &::before{
-                background-size: contain!important;
-                background-repeat: no-repeat!important;
-                @extend .position;
-                left: 0;
-                top: 0;
-                width: 21px;
-                height: 21px;
-                @include min(768){
-               
-
-                }
-                @include min(992){
-                    left: 0;
-                    width: 20px;
-                    height: 20px;
-                }
-                @include min(1200){
-                    top: -5px;
-                    width: 24px;
-                    height: 24px;
-                }
-                @include min(1440){
-                    width: 26px;
-                    height: 26px;
-                }
-                @include min(1600){
-                    width: 28px;
-                    height: 28px;
-                }
-                @include min(1900){
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-            &.name{
-                &::before{
-                    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="%2378BB60" stroke="white"/><path d="M22.1114 19.6875C21.7429 18.8148 21.2083 18.0221 20.5372 17.3535C19.8681 16.683 19.0755 16.1484 18.2032 15.7793C18.1954 15.7754 18.1875 15.7734 18.1797 15.7695C19.3965 14.8906 20.1875 13.459 20.1875 11.8438C20.1875 9.16797 18.0196 7 15.3438 7C12.668 7 10.5 9.16797 10.5 11.8438C10.5 13.459 11.2911 14.8906 12.5079 15.7715C12.5 15.7754 12.4922 15.7773 12.4844 15.7812C11.6094 16.1504 10.8243 16.6797 10.1504 17.3555C9.47995 18.0245 8.94537 18.8171 8.57622 19.6895C8.21357 20.5435 8.01798 21.4591 8.00005 22.3867C7.99953 22.4076 8.00318 22.4283 8.0108 22.4477C8.01842 22.4671 8.02985 22.4848 8.04441 22.4997C8.05897 22.5147 8.07637 22.5265 8.09559 22.5346C8.1148 22.5427 8.13545 22.5469 8.1563 22.5469H9.32817C9.41411 22.5469 9.48247 22.4785 9.48442 22.3945C9.52349 20.8867 10.129 19.4746 11.1993 18.4043C12.3067 17.2969 13.7774 16.6875 15.3438 16.6875C16.9102 16.6875 18.3809 17.2969 19.4883 18.4043C20.5586 19.4746 21.1641 20.8867 21.2032 22.3945C21.2051 22.4805 21.2735 22.5469 21.3594 22.5469H22.5313C22.5522 22.5469 22.5728 22.5427 22.592 22.5346C22.6112 22.5265 22.6286 22.5147 22.6432 22.4997C22.6578 22.4848 22.6692 22.4671 22.6768 22.4477C22.6844 22.4283 22.6881 22.4076 22.6875 22.3867C22.668 21.4531 22.4747 20.5449 22.1114 19.6875V19.6875ZM15.3438 15.2031C14.4473 15.2031 13.6036 14.8535 12.9688 14.2188C12.334 13.584 11.9844 12.7402 11.9844 11.8438C11.9844 10.9473 12.334 10.1035 12.9688 9.46875C13.6036 8.83398 14.4473 8.48438 15.3438 8.48438C16.2403 8.48438 17.084 8.83398 17.7188 9.46875C18.3536 10.1035 18.7032 10.9473 18.7032 11.8438C18.7032 12.7402 18.3536 13.584 17.7188 14.2188C17.084 14.8535 16.2403 15.2031 15.3438 15.2031Z" fill="white"/></svg>');
-                }
-            }
-            &.mail{
-                &::before{
-                    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none"><rect y="0.789062" width="30" height="30" rx="15" fill="%2378BB60"/><rect x="7" y="10" width="16" height="12" stroke="white" stroke-width="1.5"/><path d="M7 10L15 16L23 10" stroke="white" stroke-width="1.5"/></svg>');
-                }
-            }
-            &.phone{
-                &::before{
-                    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="%2378BB60" stroke="white"/><rect x="9" y="6" width="12" height="18" stroke="white" stroke-width="1.5"/><circle cx="15" cy="20" r="0.5" fill="%23101010" stroke="white"/></svg>');
-                }
-            }
-      
-            &.message{
-                &::before{
-                    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="15" fill="%2378BB60"/><path d="M18.9491 6.84055L7.38824 18.4182C6.94668 18.858 6.59663 19.3811 6.35834 19.9573C6.12005 20.5336 5.99826 21.1514 6.00002 21.775V23.0504C6.00002 23.3022 6.09992 23.5438 6.27775 23.7218C6.45558 23.8999 6.69677 24 6.94826 24H8.22174C8.8445 24.0017 9.46143 23.8798 10.0368 23.6411C10.6122 23.4025 11.1346 23.0519 11.5738 22.6098L23.1347 11.0321C23.6888 10.4758 24 9.72211 24 8.93633C24 8.15056 23.6888 7.39686 23.1347 6.84055C22.5711 6.30107 21.8215 6 21.0419 6C20.2623 6 19.5127 6.30107 18.9491 6.84055ZM21.7938 9.68937L10.2329 21.267C9.69826 21.7992 8.97559 22.0988 8.22174 22.1008H7.89649V21.775C7.89847 21.0201 8.19762 20.2964 8.72904 19.7609L20.2899 8.18329C20.4925 7.98953 20.7618 7.88141 21.0419 7.88141C21.322 7.88141 21.5913 7.98953 21.7938 8.18329C21.9929 8.3832 22.1047 8.65401 22.1047 8.93633C22.1047 9.21866 21.9929 9.48947 21.7938 9.68937Z" fill="white"/></svg>')
-                }
-            }
-        }
-    }
-    .iti input {
-        padding-left: 84px !important;
-        @include min(992){
-            padding-left: 84px !important;
-        }
-        @include min(1200){
-            padding-left: 98px !important;
-        }
-        @include min(1440){
-            padding-left: 106px !important;
-        }
-        @include min(1600){
-            padding-left: 104px !important;
-        }
-    }
-    .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container{
-        left: 27px;
-        @include min(992){
-            left: 27px;
-    
-        }
-        @include min(1200){
-            left: 40px;
-    
-        }
-        @include min(1440){
-            left: 48px;
-    
-        }
-    }
-}
-
-
-
 
 .map {
-    margin-bottom: -10px;
-    iframe {
-        height: 250px;
-        @include min(768){
-            height: 300px;
-        }
-        @include min(992){
-            height: 330px;
-        }
-        @include min(1200){
-            height: 450px;
-        }
-        @include min(1900){
-            height: 500px;
-        }
+  margin-bottom: -10px;
+  iframe {
+    height: 250px;
+    @include min(768) {
+      height: 300px;
     }
+    @include min(992) {
+      height: 330px;
+    }
+    @include min(1200) {
+      height: 450px;
+    }
+    @include min(1900) {
+      height: 500px;
+    }
+  }
 }

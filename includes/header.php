@@ -32,7 +32,7 @@
                         <ul>
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about.php">About Us</a></li>
-                            <li><a href="">Shipping Calculator </a>
+                            <li><a href="calculator.php">Shipping Calculator </a>
                             <!-- <li class="drop-downs"><a href="">Shipping Calculator </a> -->
                                 <!-- <div class="mega">
                                 <ul>

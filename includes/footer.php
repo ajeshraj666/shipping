@@ -125,7 +125,7 @@
                     <ul>
                          <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
-                        <li><a href="">Shipping Calculator</a></li>
+                        <li><a href="calculator.php">Shipping Calculator</a></li>
                         <li><a href="how-it-works.php">How it work</a></li>
                         <li><a href="blog.php">Blog</a></li>
                         <li><a href="contact.php">Contacts</a></li>
@@ -269,7 +269,7 @@
 
                     </ul>
                 </li> -->
-                <li><a href="">Shipping Calculator</a></li>
+                <li><a href="calculator.php">Shipping Calculator</a></li>
                 <li><a href="how-it-works.php">How it Works</a></li>
                 <li><a href="blog.php">Blog</a></li>
                 <li><a href="contact.php">Contact Us</a></li>

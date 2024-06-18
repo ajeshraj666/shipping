@@ -3,7 +3,8 @@
 <section class="innerBanner">
         <picture><img src="web/images/banner/about.jpg" alt=""></picture>
         <div class="container-ctn">
-            <div class="head">
+            <div class="heading">
+                <span>404</span>
                 <h1>PAGE NOT FOUND</h1>
             </div>
         </div>

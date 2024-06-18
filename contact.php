@@ -56,7 +56,7 @@
 
          <div class="form-wrapper theme-form">
                  <h2 class="h3">Get in Touch</h2>
-             <form id="enquiryForm" action="" method="post" enctype="multipart/form-data">
+             <form id="enquiryFormContact" action="" method="post" enctype="multipart/form-data">
        
                      <div class="formGroup">
                          <div class="name">
