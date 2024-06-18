@@ -2,7 +2,7 @@
 
 
 <section class="innerBanner">
-        <picture><img src="web/images/banner/terms.jpg" alt=""></picture>
+        <picture><img src="web/images/banner/about.jpg" alt=""></picture>
         <div class="container-ctn">
             <div class="head">
                 <h1>Terms and Conditions</h1>
@@ -20,7 +20,7 @@
     <section class="terms">
         <div class="container-ctn">
             <div class="heading">
-                <p><span>+</span> OUR TERMS <span>+</span></p>
+                <span>OUR TERMS </span>
                 <h2>Terms and Conditions</h2>
             </div>
             <div class="list">

@@ -126,7 +126,7 @@
                          <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="">Shipping Calculator</a></li>
-                        <li><a href="">How it work</a></li>
+                        <li><a href="how-it-works.php">How it work</a></li>
                         <li><a href="blog.php">Blog</a></li>
                         <li><a href="contact.php">Contacts</a></li>
                     </ul>
@@ -270,7 +270,7 @@
                     </ul>
                 </li> -->
                 <li><a href="">Shipping Calculator</a></li>
-                <li><a href="">How it Works</a></li>
+                <li><a href="how-it-works.php">How it Works</a></li>
                 <li><a href="blog.php">Blog</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
             
@@ -351,10 +351,12 @@
     </div>
     
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <?php include('includes/enquiry-popup.php') ?>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="web/js/jquery.fancybox.min.js"></script>
+<!-- <script src="web/js/jquery.fancybox.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 <script src="web/js/countup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>

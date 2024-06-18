@@ -1,0 +1,878 @@
+.howItWorks-page{
+    .heading{
+
+         h2 {
+            margin-bottom: 0!important;
+         }
+    }
+}
+.howItWorks-page,.working{
+    .heading{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+         h2 {
+            text-align: center;
+            width:98%;
+            @include min(576){
+                width: 84%;
+            }
+            @include min(992){
+                width: 61.32%;
+            }
+            @include min(1200){
+                width: 68.32%;
+            }
+            @include min(1300){
+                width: 63.32%;
+            }
+        }
+    
+    }
+}
+
+.howItWorks-page{
+    @extend .commonPadding;
+ 
+    .d-flex{
+        gap: 10px;
+        margin-top:5px;
+
+        @include min(576){
+            margin-top:8px;
+
+            gap: 10px;
+        }
+        @include min(768){
+            gap: 15px;
+        }
+        @include min(992){
+            margin-top:10px;
+
+            gap: 60px;
+        }
+        @include min(1200){
+            gap: 73px;
+            margin-top: 12px;
+
+        }
+        @include min(1280){
+            gap: 78px;
+            
+        }
+        @include min(1350){
+            gap: 82px;
+            margin-top: 14px;
+
+        }
+        @include min(1440){
+            gap: 87px;
+            margin-top: 18px;
+
+        }
+        @include min(1600){
+            gap: 97px;
+            margin-top: 20px;
+
+        }
+        @include min(1900){
+            gap: 117px;
+            margin-top: 24px;
+        }
+    }
+}
+.howItWorks-card{
+    border: 1px solid $greycolor;
+    background: $themeBgLight;
+    padding: 25px 16px 27px 16px;
+    border-radius: 10px;
+    @include min(576){
+        width: 32%;
+        padding: 22px 12px 24px 12px;
+        border-radius: 10px;
+    }
+    @include min(768){
+        width: 31.78%;
+        padding: 22px 12px 24px 12px;
+        border-radius: 10px;
+    }
+    @include min(992){
+        width: 28.78%;
+        padding: 25px 16px 27px 16px;
+        border-radius: 14px;
+    }
+    @include min(1200){
+        padding: 35px 18px 37px 18px;
+        border-radius: 14px;
+    }
+    @include min(1440){
+        padding: 46px 26px 48px 26px;
+        border-radius: 16px;
+    }
+    @include min(1600){
+        padding: 48px 28px 50px 28px;
+        border-radius: 18px;
+    }
+    @include min(1900){
+        padding: 50px 30px 52px 30px;
+        border-radius: 20px;
+    }
+    transition: 0.5s ease all;
+
+}
+.howItWorks-head {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+    @include max(767){
+        flex-wrap: wrap;
+    }
+    @include min(576){
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    @include min(768){
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+    @include min(992){
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+    @include min(1200){
+        gap: 25px;
+        margin-bottom: 28px;
+    }
+    @include min(1440){
+        gap: 34px;
+        margin-bottom: 34px;
+    }
+    @include min(1600){
+        gap: 38px;
+        margin-bottom: 38px;
+    }
+    @include min(1900){
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    h3{
+        color: $black;
+        font-size: 16px;
+        line-height: 21px;
+        @include min(576){
+            font-size: 13.5px;
+            line-height: 19px;
+        }
+        @include min(768){
+            font-size: 14px;
+            line-height: 20px;
+        }
+        @include min(992){
+            font-size: 16px;
+            line-height: 21px;
+    
+        }
+        @include min(1200){
+            margin-top: 2px;
+            font-size: 19px;
+            line-height: 30px;
+        }
+        @include min(1440){
+            margin-top: 4px;
+            font-size: 21px;
+            line-height: 38px;
+        }
+        @include min(1600){
+            font-size: 24px;
+            line-height: 42px;
+        }
+        @include min(1900){
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+    picture{
+        position: relative;
+        padding-left: 5px;
+        @include min(992){
+            padding-left: 5px;
+        }
+        @include min(1200){
+            padding-left: 6px;
+        }
+        @include min(1440){
+            padding-left: 8px;
+        }
+        @include min(1600){
+            padding-left: 9px;
+        }
+        @include min(1900){
+            padding-left: 10px;
+        }
+        &::before{
+            transition: 0.5s ease all;
+
+            @extend .position;
+            background-color: $secondaryColor;
+            left: 0;
+            width: 26px;
+            height: 44px;
+            border-radius: 20px;
+            top: -9px;
+            @include min(992){
+                animation: rotates 3s infinite;
+            }
+        
+            @include min(576){
+                width: 23px;
+                height: 40px;
+                border-radius: 25px;
+                top: -8px;
+            }
+            @include min(768){
+                width: 28px;
+                height: 45px;
+                border-radius: 30px;
+                top: -8px;
+            }
+            @include min(992){
+                width: 31px;
+                height: 54px;
+                border-radius: 30px;
+                top: -9px;
+            }
+            @include min(1200){
+                width: 39px;
+                height: 65px;
+                border-radius: 35px;
+                top: -11px;
+            }
+            @include min(1440){
+                width: 47px;
+                height: 80px;
+                border-radius: 40px;
+                top: -11px;
+            }
+            @include min(1600){
+                width: 55px;
+                height: 95px;
+                border-radius: 48px;
+                top: -18px;
+
+            }
+            @include min(1900){
+                top: -19px;
+                width: 60px;
+                height: 100px;
+                border-radius: 50px;
+            }
+
+        }
+    }
+    img{
+        height: auto;
+        position: relative;
+        z-index: 1;
+        width: 40px;
+        transition: 0.5s ease all;
+
+        @include min(576){
+            width: 35px;
+        }
+        @include min(768){
+            width: 40px;
+        }
+        @include min(992){
+            width: 50px;
+        }
+        @include min(1200){
+            width: 60px;
+        }
+        @include min(1440){
+            width: 74px;
+        }
+        @include min(1600){
+            width: 85px;
+        }
+        @include min(1900){
+            width: 90px;
+
+        }
+    }
+}
+
+.howItWorks-card{
+    &:hover{
+        background:$secondaryColor;
+        transition: 0.8s ease all;
+
+        .howItWorks-head picture::before{
+            background-color: $primaryColor;
+            transition: 0.8s ease all;
+
+        }
+        img{
+            filter: invert(1);
+            transition: 0.8s ease all;
+        }
+    }
+}
+
+// ==================================== CTA section======================================
+
+.inner-cta{
+    position: relative;
+    margin-bottom: 60px;
+    @include min(768){
+        margin-bottom: 70px;
+    }
+    @include min(1200){
+        margin-bottom: 90px;
+    }
+    @include min(1440){
+        margin-bottom: 100px;
+    }
+    @include min(1600){
+        margin-bottom: 120px;
+    }
+    @include min(1900){
+        margin-bottom: 130px;
+    }
+    >picture{
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        width: 22.97%;
+        @include min(576){
+            bottom: -35px;
+
+        }
+    }
+    .container-ctn{
+        position: relative;
+        background:$themeBg;
+        border: 1px solid $greycolor;
+        border-radius: 40px;
+        @include min(576){
+            border-radius: 20px;
+        }
+        @include min(768){
+            border-radius: 55px;
+        }
+        @include min(992){
+            border-radius: 60px;
+        }
+        @include min(1200){
+            border-radius: 70px;
+        }
+        @include min(1440){
+            border-radius: 80px;
+        }
+        @include min(1600){
+            border-radius: 90px;
+        }
+        @include min(1900){
+            border-radius: 100px;
+        }
+        >picture{
+            width: 15.72%;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            @include min(576){
+                bottom: -35px;
+
+            }
+            @include min(768){
+                left: 5.8%;
+
+            }
+        }
+    }
+    picture{
+    
+            img{
+                width: 100%;
+                height: auto;
+            }
+        
+    }
+    .d-flex{
+        margin: auto;
+        min-height: 130px;
+        width: 65%;
+        @include min(576){
+            width: 60%;
+            min-height: 100px;
+        }
+        @include min(768){
+            width: 52%;
+            min-height: 170px;
+        }
+        @include min(992){
+            width: 46%;
+            min-height: 180px;
+        }
+        @include min(1200){
+            min-height: 220px;
+        }
+        @include min(1280){
+            min-height: 250px;
+        }
+        @include min(1440){
+            min-height: 270px;
+        }
+        @include min(1600){
+            min-height: 310px;
+        }
+        @include min(1900){
+            min-height: 375px;
+        }
+    }
+    
+    .inner-cta-wrapper {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        @include min(768){
+            gap: 20px;
+        }
+        @include min(992){
+            gap: 24px;
+        }
+        @include min(1200){
+            gap: 28px;
+        }
+        @include min(1440){
+            gap: 33px;
+        }
+        @include min(1600){
+            gap: 36px;
+        }
+        @include min(1900){
+            gap: 40px;
+        }
+        > div{
+            width: 100%;
+            display: flex;
+           @include min(576){
+            align-items: flex-end;
+           }
+        }
+    }
+    .ctaText{
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 14px;
+        color: $white;
+        @include max(575){
+            flex-direction: column;
+        }
+        @include min(576){
+            font-size: 12px;
+            line-height: 18px;
+        }
+        @include min(768){
+            font-size: 13px;
+            line-height: 20px;
+        }
+        @include min(992){
+            font-size: 15px;
+            line-height: 26px;
+        }
+        @include min(1200){
+            font-size: 19px;
+            line-height: 28px;
+        }
+        @include min(1280){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include min(1440){
+            font-size: 22px;
+            line-height: 32px;
+        }
+        @include min(1600){
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @include min(1900){
+            font-size: 30px;
+            line-height: 40px;
+        }
+        strong{
+            position: relative;
+            display: block;
+            top: 10px;
+            min-width: 44.3%;
+            color: $white;
+            font-size: 22px;
+            line-height: 25px;
+            @include max(575){
+                margin-bottom: 10px;
+            }
+            @include min(576){
+                text-align: right;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @include min(768){
+                font-size: 28px;
+                line-height: 40px;
+            }
+            @include min(992){
+                font-size: 34px;
+                line-height: 50px;
+            }
+            @include min(1200){
+                font-size: 38px;
+                line-height: 55px;
+            }
+            @include min(1280){
+                font-size: 40px;
+                line-height: 60px;
+            }
+            @include min(1440){
+                font-size: 45px;
+                line-height: 65px;
+            }
+            @include min(1600){
+                font-size: 50px;
+                line-height: 70px;
+            }
+            @include min(1900){
+                font-size: 60px;
+                line-height: 80px;
+            }
+        }
+    }
+}
+
+// ==========================================Bensit Section====================================
+.why-us{
+    background: $themeBgLight;
+    .d-flex{
+        gap: 15px ;
+        @include min(576){
+            gap: 20px ;
+
+        }
+        @include min(768){
+            gap: 15px ;
+
+        }
+        @include min(992){
+            gap: 20px 56px ;
+
+        }
+        @include min(1200){
+            gap: 22px 68px ;
+
+        }
+        @include min(1280){
+            gap: 24px 72px ;
+
+        }
+        @include min(1350){
+            gap: 24px 77px ;
+
+        }
+        @include min(1440){
+            gap: 28px 82px ;
+
+        }
+        @include min(1600){
+            gap: 30px 91px ;
+
+        }
+        @include min(1900){
+            gap: 32px 110px ;
+
+        }
+    }
+}
+.benfit-card{
+    border: 1px solid $greycolor;
+    background-color: $white;
+    transition: 0.5s ease all;
+    width:100%;
+    border-radius: 15px;
+    padding: 16px;
+    h3{
+        @include max(575){
+            min-height: auto;
+            text-align: left;
+        }
+    }
+    @include min(576){
+        border-radius: 16px;
+
+        padding: 17px;
+
+        width: 48%;
+    }
+    @include min(768){
+        border-radius: 18px;
+
+        width: 31.86%;
+        padding: 15px;
+
+    }
+    @include min(992){
+        border-radius: 20px;
+        padding: 20px;
+        width: 29.07%;
+    }
+    @include min(1200){
+        border-radius: 22px;
+        padding: 22px;
+    }
+    @include min(1440){
+        border-radius: 26px;
+        padding: 26px;
+    }
+    @include min(1600){
+        border-radius: 28px;
+        padding: 28px;
+    }
+    @include min(1900){
+        border-radius: 30px;
+        padding: 30px;
+    }
+    p{
+        width: 100%;
+    }
+    .card-head{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+        @include min-max(768,991){
+            align-items: flex-start;
+        }
+        @include min(768){
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        @include min(992){
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        @include min(1200){
+            gap: 11px;
+            margin-bottom: 14px;
+        }
+        @include min(1440){
+            gap: 13px;
+            margin-bottom: 16px;
+        }
+        @include min(1600){
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+        @include min(1900){
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        picture{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $greycolor;
+            border-radius: 50%;
+            padding: 5px;
+            width: 40px;
+            height: 40px;
+
+            @include min(576){
+                width: 35px;
+                height: 35px;
+            }
+            @include min(768){
+                width: 30px;
+                height: 30px;
+            }
+            
+            @include min(992){
+                width: 38px;
+                height: 38px;
+            }
+            @include min(1200){
+                width: 40px;
+                height: 40px;
+            }
+            @include min(1440){
+                width: 46px;
+                height: 46px;
+            }
+            @include min(1600){
+                width: 48px;
+                height: 48px;
+            }
+            @include min(1900){
+                width: 50px;
+                height: 50px;
+            }
+            img{
+                height: auto;
+                width: 25px;
+                @include min(576){
+                    width: 25px;
+                }
+                @include min(768){
+                    width: 18px;
+                }
+                @include min(992){
+                    width: 20px;
+                }
+                @include min(1200){
+                    width: 22px;
+                }
+                @include min(1440){
+                    width: 26px;
+                }
+                @include min(1600){
+                    width: 28px;
+                }
+                @include min(1900){
+                    width: 30px;
+                }
+            }
+        }
+    }
+    &:hover{
+        box-shadow: 0px 15px 15px 0px rgba(7, 114, 91, 0.15);
+        picture{
+            transition: 0.5s ease all;
+            background-color: $secondaryColor;
+        }
+    }
+}
+
+.clients.clients-inner .heading h2 {
+    @include min(1200){
+        width: 54.32%;
+    }
+}
+
+
+///=========================CTA Footer============================
+.cta-footer{
+    padding-top:25px;
+    @include min(992){
+        padding-top: 35px;
+    }
+    @include min(1200){
+        padding-top: 45px;
+    }
+    @include min(1440){
+        padding-top: 50px;
+    }
+    @include min(1600){
+        padding-top: 55px;
+    }
+    @include min(1900){
+        padding-top: 60px;
+    }
+    .d-flex{
+        @include max(575){
+            gap: 20px;
+        }
+    }
+    .container-ctn{
+        background-color: $greyBg;
+        border-radius: 6px;
+        padding: 15px 20px;
+        @include min(576){
+            border-radius: 10px;
+            padding: 20px 25px;
+        }
+        @include min(992){
+            border-radius: 13px;
+            padding: 25px 30px;
+        }
+        @include min(1200){
+            border-radius: 14px;
+            padding: 35px 45px;
+        }
+        @include min(1440){
+            border-radius: 18px;
+            padding: 40px 50px;
+        }
+        @include min(1600){
+            border-radius: 19px;
+            padding: 45px 55px;
+        }
+        @include min(1900){
+            border-radius: 20px;
+            padding: 50px 60px;
+        }
+    }
+    &-description{
+        width: 100%;
+        @include min(576){
+            width: 50%;
+        }
+        @include min(768){
+            width: 70%;
+        }
+        @include min(992){
+            width: 80%;
+        }
+        a{
+            color: #518EF8;
+        }
+        .h3{
+            font-weight: 600;
+            line-height: 23px;
+            font-size: 12px;
+        
+            @include min(576){
+                font-size: 13px;
+            }
+            @include min(768){
+                font-size: 15px;
+            }
+            @include min(992){
+                font-size: 15px;
+            }
+            @include min(1200){
+                font-size: 15px;
+                line-height: 26px
+
+            }
+            @include min(1280){
+                font-size: 15px;
+                line-height: 28px
+
+            }
+            @include min(1350){
+                font-size: 16px;
+                line-height: 30px
+
+            }
+            @include min(1440){
+                font-size: 17px;
+                line-height: 36px
+
+            }
+            @include min(1600){
+                font-size: 18px;
+                line-height: 38px
+
+            }
+            @include min(1900){
+                font-size: 24px;
+                line-height: 40px
+            }
+        
+        }
+        h3{
+            color: $black;
+        }
+    }
+}
+

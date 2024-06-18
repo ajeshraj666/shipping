@@ -12,7 +12,9 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="web/css/slick-full.css">
     <link rel="stylesheet" href="web/css/bootstrap-short.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
     <link rel="stylesheet" href="web/scss/style.css">
+
 
 </head>
 <body>
@@ -96,7 +98,7 @@
                                 </ul>
                                 </div> -->
                             </li>
-                            <li><a href="">How it Works</a></li>
+                            <li><a href="how-it-works.php">How it Works</a></li>
                             <li><a href="blog.php">Blog</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                          

@@ -123,7 +123,7 @@
             <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
 
-        <ul class="d-flex flex-wrap">
+        <ul class="d-flex flex-wrap workingStep">
             <li>
                 <picture><img src="web/images/home/1.jpg" alt=""></picture>
                 <div>

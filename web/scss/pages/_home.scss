@@ -110,7 +110,12 @@
     padding-bottom: 10px;
     margin-bottom: 172px;
 
-    ul{
+ 
+}
+
+
+
+    ul.workingStep{
         padding-bottom: 50px;
         counter-reset: number;
         gap: 20px;
@@ -203,173 +208,174 @@
                 line-height: 40px; 
             }
         }
-    }
-    li{
-        width:100%;
-        @include min(768){
-            width: 47%;
-        }
-        @include min(992){
-            width: 47%;
-        }
-        @include min(1200){
-            width: 47.65%;
-        }
-        @include min(1440){
-            width: 47.2%;
-        }
-        @include min(1600){
-            width: 47.3%;
-        }
-        @include min(1900){
-            width: 47.65%;
-        }
-        position: relative;
-
-        img{
-            width: 100%;
-        }
-        picture{
-            overflow: hidden;
-            position: absolute;
-            z-index: 2;
-            border: 1px solid $border;
-            border-radius: 10px;
-            width: 32%;
-            @include max(767){
-                top: 50%;
-                transform: translateY(-50%);
-            }
+        li{
+            width:100%;
             @include min(768){
-                top: -20px;
-            }
-            @include min(1200){
-                top: -40px;
-            }
-        }
-       > div{
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            min-height: 120px;
-            padding: 15px 15px 15px 15px;
-            border-radius: 15px;
-            background-color: $white;
-            transition: 0.5s ease all;
-            width: 75.69%;
-            @include min(576){
-                min-height: 165px;
-                width: 71.69%;
-            }
-            @include min(768){
-                width: 87.69%;
-                padding: 10px 15px 10px 22px;
-              min-height: 85px;
-                border-radius: 20px;
+                width: 47%;
             }
             @include min(992){
-                padding: 20px 20px 20px 22px;  
-                min-height: 110px;
-                border-radius: 22px;
+                width: 47%;
             }
             @include min(1200){
-                padding: 25px 25px 25px 40px;  
-                min-height: 140px;
-                border-radius: 25px;
+                width: 47.65%;
             }
             @include min(1440){
-                padding: 30px 30px 30px 40px;  
-                min-height: 160px;
-                border-radius: 40px;
+                width: 47.2%;
             }
             @include min(1600){
-                padding: 30px 45px 30px 45px;  
-                min-height: 170px;
-                border-radius: 45px;
+                width: 47.3%;
             }
             @include min(1900){
-                padding: 32px 50px 50px 50px;  
-                min-height: 230px;
-                border-radius: 50px;
+                width: 47.65%;
             }
-            &:hover{
-                background-color: $primaryColor;
-                transition: 0.3s ease all;
-                h3,p{
-                    color: $white;
-                }
-
-            }
-           >div{
             position: relative;
-            width: 100%;
-            margin-left: auto;
-            padding-left: 49px;
-            @include min(576){
-                padding-left: 57px;
+    
+            img{
+                width: 100%;
             }
-            @include min(768){
-                width: 86.7%;
-                padding-left: 38px;
-            }
-            @include min(992){
-                padding-left: 50px;
-            }
-            @include min(1200){
-                padding-left: 64px;
-            }
-            @include min(1440){
-                padding-left: 64px;
-            }
-            @include min(1600){
-                padding-left: 70px;
-            }
-            @include min(1900){
-                padding-left: 95px;
-            }
-
-
-            &::before{
-                color: rgba(120, 187, 96, 0.30);
-                font-weight: 700;
-                transition: 0.5s ease all;
-                counter-increment: number;
-                content:  counter(number) " ";
+            picture{
+                overflow: hidden;
                 position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 0;
-                font-size: 105px;
-                line-height: 90px;
-                @include min(768){
-                    font-size: 70px;
-                    line-height: 66px;
+                z-index: 2;
+                border: 1px solid $border;
+                border-radius: 10px;
+                width: 32%;
+                @include max(767){
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
-                @include min(992){
-                    font-size: 100px;
-                    line-height: 80px; 
+                @include min(768){
+                    top: -20px;
                 }
                 @include min(1200){
-                    font-size: 123px;
-                    line-height: 123px; 
-                }
-                @include min(1440){
-                    font-size: 120px;
-                    line-height: 95px; 
-                }
-                @include min(1600){
-                    font-size: 150px;
-                    line-height: 150px; 
-                }
-                @include min(1900){
-                    font-size: 200px;
-                    line-height: 200px; 
+                    top: -40px;
                 }
             }
-           }
+           > div{
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                min-height: 120px;
+                padding: 15px 15px 15px 15px;
+                border-radius: 15px;
+                background-color: $white;
+                transition: 0.5s ease all;
+                width: 75.69%;
+                @include min(576){
+                    min-height: 165px;
+                    width: 71.69%;
+                }
+                @include min(768){
+                    width: 87.69%;
+                    padding: 10px 15px 10px 22px;
+                  min-height: 85px;
+                    border-radius: 20px;
+                }
+                @include min(992){
+                    padding: 20px 20px 20px 22px;  
+                    min-height: 110px;
+                    border-radius: 22px;
+                }
+                @include min(1200){
+                    padding: 25px 25px 25px 40px;  
+                    min-height: 140px;
+                    border-radius: 25px;
+                }
+                @include min(1440){
+                    padding: 30px 30px 30px 40px;  
+                    min-height: 160px;
+                    border-radius: 40px;
+                }
+                @include min(1600){
+                    padding: 30px 45px 30px 45px;  
+                    min-height: 170px;
+                    border-radius: 45px;
+                }
+                @include min(1900){
+                    padding: 32px 50px 50px 50px;  
+                    min-height: 230px;
+                    border-radius: 50px;
+                }
+                &:hover{
+                    background-color: $primaryColor;
+                    transition: 0.3s ease all;
+                    h3,p{
+                        color: $white;
+                    }
+    
+                }
+               >div{
+                position: relative;
+                width: 100%;
+                margin-left: auto;
+                padding-left: 49px;
+                @include min(576){
+                    padding-left: 57px;
+                }
+                @include min(768){
+                    width: 86.7%;
+                    padding-left: 38px;
+                }
+                @include min(992){
+                    padding-left: 50px;
+                }
+                @include min(1200){
+                    padding-left: 64px;
+                }
+                @include min(1440){
+                    padding-left: 64px;
+                }
+                @include min(1600){
+                    padding-left: 70px;
+                }
+                @include min(1900){
+                    padding-left: 95px;
+                }
+    
+    
+                &::before{
+                    color: rgba(120, 187, 96, 0.30);
+                    font-weight: 700;
+                    transition: 0.5s ease all;
+                    counter-increment: number;
+                    content:  counter(number) " ";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    font-size: 105px;
+                    line-height: 90px;
+                    @include min(768){
+                        font-size: 70px;
+                        line-height: 66px;
+                    }
+                    @include min(992){
+                        font-size: 100px;
+                        line-height: 80px; 
+                    }
+                    @include min(1200){
+                        font-size: 123px;
+                        line-height: 123px; 
+                    }
+                    @include min(1440){
+                        font-size: 120px;
+                        line-height: 95px; 
+                    }
+                    @include min(1600){
+                        font-size: 150px;
+                        line-height: 150px; 
+                    }
+                    @include min(1900){
+                        font-size: 200px;
+                        line-height: 200px; 
+                    }
+                }
+               }
+            }
         }
     }
-}
+
+
 
 .testimonials .heading,.blog-home .heading {
     display: flex;

@@ -28,11 +28,12 @@ $(document).ready(function(){
 
     $(document).ready(function(){
       $(".clientSlider").slick({
-        slidesToShow:6.9,
+        slidesToShow:7,
         slidesToScroll: 1,
         dots: false,
         arrows:true,
-        // autoplay:true,
+        infinite:!0,
+        autoplay:!0,autoplaySpeed:0,speed:3000,variableWidth:!0,cssEase:"linear",
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
         responsive: [
@@ -67,6 +68,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         dots: false,
         arrows:true,
+        cssEase:"linear",
         autoplay:true,
         prevArrow: $('.prev1'),
         nextArrow: $('.next1'),
@@ -121,7 +123,8 @@ function contactPhone(selector, phoneInput) {
   const phoneNumber = phoneInput.getNumber();	
   $(selector + ' .phone_number').val(phoneNumber);	
 }	
-initializePhoneInput(".contact-enquiry");	
+initializePhoneInput(".contact-form");	
+initializePhoneInput(".careerPopupBox");	
 
 
 
@@ -154,17 +157,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // ======================Abou Tab======================
-document.getElementById('missionButton').addEventListener('click', function() {
-  document.querySelector('.mission').classList.add('active');
-  document.querySelector('.vision').classList.remove('active');
-  this.classList.add('active');
-  document.getElementById('visionButton').classList.remove('active');
-});
-
-document.getElementById('visionButton').addEventListener('click', function() {
-  document.querySelector('.vision').classList.add('active');
-  document.querySelector('.mission').classList.remove('active');
-  this.classList.add('active');
-  document.getElementById('missionButton').classList.remove('active');
+$(document).ready(function() {
+  var missionButton = document.getElementById('missionButton');
+  var visionButton = document.getElementById('visionButton');
+  
+  if (missionButton) {
+    missionButton.addEventListener('click', function() {
+      document.querySelector('.mission').classList.add('active');
+      document.querySelector('.vision').classList.remove('active');
+      this.classList.add('active');
+      visionButton.classList.remove('active');
+    });
+  }
+  
+  if (visionButton) {
+    visionButton.addEventListener('click', function() {
+      document.querySelector('.vision').classList.add('active');
+      document.querySelector('.mission').classList.remove('active');
+      this.classList.add('active');
+      missionButton.classList.remove('active');
+    });
+  }
 });
 
