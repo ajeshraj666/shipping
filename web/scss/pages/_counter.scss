@@ -3,7 +3,6 @@
 
 }
 .timer-col{
-  transition: 0.8s ease all;
 
   text-align: center;
   display: flex;
@@ -80,7 +79,7 @@
     background-color: $secondaryColor;
     margin-bottom: -30px;
     border-radius: 50%;
-    transition: 0.8s ease all;
+    // transition: 0.8s ease all;
     @include min(576){
       margin-bottom: -30px;
     }

@@ -3,7 +3,8 @@
 <section class="innerBanner">
     <picture><img src="web/images/banner/contact.jpg" alt=""></picture>
     <div class="container-ctn">
-        <div class="head">
+    <div class="heading">
+    <span>Contact Us</span>
             <h1>Contact Us</h1>
         </div>
     </div>

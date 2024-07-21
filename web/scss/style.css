@@ -1864,7 +1864,6 @@ select:focus-visible {
 }
 
 header {
-  transition: 0.6s ease all;
   background: rgba(16, 16, 16, 0.2);
   z-index: 9;
   top: 0;
@@ -2330,7 +2329,6 @@ header.scrolled .bottom-header ul a {
   align-items: center;
 }
 .bottom-header .main-menu nav > ul > li a {
-  transition: 0.3s ease all;
   position: relative;
   height: 100%;
   display: flex;
@@ -3977,7 +3975,6 @@ ul.workingStep li > div > div::before {
 }
 
 .blog-card {
-  transition: 0.5s ease all;
   border-radius: 5px;
   border: 1px solid #ECECEC;
   padding: 12px 12px 20px 12px;
@@ -5171,6 +5168,16 @@ ul.workingStep li > div > div::before {
 }
 .terms p:last-child {
   margin-bottom: 0;
+}
+.terms .themeBtn, .terms .footerTop .btn, .footerTop .terms .btn, .terms .page-not-found .btn, .page-not-found .terms .btn, .terms .thank-you .btn, .thank-you .terms .btn {
+  margin-top: 30px !important;
+}
+
+@media (min-width: 576px) {
+  .colum-2 ul {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
 }
 
 .faq .head {
@@ -7249,7 +7256,6 @@ ul.workingStep li > div > div::before {
 }
 
 .timer-col {
-  transition: 0.8s ease all;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -7341,7 +7347,6 @@ ul.workingStep li > div > div::before {
   background-color: #78BB60;
   margin-bottom: -30px;
   border-radius: 50%;
-  transition: 0.8s ease all;
 }
 @media (min-width: 576px) {
   .timer-col picture {
@@ -10050,7 +10055,9 @@ ul.workingStep li > div > div::before {
 .calculator input {
   color: #101010;
 }
-.calculator label,
+.calculator .radioOuter p {
+  font-weight: 800;
+}
 .calculator select,
 .calculator p {
   font-weight: 600;
@@ -10249,13 +10256,14 @@ ul.workingStep li > div > div::before {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 3px;
 }
+.calculator #volumetricWeightFields {
+  display: none;
+}
 .calculator .form-row {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
 }
 .calculator form > div {
-  display: flex;
   flex-wrap: wrap;
 }
 .calculator form label {
@@ -10353,6 +10361,16 @@ ul.workingStep li > div > div::before {
     border: 10px solid #07725B;
   }
 }
+@media (min-width: 1300px) {
+  .calculator .radioOuter + .radioOuter {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 1299px) {
+  .calculator .radioOuter p {
+    width: 100%;
+  }
+}
 .calculator .radioOuter,
 .calculator .inputOuter {
   gap: 15px;
@@ -10366,7 +10384,7 @@ ul.workingStep li > div > div::before {
 @media (min-width: 1200px) {
   .calculator .radioOuter,
   .calculator .inputOuter {
-    gap: 28px;
+    gap: 24px;
   }
 }
 @media (min-width: 1350px) {
@@ -10428,36 +10446,71 @@ ul.workingStep li > div > div::before {
   }
 }
 .calculator .location,
-.calculator h3 {
+.calculator .checkboxHeader {
+  cursor: pointer;
+  gap: 10px;
   margin-bottom: 15px;
+}
+.calculator .location input,
+.calculator .checkboxHeader input {
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+  .calculator .location input,
+  .calculator .checkboxHeader input {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .calculator .location input,
+  .calculator .checkboxHeader input {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 1600px) {
+  .calculator .location input,
+  .calculator .checkboxHeader input {
+    width: 25px;
+    height: 25px;
+  }
+}
+.calculator .location h3,
+.calculator .checkboxHeader h3 {
+  margin: 0;
+  position: relative;
+  left: -30px;
+  padding-left: 30px;
 }
 @media (min-width: 992px) {
   .calculator .location,
-  .calculator h3 {
+  .calculator .checkboxHeader {
     margin-bottom: 18px;
   }
 }
 @media (min-width: 1200px) {
   .calculator .location,
-  .calculator h3 {
+  .calculator .checkboxHeader {
     margin-bottom: 22px;
   }
 }
 @media (min-width: 1440px) {
   .calculator .location,
-  .calculator h3 {
+  .calculator .checkboxHeader {
     margin-bottom: 26px;
   }
 }
 @media (min-width: 1600px) {
   .calculator .location,
-  .calculator h3 {
+  .calculator .checkboxHeader {
     margin-bottom: 28px;
   }
 }
 @media (min-width: 1900px) {
   .calculator .location,
-  .calculator h3 {
+  .calculator .checkboxHeader {
     margin-bottom: 30px;
   }
 }
@@ -11192,5 +11245,11 @@ ul.workingStep li > div > div::before {
   .shipping-cta h2 {
     width: 78%;
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .packageWeightInput {
+    padding-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

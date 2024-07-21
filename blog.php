@@ -3,7 +3,8 @@
 <section class="innerBanner">
     <picture><img src="web/images/banner/blog.jpg" alt=""></picture>
     <div class="container-ctn">
-        <div class="head">
+    <div class="heading">
+    <span>Our News</span>
             <h1>Our Blog</h1>
         </div>
     </div>

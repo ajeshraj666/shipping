@@ -1,17 +1,18 @@
 <?php include('includes/header.php') ?>
 
 <section class="innerBanner">
-    <picture><img src="web/images/banner/contact.jpg" alt=""></picture>
+    <picture><img src="web/images/banner/how-it.jpg" alt=""></picture>
     <div class="container-ctn">
-        <div class="head">
-            <h1>Contact Us</h1>
+        <div class="heading">
+            <span>Processes</span>
+            <h1>How it Works</h1>
         </div>
     </div>
 
     <div class="breadCrumb">
         <ul>
             <li><a href="index.php">HOME</a>&nbsp; / &nbsp;</li>
-            <li>Contact Us</li>
+            <li>How it Works</li>
         </ul>
     </div>
 </section>
@@ -19,7 +20,7 @@
 <section class="howItWorks-page">
     <div class="container-ctn">
         <div class="heading ">
-            <span>Get in Touch</span>
+            <span>How it Works</span>
             <h2>Challenges for International Shoppers to Shop in India</h2>
         </div>
        <div class="d-flex flex-wrap">

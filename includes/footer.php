@@ -110,18 +110,23 @@
                 </div>
             </div>
             <div class="links">
-                    <strong>Industry Served</strong>
+                    <strong>Other Links</strong>
                     <ul>
-                        <li><a href="">Frozen Foods</a></li>
+                        <!-- <li><a href="">Frozen Foods</a></li>
                         <li><a href="">Automobiles</a></li>
                         <li><a href="">Machineries</a></li>
                         <li><a href="">Export Import</a></li>
                         <li><a href="">Cargo Freight</a></li>
-                        <li><a href="">Warehousing</a></li>
+                        <li><a href="">Warehousing</a></li> -->
+                        <li><a href="prohibited-items.php">Prohibited Items</a></li>
+                        <li><a href="refund.php">Refund And Cancellation</a></li>
+                        <li><a href="privacy.php">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms And Conditions</a></li>
+
                     </ul>
             </div>
             <div class="links">
-                    <strong>Company Info</strong>
+                    <strong>Quick Links</strong>
                     <ul>
                          <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
@@ -362,7 +367,212 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
 <script src="web/js/jquery.star-rating-svg.min.js"></script>
 <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" ></script>
+
+<script>
+    const timeline = gsap.timeline({defaults: {duration: .5}})
+    timeline
+    .from(".bannerImage ", {  opacity:0 , scale: 5})
+      .from("header", {  y: "-100%", ease: "back.out" })
+      .from(".brand", {  opacity:0 })
+      .from(".link", {  opacity:0, stagger: .2 })
+      .from(".buttonGroup", {  opacity:0 })
+      .from(".bannerText span", {  x: "-100vw", opacity:0  },1)
+      .from(".bannerText h1", {  x: "-100vw", opacity:0  },1.25)
+      .from(".bannerText p", {  x: "-100vw", opacity:0  },1.75)
+      .from(".bannerText .bannerBtn", {  y: "100vh", opacity:0  },2)
+      .from(".leftFixedBox", {  x: "100vw", opacity:0  })
+     
+
+    //   .from(".bannerText ", {  x: "-100vw", ease: 'back' },'<.5')
+ 
+    // .fromTo('.button',{opacity:0,scale:0, rotation:720}, {opacity:1, scale:1, rotation:0})
+
+
+    // repeat:-1 - for infinit
+    // yoyo: true - for linear (like left to right, right to left)
+    //scrollTrigger: '#page 2 #box'
+
+
+
+     gsap.from(".timer-col", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".counter",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from(".timer-col picture", {
+        duration: 1,
+        scale:0,
+        rotate: 360,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".counter",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } 
+     })
+   
+     gsap.from(".howDoesWork .heading", {
+        duration: 1,
+        opacity: 0,
+        x: -50,
+        scrollTrigger: {
+            trigger: ".howDoesWork .heading",
+            start: "top 80%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from(".howDoesWork .workingStep li", {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".howDoesWork .workingStep",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from("ul.workingStep li > div > div", {
+        duration: 2,
+        y: -50,
+        stagger: 0.4,
+        scrollTrigger: {
+            trigger: ".howDoesWork .workingStep",
+            start: "top 50%", 
+            end: "bottom 50%", 
+        } 
+     })
+     gsap.from(".howDoesWork .cta", {
+        opacity:0,
+        duration: 2,
+         scale: 1.1,
+        scrollTrigger: {
+            markers: true,
+            trigger: ".howDoesWork .cta",
+            start: "top 50%", 
+            end: "bottom 80%", 
+        } 
+     })
+     gsap.from(".shippin-bg > picture", {
+        duration: 2,
+        opacity:0,
+         x: '100%',
+        scrollTrigger: {
+            trigger: ".howDoesWork .cta",
+            start: "top 50%", 
+            end: "bottom 80%", 
+        } 
+     })
+     gsap.from(".shipping-items", {
+        opacity:0,
+        duration: 1,
+        y: 100,
+        stagger: 0.4,
+        scrollTrigger: {
+            trigger: ".howDoesWork .cta",
+            start: "top 50%", 
+            end: "bottom 80%", 
+        } 
+     })
+     gsap.from(".howDoesWork .static-man img", {
+        duration: 3,
+        opacity:0,
+         x: '-100%',
+        scrollTrigger: {
+            trigger: ".howDoesWork .cta",
+            start: "top 50%", 
+            end: "bottom 80%", 
+        } 
+     })
+     gsap.from(".clients .heading", {
+        duration: 1,
+        opacity: 0,
+        x: -50,
+        scrollTrigger: {
+            trigger: ".clients .heading",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from(".clients .clientSlider ", 
+        {opacity:0,scale:0, scrollTrigger: {
+
+            trigger: ".clients .clientSlider ",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } },
+        
+        {opacity:1, scale:1, rotation:0}
+
+     )
+
+     gsap.from(".testimonials  .heading", {
+        duration: 1,
+        opacity: 0,
+        y: -50,
+        scrollTrigger: {
+            trigger: ".testimonials  .heading",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from(".testimonialSlider ", {
+        duration: 1,
+        opacity: 0,
+        y: 150,
+        scrollTrigger: {
+            trigger: ".testimonialSlider ",
+            start: "top 80%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from(".blog-home .heading ", {
+        duration: 1,
+        opacity: 0,
+        y: -50,
+        scrollTrigger: {
+            trigger: ".blog-home  .heading",
+            start: "top 50%", 
+            end: "bottom 20%", 
+        } 
+     })
+     gsap.from(".blog-home .blog-card", {
+        duration: 1,
+        opacity: 0,
+        y: 150,
+        stagger: .4,
+        scrollTrigger: {
+
+            trigger: ".blog-home .blog-card",
+            start: "top 80%", 
+            end: "bottom 80%", 
+        } 
+     })
+     gsap.from("footer .d-flex > div", {
+        duration: 1,
+        opacity: 0,
+        y: 150,
+        stagger: .4,
+        scrollTrigger: {
+
+            trigger: "footer",
+            start: "top 80%", 
+            end: "bottom 80%", 
+        } 
+     })
+</script>
 <script src="web/js/script.js"></script>
+
 <!-- <script>
 $(function() {
 AOS.init({

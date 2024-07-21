@@ -30,9 +30,9 @@
                 <div class="main-menu align-items-center d-flex">
                     <nav class="d-none d-lg-flex ">
                         <ul>
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="about.php">About Us</a></li>
-                            <li><a href="calculator.php">Shipping Calculator </a>
+                            <li><a class="link" href="index.php">Home</a></li>
+                            <li><a class="link" href="about.php">About Us</a></li>
+                            <li><a class="link" href="calculator.php">Shipping Calculator </a>
                             <!-- <li class="drop-downs"><a href="">Shipping Calculator </a> -->
                                 <!-- <div class="mega">
                                 <ul>
@@ -98,9 +98,9 @@
                                 </ul>
                                 </div> -->
                             </li>
-                            <li><a href="how-it-works.php">How it Works</a></li>
-                            <li><a href="blog.php">Blog</a></li>
-                            <li><a href="contact.php">Contact Us</a></li>
+                            <li><a class="link" href="how-it-works.php">How it Works</a></li>
+                            <li><a class="link" href="blog.php">Blog</a></li>
+                            <li><a class="link" href="contact.php">Contact Us</a></li>
                          
                         </ul>
                         

@@ -31,16 +31,14 @@
                 <div class="form-col-12 w-100 d-flex flex-wrap border1">
                     <select id="location" name="location">
                         <option value="0">Where do you want to send your package to?</option>
-                        <option value="us">United States</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="ca">Canada</option>
+           
                         <!-- Add more options as needed -->
                     </select>
                     <span class="error" id="locationError">Please select the location</span>
                 </div>
             </div>
             <div class="d-flex flex-wrap form-row justify-content-between package">
-                <div class="form-col-5 radioOuter d-flex flex-wrap align-items-end border1">
+                <div class="form-col-5 radioOuter d-flex flex-wrap align-items-end  ">
                     <p>Package Type</p>
                     <div class="d-flex">
                         <div class="custom-radio">
@@ -55,7 +53,7 @@
                     <span class="error" id="package_typeError">Please select the package type</span>
 
                 </div>
-                <div class="form-col-5 radioOuter d-flex flex-wrap  align-items-end border1">
+                <div class="form-col-5 col-xl-3 radioOuter d-flex flex-wrap  align-items-end  ">
                     <p>Package Weight</p>
                     <div class="d-flex">
                         <div class="custom-radio">
@@ -70,7 +68,7 @@
                     <span class="error" id="weight_unitError">Please select any option</span>
 
                 </div>
-                <div class="form-col-2 ">
+                <div class="form-col-2 col-xl-4 packageWeightInput">
                     <div class="input-group justify-content-between">
                         <button type="button" class="decrement" data-field="weight"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"> <g clip-path="url(#clip0_1623_290)"> <path d="M21.25 15C21.25 15.69 20.69 16.25 20 16.25H10C9.31 16.25 8.75 15.69 8.75 15C8.75 14.31 9.31 13.75 10 13.75H20C20.69 13.75 21.25 14.31 21.25 15ZM30 6.25V23.75C30 27.1962 27.1962 30 23.75 30H6.25C2.80375 30 0 27.1962 0 23.75V6.25C0 2.80375 2.80375 0 6.25 0H23.75C27.1962 0 30 2.80375 30 6.25ZM27.5 6.25C27.5 4.1825 25.8175 2.5 23.75 2.5H6.25C4.1825 2.5 2.5 4.1825 2.5 6.25V23.75C2.5 25.8175 4.1825 27.5 6.25 27.5H23.75C25.8175 27.5 27.5 25.8175 27.5 23.75V6.25Z" fill="#101010" /> </g> <defs> <clipPath id="clip0_1623_290"> <rect width="30" height="30" fill="white" /> </clipPath> </defs> </svg></button>
                         <input type="number" id="weight" name="weight"  value=" 0.00" step="0.1" >
@@ -80,13 +78,16 @@
 
                 </div>
             </div>
-            <h3>Volumetric Weight (Optional)</h3>
-            <div class="d-flex flex-wrap form-row justify-content-between weight">
-                <div class="form-col-2 radioOuter d-flex flex-wrap align-items-end border1">
+            <div class="checkboxHeader d-flex align-items-center w-100" id="volumetricWeightToggle">
+                <input type="checkbox" id="volumetricWeightCheckbox" >
+                <h3>Volumetric Weight (Optional)</h3>
+            </div>
+            <div class=" flex-wrap form-row justify-content-between weight" id="volumetricWeightFields">
+                <div class="form-col-2 radioOuter d-flex flex-wrap align-items-end ">
                     <p>Unit</p>
                     <div class="d-flex">
                         <div class="custom-radio">
-                            <input type="radio" id="cm" name="volumetric_unit" value="cm" checked>
+                            <input type="radio" id="cm" name="volumetric_unit" value="cm" >
                             <label for="cm">cm</label>
                         </div>
                         <div class="custom-radio">
@@ -97,7 +98,7 @@
                     <span class="error" id="volumetric_unitError">Please select any option</span>
 
                 </div>
-                <div class="form-col-3  border1 d-flex align-items-end inputOuter">
+                <div class="form-col-3  d-flex align-items-end inputOuter">
                     <p>Length</p>
                     <div class="input-group justify-content-between">
                         <button type="button" class="decrement" data-field="length"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"> <g clip-path="url(#clip0_1623_290)"> <path d="M21.25 15C21.25 15.69 20.69 16.25 20 16.25H10C9.31 16.25 8.75 15.69 8.75 15C8.75 14.31 9.31 13.75 10 13.75H20C20.69 13.75 21.25 14.31 21.25 15ZM30 6.25V23.75C30 27.1962 27.1962 30 23.75 30H6.25C2.80375 30 0 27.1962 0 23.75V6.25C0 2.80375 2.80375 0 6.25 0H23.75C27.1962 0 30 2.80375 30 6.25ZM27.5 6.25C27.5 4.1825 25.8175 2.5 23.75 2.5H6.25C4.1825 2.5 2.5 4.1825 2.5 6.25V23.75C2.5 25.8175 4.1825 27.5 6.25 27.5H23.75C25.8175 27.5 27.5 25.8175 27.5 23.75V6.25Z" fill="#101010" /> </g> <defs> <clipPath id="clip0_1623_290"> <rect width="30" height="30" fill="white" /> </clipPath> </defs> </svg></button>
@@ -107,7 +108,7 @@
                     <span class="error" id="lengthError">Please select the package length</span>
 
                 </div>
-                <div class="form-col-3  border1 d-flex align-items-end inputOuter">
+                <div class="form-col-3   d-flex align-items-end inputOuter">
                     <p>Height</p>
                     <div class="input-group justify-content-between">
                        <button type="button" class="decrement" data-field="height"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"> <g clip-path="url(#clip0_1623_290)"> <path d="M21.25 15C21.25 15.69 20.69 16.25 20 16.25H10C9.31 16.25 8.75 15.69 8.75 15C8.75 14.31 9.31 13.75 10 13.75H20C20.69 13.75 21.25 14.31 21.25 15ZM30 6.25V23.75C30 27.1962 27.1962 30 23.75 30H6.25C2.80375 30 0 27.1962 0 23.75V6.25C0 2.80375 2.80375 0 6.25 0H23.75C27.1962 0 30 2.80375 30 6.25ZM27.5 6.25C27.5 4.1825 25.8175 2.5 23.75 2.5H6.25C4.1825 2.5 2.5 4.1825 2.5 6.25V23.75C2.5 25.8175 4.1825 27.5 6.25 27.5H23.75C25.8175 27.5 27.5 25.8175 27.5 23.75V6.25Z" fill="#101010" /> </g> <defs> <clipPath id="clip0_1623_290"> <rect width="30" height="30" fill="white" /> </clipPath> </defs> </svg></button>
@@ -117,7 +118,7 @@
                     <span class="error" id="heightError">Please select the package height</span>
 
                 </div>
-                <div class="form-col-3  border1 d-flex align-items-end inputOuter">
+                <div class="form-col-3   d-flex align-items-end inputOuter">
                     <p>Width</p>
                     <div class="input-group justify-content-between">
                          <button type="button" class="decrement" data-field="width"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"> <g clip-path="url(#clip0_1623_290)"> <path d="M21.25 15C21.25 15.69 20.69 16.25 20 16.25H10C9.31 16.25 8.75 15.69 8.75 15C8.75 14.31 9.31 13.75 10 13.75H20C20.69 13.75 21.25 14.31 21.25 15ZM30 6.25V23.75C30 27.1962 27.1962 30 23.75 30H6.25C2.80375 30 0 27.1962 0 23.75V6.25C0 2.80375 2.80375 0 6.25 0H23.75C27.1962 0 30 2.80375 30 6.25ZM27.5 6.25C27.5 4.1825 25.8175 2.5 23.75 2.5H6.25C4.1825 2.5 2.5 4.1825 2.5 6.25V23.75C2.5 25.8175 4.1825 27.5 6.25 27.5H23.75C25.8175 27.5 27.5 25.8175 27.5 23.75V6.25Z" fill="#101010" /> </g> <defs> <clipPath id="clip0_1623_290"> <rect width="30" height="30" fill="white" /> </clipPath> </defs> </svg></button>
